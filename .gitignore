@@ -1,0 +1,39 @@
+# Node / Frontend
+node_modules/
+dist/
+build/
+.vite/
+
+# Python / Backend
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+venv/
+.venv/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+logs/
+*.log
+
+# Editors and OS
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Frontend-specific
+frontend/node_modules/
+frontend/dist/
+
+# Backend-specific
+backend/.venv/
+backend/__pycache__/
+backend/*.py[cod]
+backend/.env

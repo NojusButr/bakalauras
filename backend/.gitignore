@@ -1,0 +1,20 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Environment files
+.env
+.env.*
+
+# Testing / cache
+.pytest_cache/
+.mypy_cache/
+
+# Editor folders
+.vscode/
