@@ -1,3 +1,4 @@
+& c:\Users\Nojus\Desktop\bakalauras\backend\.venv\Scripts\Activate.ps1
 cd backend
 .venv\Scripts\python.exe -m fastapi dev main.py
 

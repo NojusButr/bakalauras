@@ -1,8 +1,78 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.map-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.info-panel {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.info-panel h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.info-item {
+  margin: 8px 0;
+  color: #555;
+  font-size: 12px;
+  font-family: monospace;
+}
+
+.info-panel button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #3388ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.info-panel button:hover {
+  background-color: #2266cc;
+}
+
+.info-panel select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 12px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+  background-color: white;
+  color: #333;
+  margin-left: 8px;
+  min-width: 120px;
+}
+
+.info-panel select:hover {
+  border-color: #999;
+}
+
+.info-panel select option {
+  color: #333;
+  background-color: white;
+  padding: 4px;
 }
 
 .logo {
