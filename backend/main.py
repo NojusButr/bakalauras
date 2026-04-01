@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.config import CITIES_CONFIG
-from app.routers import cities, routes, traffic
+from app.routers import cities, routes, traffic, simulation
 from app.services.graph_service import load_or_create_city_geojson
 
 app = FastAPI()
@@ -18,6 +18,7 @@ app.add_middleware(
 app.include_router(traffic.router)
 app.include_router(cities.router)
 app.include_router(routes.router)
+app.include_router(simulation.router)
 
 
 @app.on_event("startup")

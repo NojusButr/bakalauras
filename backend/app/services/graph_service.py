@@ -1,7 +1,7 @@
 import json
 import pickle
 import osmnx as ox
-from app.config import CITIES_DIR, CITY_BOUNDING_BOX
+from app.config import CITIES_DIR, CITY_RADIUS_M
 
 # In-memory graph cache
 GRAPHS = {}
@@ -23,9 +23,10 @@ def load_or_create_city_graph(city_name: str, place_name: str, coords: tuple = N
         with open(graph_file, "rb") as f:
             G = pickle.load(f)
     else:
-        print(f"Fetching {city_name} graph from OpenStreetMap...")
+        radius = CITY_RADIUS_M.get(city_name_lower, 10000)
+        print(f"Fetching {city_name} graph from OpenStreetMap (radius={radius}m)...")
         if coords:
-            G = ox.graph_from_point(coords, dist=CITY_BOUNDING_BOX, network_type="drive")
+            G = ox.graph_from_point(coords, dist=radius, network_type="drive")
         else:
             G = ox.graph_from_place(place_name, network_type="drive")
 
@@ -58,3 +59,24 @@ def load_or_create_city_geojson(city_name: str, place_name: str, coords: tuple =
 
     print(f"{city_name} GeoJSON cached.")
     return geojson
+
+
+def delete_city_cache(city_name: str):
+    """
+    Delete cached graph and GeoJSON for a city so it gets re-fetched
+    next time with the current CITY_RADIUS_M value.
+    """
+    city_name_lower = city_name.lower()
+    city_dir = CITIES_DIR / city_name_lower
+
+    deleted = []
+    for filename in ("graph.pkl", "geojson.json"):
+        f = city_dir / filename
+        if f.exists():
+            f.unlink()
+            deleted.append(filename)
+
+    # Also clear from memory cache
+    GRAPHS.pop(city_name_lower, None)
+
+    return deleted

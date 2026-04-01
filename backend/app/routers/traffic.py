@@ -4,7 +4,6 @@ from app.config import CITIES_CONFIG
 from app.services.graph_service import load_or_create_city_geojson
 from app.services.traffic_service import (
     build_traffic_snapshot,
-    get_traffic_for_point,
     list_snapshots,
     load_latest_snapshot,
     load_snapshot,
@@ -14,21 +13,12 @@ from app.services.traffic_service import (
 router = APIRouter(prefix="/traffic", tags=["traffic"])
 
 
-@router.get("")
-def traffic_point(lat: float, lng: float):
-    """Single-point traffic lookup (Flow Segment API)."""
-    result = get_traffic_for_point(lat, lng)
-    if result is None:
-        raise HTTPException(status_code=502, detail="TomTom API error")
-    return result
-
-
 @router.post("/snapshot/{city_name}")
 def create_snapshot(city_name: str):
     """
-    Manually trigger a full traffic snapshot for a city.
-    Fetches TomTom vector flow tiles, merges onto OSM edges, saves to disk.
-    Returns the annotated GeoJSON.
+    Trigger a traffic snapshot for a city.
+    Makes 2 HTTP requests to HERE (flow + incidents), merges onto OSM edges.
+    Fast — typically completes in a few seconds.
     """
     city_key = city_name.lower()
     if city_key not in CITIES_CONFIG:
@@ -44,7 +34,6 @@ def create_snapshot(city_name: str):
 
     saved_path = save_snapshot(city_key, snapshot)
     snapshot["metadata"]["saved_as"] = saved_path.name
-
     return snapshot
 
 
@@ -59,27 +48,23 @@ def get_latest_snapshot(city_name: str):
     if snapshot is None:
         raise HTTPException(
             status_code=404,
-            detail=f"No snapshots found for '{city_name}'. Trigger POST /traffic/snapshot/{city_name} first."
+            detail=f"No snapshots yet for '{city_name}'. Trigger POST /traffic/snapshot/{city_name} first."
         )
     return snapshot
 
 
 @router.get("/snapshot/{city_name}/list")
 def get_snapshot_list(city_name: str):
-    """List all saved snapshot filenames for a city (sorted oldest → newest)."""
+    """List all saved snapshot filenames for a city (oldest → newest)."""
     city_key = city_name.lower()
     if city_key not in CITIES_CONFIG:
         raise HTTPException(status_code=404, detail=f"City '{city_name}' not found")
-
     return {"city": city_key, "snapshots": list_snapshots(city_key)}
 
 
 @router.get("/snapshot/{city_name}/{filename}")
 def get_snapshot(city_name: str, filename: str):
-    """
-    Return a specific historical snapshot by filename
-    (use filenames from GET /traffic/snapshot/{city}/list).
-    """
+    """Load a specific historical snapshot by filename."""
     city_key = city_name.lower()
     if city_key not in CITIES_CONFIG:
         raise HTTPException(status_code=404, detail=f"City '{city_name}' not found")
@@ -87,5 +72,4 @@ def get_snapshot(city_name: str, filename: str):
     snapshot = load_snapshot(city_key, filename)
     if snapshot is None:
         raise HTTPException(status_code=404, detail=f"Snapshot '{filename}' not found")
-
     return snapshot

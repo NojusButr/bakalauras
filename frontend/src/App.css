@@ -11,6 +11,7 @@
   position: relative;
 }
 
+/* ── Info panel overlay ───────────────────────────────────────────────────── */
 .info-panel {
   position: absolute;
   top: 10px;
@@ -22,7 +23,18 @@
   z-index: 1000;
   font-family: Arial, sans-serif;
   font-size: 14px;
+  color: #333;
+  width: 280px;
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #ccc transparent;
+  box-sizing: border-box;
 }
+
+.info-panel::-webkit-scrollbar { width: 4px; }
+.info-panel::-webkit-scrollbar-thumb { background: #ccc; border-radius: 4px; }
 
 .info-panel h2 {
   margin: 0 0 10px 0;
@@ -30,30 +42,57 @@
   color: #333;
 }
 
+.info-panel h3 {
+  margin: 0 0 6px 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
 .info-item {
-  margin: 8px 0;
-  color: #555;
+  margin: 6px 0;
+  color: #333;
   font-size: 12px;
   font-family: monospace;
 }
 
+.info-panel label {
+  color: #333;
+  font-weight: 600;
+}
+
+.info-panel hr {
+  border: none;
+  border-top: 1px solid #e5e7eb;
+  margin: 10px 0;
+}
+
+/* ── Buttons ──────────────────────────────────────────────────────────────── */
 .info-panel button {
-  margin-top: 10px;
-  padding: 8px 15px;
+  margin-top: 6px;
+  padding: 6px 10px;
   background-color: #3388ff;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 12px;
+  font-family: Arial, sans-serif;
+  transition: background 0.15s;
 }
 
-.info-panel button:hover {
+.info-panel button:hover:not(:disabled) {
   background-color: #2266cc;
 }
 
+.info-panel button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+/* ── Selects ──────────────────────────────────────────────────────────────── */
 .info-panel select {
-  padding: 6px 8px;
+  padding: 4px 6px;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-size: 12px;
@@ -61,52 +100,34 @@
   cursor: pointer;
   background-color: white;
   color: #333;
-  margin-left: 8px;
-  min-width: 120px;
+  max-width: 160px;
 }
 
-.info-panel select:hover {
-  border-color: #999;
-}
+.info-panel select:hover { border-color: #999; }
+.info-panel select option { color: #333; background-color: white; }
 
-.info-panel select option {
+/* ── Simulation panel section ─────────────────────────────────────────────── */
+.sim-active-banner {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 4px;
+  padding: 6px 8px;
+  margin-bottom: 8px;
+  font-size: 12px;
   color: #333;
-  background-color: white;
-  padding: 4px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.sim-preset-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 4px !important;
+  margin-top: 0 !important;
+  font-size: 12px !important;
+  padding: 5px 8px !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* ── Move Leaflet zoom controls to top-right ─────────────────────────────── */
+.leaflet-top.leaflet-left .leaflet-control-zoom {
+  display: none;
 }

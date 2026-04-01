@@ -1,304 +1,194 @@
 import json
-import time
 import requests
 from datetime import datetime
 from pathlib import Path
 from shapely.geometry import LineString, shape
+from shapely.strtree import STRtree
 
-from app.config import TOMTOM_API, CITIES_DIR
-
-
-# ── Config ────────────────────────────────────────────────────────────────────
-
-REQUEST_DELAY_S = 0.05        # 50ms between requests (~20 req/s, well under limits)
-MATCH_TOLERANCE_DEG = 0.005   # ~500m — max distance to match a TomTom seg to OSM edge
-EARLY_STOP_WINDOW = 150       # stop if no new unique segments found in this many requests
-
-# Sample these highway types — ones TomTom is likely to monitor.
-# Ordered from most → least important so we prioritize major roads first.
-SAMPLED_HIGHWAY_TYPES = {
-    "motorway", "motorway_link",
-    "trunk", "trunk_link",
-    "primary", "primary_link",
-    "secondary", "secondary_link",
-    "tertiary", "tertiary_link",
-    "residential",
-    "unclassified",
-    "living_street",
-    "service",
-}
+from app.config import HERE_API_KEY, CITIES_DIR, CITIES_CONFIG, CITY_RADIUS_M
 
 
-# ── FRC → free-flow fallback (only used if TomTom doesn't return freeFlowSpeed) ──
-# In practice the API always returns it, this is just a safety net
-FRC_FREE_FLOW = {
-    "FRC0": 120,  # Motorway
-    "FRC1": 100,  # Major road
-    "FRC2": 90,
-    "FRC3": 70,
-    "FRC4": 50,
-    "FRC5": 40,
-    "FRC6": 30,
-    "FRC7": 20,
-}
+# ── HERE API calls ────────────────────────────────────────────────────────────
+
+HERE_FLOW_URL      = "https://data.traffic.hereapi.com/v7/flow"
+HERE_INCIDENTS_URL = "https://data.traffic.hereapi.com/v7/incidents"
 
 
-def _congestion_level(current: float, free_flow: float) -> str:
-    if not free_flow or free_flow <= 0:
+def _city_circle(city_key: str) -> str:
+    """Return HERE circle filter string for a city, e.g. 'circle:54.6872,25.2797;r=15000'"""
+    _, (lat, lng) = CITIES_CONFIG[city_key]
+    radius = CITY_RADIUS_M.get(city_key, 10000)
+    return f"circle:{lat},{lng};r={radius}"
+
+
+def _fetch_flow(city_key: str) -> list[dict]:
+    """
+    Fetch HERE /v7/flow for a city — one request covers the whole city.
+    Returns list of result dicts with 'location' and 'currentFlow'.
+    """
+    params = {
+        "in": _city_circle(city_key),
+        "locationReferencing": "shape",
+        "functionalClasses": "1,2,3,4,5",   # all road classes
+        "advancedFeatures": "deepCoverage",  # include smaller roads
+        "apiKey": HERE_API_KEY,
+    }
+    r = requests.get(HERE_FLOW_URL, params=params, timeout=30)
+    r.raise_for_status()
+    return r.json().get("results", [])
+
+
+def _fetch_incidents(city_key: str) -> list[dict]:
+    """
+    Fetch HERE /v7/incidents for a city — one request covers the whole city.
+    Returns list of result dicts with 'location' and 'incidentDetails'.
+    """
+    params = {
+        "in": _city_circle(city_key),
+        "locationReferencing": "shape",
+        "apiKey": HERE_API_KEY,
+    }
+    r = requests.get(HERE_INCIDENTS_URL, params=params, timeout=30)
+    r.raise_for_status()
+    return r.json().get("results", [])
+
+
+# ── HERE response → internal segment format ───────────────────────────────────
+
+def _congestion_level(jam_factor: float) -> str:
+    """Convert HERE jamFactor (0-10) to green/yellow/red."""
+    if jam_factor is None:
         return "unknown"
-    ratio = current / free_flow
-    if ratio >= 0.8:
+    if jam_factor <= 2.0:
         return "green"
-    elif ratio >= 0.5:
+    elif jam_factor <= 5.0:
         return "yellow"
     else:
         return "red"
 
 
-# ── OSM edge midpoint sampler ─────────────────────────────────────────────────
+def _links_to_linestring(links: list[dict]):
+    """Flatten HERE shape links into a single shapely LineString (lng, lat)."""
+    coords = []
+    for link in links:
+        for pt in link.get("points", []):
+            coords.append((pt["lng"], pt["lat"]))
+    # Deduplicate consecutive identical points
+    deduped = [coords[0]] if coords else []
+    for c in coords[1:]:
+        if c != deduped[-1]:
+            deduped.append(c)
+    return LineString(deduped) if len(deduped) >= 2 else None
 
-# Priority order for highway types — major roads first so we find the most
-# TomTom-monitored segments early and can benefit from early stopping sooner.
-_HIGHWAY_PRIORITY = [
-    "motorway", "motorway_link",
-    "trunk", "trunk_link",
-    "primary", "primary_link",
-    "secondary", "secondary_link",
-    "tertiary", "tertiary_link",
-    "residential", "unclassified",
-    "living_street", "service",
-]
 
-def _edge_midpoints(geojson: dict) -> list[tuple[float, float]]:
+def _parse_flow_results(results: list[dict]) -> list[dict]:
     """
-    Extract the midpoint (lat, lng) of every OSM edge, ordered by road importance.
-    Filters to SAMPLED_HIGHWAY_TYPES only — no point sampling footways/cycleways.
-    Deduplicates midpoints that are suspiciously close (within ~50m) to avoid
-    redundant requests on parallel edges.
+    Convert HERE flow results into internal segment list:
+    [{ "geometry": LineString, "props": {...} }, ...]
     """
-    # Group features by highway type so we can sort by priority
-    by_type: dict[str, list] = {h: [] for h in _HIGHWAY_PRIORITY}
-    other = []
+    segments = []
+    for result in results:
+        links = result.get("location", {}).get("shape", {}).get("links", [])
+        flow  = result.get("currentFlow", {})
 
-    for feat in geojson["features"]:
-        hw = feat.get("properties", {}).get("highway")
-        # highway can be a list (OSM quirk) — take first value
-        if isinstance(hw, list):
-            hw = hw[0] if hw else None
-        if hw in SAMPLED_HIGHWAY_TYPES:
-            by_type.get(hw, other).append(feat)
-
-    ordered_features = []
-    for hw in _HIGHWAY_PRIORITY:
-        ordered_features.extend(by_type[hw])
-
-    # Extract midpoints, dedup within ~50m
-    points: list[tuple[float, float]] = []
-    seen: set[tuple[int, int]] = set()  # bucketed to ~50m grid
-
-    for feat in ordered_features:
-        geom = feat.get("geometry", {})
-        try:
-            line = shape(geom)
-            mp = line.interpolate(0.5, normalized=True)
-            lat, lng = mp.y, mp.x
-        except Exception:
+        geom = _links_to_linestring(links)
+        if geom is None:
             continue
 
-        # Bucket to ~0.0005 deg ≈ 50m to skip near-duplicate midpoints
-        bucket = (round(lat, 4), round(lng, 4))
-        if bucket in seen:
+        speed_ms        = flow.get("speed")         # m/s
+        speed_uncapped  = flow.get("speedUncapped")  # m/s, may exceed limit
+        free_flow_ms    = flow.get("freeFlow")       # m/s
+        jam_factor      = flow.get("jamFactor")
+        confidence      = flow.get("confidence")
+        traversability  = flow.get("traversability", "open")  # open / closed
+        road_closure    = traversability != "open"
+
+        # Convert m/s → kph for human readability
+        speed_kph      = round(speed_ms * 3.6, 1)      if speed_ms      is not None else None
+        free_flow_kph  = round(free_flow_ms * 3.6, 1)  if free_flow_ms  is not None else None
+        congestion_ratio = (
+            round(speed_ms / free_flow_ms, 3)
+            if speed_ms is not None and free_flow_ms and free_flow_ms > 0
+            else None
+        )
+
+        # functionalClass from first link (road hierarchy, 1=motorway … 5=local)
+        functional_class = links[0].get("functionalClass") if links else None
+
+        segments.append({
+            "geometry": geom,
+            "props": {
+                "current_speed_kph":   speed_kph,
+                "free_flow_speed_kph": free_flow_kph,
+                "congestion_ratio":    congestion_ratio,
+                "congestion_level":    _congestion_level(jam_factor),
+                "jam_factor":          jam_factor,
+                "confidence":          confidence,
+                "road_closure":        road_closure,
+                "functional_class":    functional_class,
+            }
+        })
+    return segments
+
+
+def _parse_incident_results(results: list[dict]) -> list[dict]:
+    """
+    Convert HERE incident results into internal segment list.
+    Each incident has geometry + incident metadata.
+    """
+    incidents = []
+    for result in results:
+        links   = result.get("location", {}).get("shape", {}).get("links", [])
+        details = result.get("incidentDetails", {})
+
+        geom = _links_to_linestring(links)
+        if geom is None:
             continue
-        seen.add(bucket)
-        points.append((lat, lng))
 
-    return points
+        incidents.append({
+            "geometry": geom,
+            "props": {
+                "incident_id":          details.get("id"),
+                "incident_type":        details.get("type"),
+                "incident_description": details.get("description", {}).get("value"),
+                "incident_criticality": details.get("criticality"),
+                "incident_road_closed": details.get("roadClosed", False),
+                "incident_start_time":  details.get("startTime"),
+                "incident_end_time":    details.get("endTime"),
+            }
+        })
+    return incidents
 
 
-# ── TomTom Flow Segment API ───────────────────────────────────────────────────
+# ── Spatial matching ──────────────────────────────────────────────────────────
 
-def _fetch_flow_segment(lat: float, lng: float) -> dict | None:
+MATCH_TOLERANCE_DEG = 0.005  # ~500m
+
+
+def _match_segments_to_edges(
+    features: list[dict],
+    traffic_segments: list[dict],
+    null_traffic_props: dict,
+) -> list[dict]:
     """
-    Hit TomTom flowSegmentData for a single point.
-    Returns the flowSegmentData dict or None on failure.
+    For each GeoJSON feature (OSM edge), find the nearest traffic segment
+    using an STRtree spatial index for efficiency.
+    Returns annotated feature list.
     """
-    url = (
-        f"https://api.tomtom.com/traffic/services/4"
-        f"/flowSegmentData/absolute/10/json"
-    )
-    params = {
-        "key": TOMTOM_API,
-        "point": f"{lat},{lng}",
-        "unit": "kmph",
-    }
+    if not traffic_segments:
+        return [
+            {**feat, "properties": {**feat.get("properties", {}), **null_traffic_props}}
+            for feat in features
+        ]
 
-    try:
-        r = requests.get(url, params=params, timeout=10)
-    except requests.RequestException as e:
-        print(f"Request error at ({lat},{lng}): {e}")
-        return None
+    # Build spatial index over traffic segment geometries
+    seg_geoms = [s["geometry"] for s in traffic_segments]
+    tree = STRtree(seg_geoms)
 
-    if r.status_code == 404:
-        return None  # No road near this point — normal
-    if r.status_code == 403:
-        raise RuntimeError(f"TomTom quota exhausted: {r.text[:100]}")
-    if r.status_code != 200:
-        print(f"TomTom error at ({lat},{lng}): {r.status_code} {r.text[:100]}")
-        return None
-
-    return r.json().get("flowSegmentData")
-
-
-# ── Deduplication ─────────────────────────────────────────────────────────────
-
-def _segment_key(flow: dict) -> str:
-    """
-    Stable dedup key from the segment's coordinate list.
-    TomTom returns the same coordinates for the same physical road segment
-    regardless of which grid point triggered it.
-    """
-    coords = flow.get("coordinates", {}).get("coordinate", [])
-    if not coords:
-        return ""
-    # Use first + last coordinate as a lightweight key
-    first = coords[0]
-    last = coords[-1]
-    return f"{first['latitude']:.5f},{first['longitude']:.5f}|{last['latitude']:.5f},{last['longitude']:.5f}"
-
-
-def _flow_to_segment(flow: dict) -> dict:
-    """
-    Convert a TomTom flowSegmentData response into our internal segment format:
-    {
-      "geometry": shapely LineString (lng, lat),
-      "props": { all traffic fields }
-    }
-    """
-    coords = flow.get("coordinates", {}).get("coordinate", [])
-    # TomTom returns (lat, lng) — convert to (lng, lat) for GeoJSON convention
-    line_coords = [(c["longitude"], c["latitude"]) for c in coords]
-
-    current_speed = flow.get("currentSpeed", 0)
-    free_flow_speed = flow.get("freeFlowSpeed") or FRC_FREE_FLOW.get(flow.get("frc", ""), 50)
-    confidence = flow.get("confidence")
-    road_closure = flow.get("roadClosure", False)
-    current_travel_time = flow.get("currentTravelTime")
-    free_flow_travel_time = flow.get("freeFlowTravelTime")
-    frc = flow.get("frc", "")
-
-    congestion_ratio = round(current_speed / free_flow_speed, 3) if free_flow_speed else None
-    congestion = _congestion_level(current_speed, free_flow_speed)
-
-    # Travel time delay — useful GNN feature
-    travel_time_delay = (
-        round(current_travel_time - free_flow_travel_time, 1)
-        if current_travel_time is not None and free_flow_travel_time is not None
-        else None
-    )
-
-    return {
-        "geometry": LineString(line_coords) if len(line_coords) >= 2 else None,
-        "props": {
-            "current_speed_kph": current_speed,
-            "free_flow_speed_kph": free_flow_speed,
-            "congestion_ratio": congestion_ratio,
-            "congestion_level": congestion,
-            "road_closure": road_closure,
-            "confidence": confidence,
-            "current_travel_time_s": current_travel_time,
-            "free_flow_travel_time_s": free_flow_travel_time,
-            "travel_time_delay_s": travel_time_delay,
-            "frc": frc,  # Functional Road Class — useful for GNN node features
-        },
-    }
-
-
-# ── Main snapshot builder ─────────────────────────────────────────────────────
-
-def build_traffic_snapshot(city_name: str, geojson: dict) -> dict:
-    """
-    1. Build a grid over the city bounding box
-    2. Sample TomTom flowSegmentData at each grid point
-    3. Deduplicate segments by their coordinate fingerprint
-    4. Match each OSM edge to its nearest TomTom segment
-    5. Return annotated GeoJSON FeatureCollection
-
-    Per-edge fields (GNN-ready):
-      From OSM  : osmid, name, length, highway, maxspeed, lanes, oneway, geometry
-      From TomTom: current_speed_kph, free_flow_speed_kph, congestion_ratio,
-                   congestion_level, road_closure, confidence,
-                   current_travel_time_s, free_flow_travel_time_s,
-                   travel_time_delay_s, frc
-    """
-    city_lower = city_name.lower()
-
-    # 1. Extract ordered edge midpoints from OSM data
-    sample_points = _edge_midpoints(geojson)
-    print(
-        f"[{city_lower}] Sampling {len(sample_points)} OSM edge midpoints "
-        f"(early stop after {EARLY_STOP_WINDOW} requests with no new segments)..."
-    )
-
-    # 2. Fetch + deduplicate + early stop
-    seen_keys: set[str] = set()
-    traffic_segments: list[dict] = []
-    requests_since_new = 0
-    errors = 0
-    total_requests = 0
-
-    for i, (lat, lng) in enumerate(sample_points):
-        try:
-            flow = _fetch_flow_segment(lat, lng)
-        except RuntimeError as e:
-            print(f"[{city_lower}] Aborting — {e}")
-            print(f"[{city_lower}] Saving partial snapshot with {len(traffic_segments)} segments collected so far")
-            break
-        flow = _fetch_flow_segment(lat, lng)
-        total_requests += 1
-
-        if flow is None:
-            errors += 1
-            requests_since_new += 1
-        else:
-            key = _segment_key(flow)
-            if key and key not in seen_keys:
-                seen_keys.add(key)
-                seg = _flow_to_segment(flow)
-                if seg["geometry"] is not None:
-                    traffic_segments.append(seg)
-                requests_since_new = 0  # reset window — found something new
-            else:
-                requests_since_new += 1
-
-        if REQUEST_DELAY_S:
-            time.sleep(REQUEST_DELAY_S)
-
-        if (i + 1) % 100 == 0:
-            print(
-                f"  {i+1}/{len(sample_points)} sampled, "
-                f"{len(traffic_segments)} unique segments, "
-                f"{requests_since_new} since last new"
-            )
-
-        # Early stop — no new segments for a while, we've likely found everything
-        if requests_since_new >= EARLY_STOP_WINDOW:
-            print(
-                f"[{city_lower}] Early stop at {total_requests} requests — "
-                f"no new segments in last {EARLY_STOP_WINDOW} requests"
-            )
-            break
-
-    print(
-        f"[{city_lower}] Done. {total_requests} requests → "
-        f"{len(traffic_segments)} unique segments ({errors} no-road responses skipped)"
-    )
-
-    # 4. Match OSM edges → nearest TomTom segment
-    timestamp = datetime.utcnow().isoformat()
-    annotated_features = []
+    annotated = []
     matched = 0
 
-    for feat in geojson["features"]:
+    for feat in features:
         geom = feat.get("geometry", {})
         props = dict(feat.get("properties", {}))
 
@@ -306,71 +196,119 @@ def build_traffic_snapshot(city_name: str, geojson: dict) -> dict:
             line = shape(geom)
             midpoint = line.interpolate(0.5, normalized=True)
         except Exception:
-            annotated_features.append(feat)
+            annotated.append(feat)
             continue
 
-        best = None
-        best_dist = float("inf")
-        for seg in traffic_segments:
-            dist = midpoint.distance(seg["geometry"])
-            if dist < best_dist:
-                best_dist = dist
-                best = seg
+        # Query nearest geometry from spatial index
+        nearest_idx = tree.nearest(midpoint)
+        nearest_geom = seg_geoms[nearest_idx]
+        dist = midpoint.distance(nearest_geom)
 
-        if best and best_dist < MATCH_TOLERANCE_DEG:
-            props.update(best["props"])
+        if dist < MATCH_TOLERANCE_DEG:
+            props.update(traffic_segments[nearest_idx]["props"])
             matched += 1
         else:
-            props.update({
-                "current_speed_kph": None,
-                "free_flow_speed_kph": None,
-                "congestion_ratio": None,
-                "congestion_level": "unknown",
-                "road_closure": None,
-                "confidence": None,
-                "current_travel_time_s": None,
-                "free_flow_travel_time_s": None,
-                "travel_time_delay_s": None,
-                "frc": None,
-            })
+            props.update(null_traffic_props)
 
-        annotated_features.append({
-            "type": "Feature",
-            "geometry": geom,
-            "properties": props,
+        annotated.append({"type": "Feature", "geometry": geom, "properties": props})
+
+    print(f"  Matched {matched}/{len(features)} OSM edges")
+    return annotated
+
+
+# ── Main snapshot builder ─────────────────────────────────────────────────────
+
+NULL_TRAFFIC_PROPS = {
+    "current_speed_kph":   None,
+    "free_flow_speed_kph": None,
+    "congestion_ratio":    None,
+    "congestion_level":    "unknown",
+    "jam_factor":          None,
+    "confidence":          None,
+    "road_closure":        None,
+    "functional_class":    None,
+}
+
+NULL_INCIDENT_PROPS = {
+    "incident_id":          None,
+    "incident_type":        None,
+    "incident_description": None,
+    "incident_criticality": None,
+    "incident_road_closed": None,
+    "incident_start_time":  None,
+    "incident_end_time":    None,
+}
+
+
+def build_traffic_snapshot(city_name: str, geojson: dict) -> dict:
+    """
+    Fetch HERE flow + incident data for a city (2 HTTP requests total),
+    match onto OSM GeoJSON edges via spatial index, return annotated snapshot.
+
+    GNN-ready fields per edge:
+      OSM:      osmid, name, length, highway, maxspeed, lanes, oneway
+      Flow:     current_speed_kph, free_flow_speed_kph, congestion_ratio,
+                congestion_level, jam_factor, confidence, road_closure,
+                functional_class
+      Incident: incident_type, incident_criticality, incident_road_closed,
+                incident_start_time, incident_end_time, incident_description
+    """
+    city_key = city_name.lower()
+    print(f"[{city_key}] Fetching HERE flow data...")
+    flow_results     = _fetch_flow(city_key)
+    print(f"[{city_key}] Fetching HERE incident data...")
+    incident_results = _fetch_incidents(city_key)
+
+    print(f"[{city_key}] Received {len(flow_results)} flow segments, {len(incident_results)} incidents")
+
+    flow_segments     = _parse_flow_results(flow_results)
+    incident_segments = _parse_incident_results(incident_results)
+
+    print(f"[{city_key}] Matching flow data to OSM edges...")
+    features = geojson.get("features", [])
+    annotated = _match_segments_to_edges(features, flow_segments, NULL_TRAFFIC_PROPS)
+
+    # Incidents are NOT matched onto edges — too imprecise and causes visual noise.
+    # Instead store them as a separate list with centroid coordinates for map markers.
+    incident_points = []
+    for seg in incident_segments:
+        centroid = seg["geometry"].centroid
+        incident_points.append({
+            "lat": round(centroid.y, 6),
+            "lng": round(centroid.x, 6),
+            **seg["props"],
         })
 
-    print(f"[{city_lower}] Matched {matched}/{len(annotated_features)} OSM edges to TomTom segments")
+    timestamp = datetime.utcnow().isoformat()
 
     return {
         "type": "FeatureCollection",
         "metadata": {
-            "city": city_lower,
-            "timestamp": timestamp,
-            "osm_edge_midpoints_sampled": total_requests,
-            "unique_tomtom_segments": len(traffic_segments),
-            "osm_edges_total": len(annotated_features),
-            "osm_edges_matched": matched,
-            "no_road_responses_skipped": errors,
+            "city":               city_key,
+            "timestamp":          timestamp,
+            "here_flow_segments": len(flow_segments),
+            "here_incidents":     len(incident_points),
+            "osm_edges_total":    len(annotated),
+            "incidents":          incident_points,   # frontend renders as markers
         },
-        "features": annotated_features,
+        "features": annotated,
     }
 
 
 # ── Snapshot persistence ──────────────────────────────────────────────────────
 
 def save_snapshot(city_name: str, snapshot: dict) -> Path:
-    city_lower = city_name.lower()
-    snapshots_dir = CITIES_DIR / city_lower / "snapshots"
+    city_key = city_name.lower()
+    snapshots_dir = CITIES_DIR / city_key / "snapshots"
     snapshots_dir.mkdir(parents=True, exist_ok=True)
 
     timestamp = snapshot["metadata"]["timestamp"].replace(":", "-")
-    filepath = snapshots_dir / f"{timestamp}.json"
+    filepath  = snapshots_dir / f"{timestamp}.json"
 
     with open(filepath, "w") as f:
-        json.dump(snapshot, f)
+        json.dump(snapshot, f, indent=2)
 
-    print(f"[{city_lower}] Snapshot saved → {filepath}")
+    print(f"[{city_key}] Snapshot saved → {filepath}")
     return filepath
 
 
@@ -398,9 +336,3 @@ def load_latest_snapshot(city_name: str) -> dict | None:
         return None
     with open(files[-1], "r") as f:
         return json.load(f)
-
-
-# ── Legacy single-point helper ────────────────────────────────────────────────
-
-def get_traffic_for_point(lat: float, lng: float) -> dict | None:
-    return _fetch_flow_segment(lat, lng)

@@ -13,6 +13,9 @@ interface InfoPanelProps {
   // traffic
   showTraffic: boolean
   onToggleTraffic: () => void
+  showIncidents: boolean
+  onToggleIncidents: () => void
+  trafficData: GeoJsonObject | null
   trafficStatus: TrafficStatus
   trafficLastUpdated: string | null
   snapshots: string[]
@@ -65,16 +68,19 @@ function InfoPanel({
   classicRoute, trafficRoute,
   onClear,
   showTraffic, onToggleTraffic,
-  trafficStatus, trafficLastUpdated,
+  showIncidents, onToggleIncidents,
+  trafficData, trafficStatus, trafficLastUpdated,
   snapshots, selectedSnapshot, onSelectSnapshot,
   onTriggerSnapshot,
   routeMode, onRouteModeChange,
 }: InfoPanelProps) {
   const availableCities = ['Vilnius', 'Kaunas', 'Klaipėda', 'Šiauliai', 'Panevėžys']
   const isLoading = trafficStatus === 'loading'
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const meta = (trafficData as any)?.metadata
 
   return (
-    <div className="info-panel">
+    <div>
       <h2>Routing</h2>
 
       <div className="info-item">
@@ -118,12 +124,15 @@ function InfoPanel({
         <button onClick={onToggleTraffic} disabled={isLoading}>
           {showTraffic ? 'Hide' : 'Show'} traffic
         </button>
+        <button onClick={onToggleIncidents} disabled={isLoading}>
+          {showIncidents ? 'Hide' : 'Show'} incidents
+        </button>
         <button
           onClick={onTriggerSnapshot}
           disabled={isLoading}
-          title="Sample TomTom API now (~5 min)"
+          title="Fetch fresh traffic data from HERE API (~5 seconds)"
         >
-          {isLoading ? '⏳ Collecting...' : '📡 New snapshot'}
+          {isLoading ? '⏳ Fetching...' : '📡 New snapshot'}
         </button>
       </div>
 
@@ -151,15 +160,26 @@ function InfoPanel({
       {trafficLastUpdated && (
         <div className="info-item" style={{ fontSize: '0.75rem', color: '#666' }}>
           {new Date(trafficLastUpdated).toLocaleString()}
+          {meta && (
+            <span> · {meta.here_flow_segments} segments · {meta.here_incidents} incidents</span>
+          )}
         </div>
       )}
 
       {trafficStatus === 'loaded' && (
         <div className="info-item" style={{ fontSize: '0.75rem' }}>
+          <strong>Road speed:</strong><br/>
           <span style={{ color: '#22c55e' }}>● Free</span>{' '}
           <span style={{ color: '#eab308' }}>● Slow</span>{' '}
           <span style={{ color: '#ef4444' }}>● Congested</span>{' '}
-          <span style={{ color: '#94a3b8' }}>● No data</span>
+          <span style={{ color: '#94a3b8' }}>● No data</span><br/>
+          <strong>Incidents (HERE):</strong> <span style={{ background: '#f0f9ff', border: '1px solid #ccc', borderRadius: 3, padding: '0 3px' }}>blue bg</span><br/>
+          🚧 Construction · 💥 Accident · 🚫 Closed · 🐢 Slow<br/>
+          <strong>Simulation:</strong> <span style={{ background: '#fef9c3', border: '1px solid #ccc', borderRadius: 3, padding: '0 3px' }}>yellow bg</span><br/>
+          💥 Damage · 🚫 Closure · 🐢 Congestion<br/>
+          <span style={{ color: '#7c3aed' }}>━━</span> Infrastructure damaged &nbsp;
+          <span style={{ color: '#dc2626' }}>╌╌</span> Closed &nbsp;
+          <span style={{ color: '#f97316' }}>━━</span> Congested
         </div>
       )}
     </div>

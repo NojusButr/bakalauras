@@ -9,6 +9,7 @@ export function useRouteData(
   city: string,
   mode: RouteMode = 'both',
   snapshot: string | null = null,
+  simulation: string | null = null,
 ) {
   const [classicRoute, setClassicRoute] = useState<GeoJsonObject | null>(null)
   const [trafficRoute, setTrafficRoute] = useState<GeoJsonObject | null>(null)
@@ -26,6 +27,7 @@ export function useRouteData(
       end: endPoint,
       city,
       snapshot: snapshot ?? undefined,
+      simulation: simulation ?? undefined,
     }
 
     if (mode === 'both') {
@@ -61,7 +63,8 @@ export function useRouteData(
         .then(data => { setTrafficRoute(data); setClassicRoute(null) })
         .catch(err => console.error('Traffic route failed:', err))
     }
-  }, [startPoint, endPoint, city, mode, snapshot])
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [startPoint, endPoint, city, mode, snapshot, simulation])
 
   return { classicRoute, trafficRoute, clearRoutes }
 }
