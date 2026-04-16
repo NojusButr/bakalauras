@@ -18,7 +18,6 @@ CITIES_CONFIG = {
 }
 
 # Radius in meters — used for BOTH OSM graph queries and HERE API circle queries.
-# Increasing this gives more road coverage but larger graph files and slower startup.
 CITY_RADIUS_M = {
     "vilnius":    15000,
     "kaunas":     12000,

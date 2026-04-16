@@ -23,7 +23,6 @@ app.include_router(simulation.router)
 
 @app.on_event("startup")
 def preload_cities():
-    """Pre-load all city graphs and GeoJSON on startup."""
     print("Initializing city data...")
     for city_key, (place_name, coords) in CITIES_CONFIG.items():
         try:

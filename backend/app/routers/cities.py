@@ -20,7 +20,6 @@ def clear_city_cache(city_name: str):
     """
     Delete cached OSM graph and GeoJSON for a city so it re-fetches
     from OpenStreetMap with the current CITY_RADIUS_M on next request.
-    Use this after changing CITY_RADIUS_M or to force a data refresh.
     """
     city_name = city_name.lower()
     if city_name not in CITIES_CONFIG:

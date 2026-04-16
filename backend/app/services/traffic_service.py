@@ -8,8 +8,6 @@ from shapely.strtree import STRtree
 from app.config import HERE_API_KEY, CITIES_DIR, CITIES_CONFIG, CITY_RADIUS_M
 
 
-# ── HERE API calls ────────────────────────────────────────────────────────────
-
 HERE_FLOW_URL      = "https://data.traffic.hereapi.com/v7/flow"
 HERE_INCIDENTS_URL = "https://data.traffic.hereapi.com/v7/incidents"
 
@@ -29,8 +27,8 @@ def _fetch_flow(city_key: str) -> list[dict]:
     params = {
         "in": _city_circle(city_key),
         "locationReferencing": "shape",
-        "functionalClasses": "1,2,3,4,5",   # all road classes
-        "advancedFeatures": "deepCoverage",  # include smaller roads
+        "functionalClasses": "1,2,3,4,5",
+        "advancedFeatures": "deepCoverage",
         "apiKey": HERE_API_KEY,
     }
     r = requests.get(HERE_FLOW_URL, params=params, timeout=30)
@@ -53,8 +51,6 @@ def _fetch_incidents(city_key: str) -> list[dict]:
     return r.json().get("results", [])
 
 
-# ── HERE response → internal segment format ───────────────────────────────────
-
 def _congestion_level(jam_factor: float) -> str:
     """Convert HERE jamFactor (0-10) to green/yellow/red."""
     if jam_factor is None:
@@ -73,7 +69,6 @@ def _links_to_linestring(links: list[dict]):
     for link in links:
         for pt in link.get("points", []):
             coords.append((pt["lng"], pt["lat"]))
-    # Deduplicate consecutive identical points
     deduped = [coords[0]] if coords else []
     for c in coords[1:]:
         if c != deduped[-1]:
@@ -95,15 +90,14 @@ def _parse_flow_results(results: list[dict]) -> list[dict]:
         if geom is None:
             continue
 
-        speed_ms        = flow.get("speed")         # m/s
-        speed_uncapped  = flow.get("speedUncapped")  # m/s, may exceed limit
-        free_flow_ms    = flow.get("freeFlow")       # m/s
+        speed_ms        = flow.get("speed")
+        speed_uncapped  = flow.get("speedUncapped")
+        free_flow_ms    = flow.get("freeFlow")
         jam_factor      = flow.get("jamFactor")
         confidence      = flow.get("confidence")
-        traversability  = flow.get("traversability", "open")  # open / closed
+        traversability  = flow.get("traversability", "open")
         road_closure    = traversability != "open"
 
-        # Convert m/s → kph for human readability
         speed_kph      = round(speed_ms * 3.6, 1)      if speed_ms      is not None else None
         free_flow_kph  = round(free_flow_ms * 3.6, 1)  if free_flow_ms  is not None else None
         congestion_ratio = (
@@ -112,7 +106,6 @@ def _parse_flow_results(results: list[dict]) -> list[dict]:
             else None
         )
 
-        # functionalClass from first link (road hierarchy, 1=motorway … 5=local)
         functional_class = links[0].get("functionalClass") if links else None
 
         segments.append({
@@ -162,7 +155,7 @@ def _parse_incident_results(results: list[dict]) -> list[dict]:
 
 # ── Spatial matching ──────────────────────────────────────────────────────────
 
-MATCH_TOLERANCE_DEG = 0.005  # ~500m
+MATCH_TOLERANCE_DEG = 0.005
 
 
 def _match_segments_to_edges(
@@ -181,7 +174,6 @@ def _match_segments_to_edges(
             for feat in features
         ]
 
-    # Build spatial index over traffic segment geometries
     seg_geoms = [s["geometry"] for s in traffic_segments]
     tree = STRtree(seg_geoms)
 
@@ -199,7 +191,6 @@ def _match_segments_to_edges(
             annotated.append(feat)
             continue
 
-        # Query nearest geometry from spatial index
         nearest_idx = tree.nearest(midpoint)
         nearest_geom = seg_geoms[nearest_idx]
         dist = midpoint.distance(nearest_geom)
@@ -215,8 +206,6 @@ def _match_segments_to_edges(
     print(f"  Matched {matched}/{len(features)} OSM edges")
     return annotated
 
-
-# ── Main snapshot builder ─────────────────────────────────────────────────────
 
 NULL_TRAFFIC_PROPS = {
     "current_speed_kph":   None,
@@ -242,7 +231,7 @@ NULL_INCIDENT_PROPS = {
 
 def build_traffic_snapshot(city_name: str, geojson: dict) -> dict:
     """
-    Fetch HERE flow + incident data for a city (2 HTTP requests total),
+    Fetch HERE flow + incident data for a city,
     match onto OSM GeoJSON edges via spatial index, return annotated snapshot.
 
     GNN-ready fields per edge:
@@ -268,8 +257,6 @@ def build_traffic_snapshot(city_name: str, geojson: dict) -> dict:
     features = geojson.get("features", [])
     annotated = _match_segments_to_edges(features, flow_segments, NULL_TRAFFIC_PROPS)
 
-    # Incidents are NOT matched onto edges — too imprecise and causes visual noise.
-    # Instead store them as a separate list with centroid coordinates for map markers.
     incident_points = []
     for seg in incident_segments:
         centroid = seg["geometry"].centroid
@@ -289,13 +276,11 @@ def build_traffic_snapshot(city_name: str, geojson: dict) -> dict:
             "here_flow_segments": len(flow_segments),
             "here_incidents":     len(incident_points),
             "osm_edges_total":    len(annotated),
-            "incidents":          incident_points,   # frontend renders as markers
+            "incidents":          incident_points,   
         },
         "features": annotated,
     }
 
-
-# ── Snapshot persistence ──────────────────────────────────────────────────────
 
 def save_snapshot(city_name: str, snapshot: dict) -> Path:
     city_key = city_name.lower()

@@ -1,0 +1,28 @@
+{
+  "name": "Shopping spree at Ozas while Ukmerges g. has construction",
+  "description": "",
+  "events": [
+    {
+      "type": "congestion",
+      "center": [
+        54.7130072715472,
+        25.276236534118652
+      ],
+      "radius_m": 1500.0,
+      "speed_reduction_pct": 70.0,
+      "description": ""
+    },
+    {
+      "type": "construction",
+      "center": [
+        54.71294529398256,
+        25.248813629150394
+      ],
+      "radius_m": 1350.0,
+      "speed_reduction_pct": 60.0,
+      "description": ""
+    }
+  ],
+  "created": "2026-04-16T10:06:12.187939",
+  "user_created": true
+}

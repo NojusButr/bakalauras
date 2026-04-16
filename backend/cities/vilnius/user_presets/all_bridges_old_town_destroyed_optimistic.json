@@ -1,0 +1,98 @@
+{
+  "name": "all bridges old town destroyed_optimistic",
+  "description": "",
+  "events": [
+    {
+      "type": "damage",
+      "center": [
+        54.70550729845012,
+        25.306733250617985
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.6945647676506,
+        25.301948189735416
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.68893735989493,
+        25.288258194923404
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.691312438178485,
+        25.279954075813297
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.6888040289256,
+        25.25864124298096
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.69045978246443,
+        25.258727073669437
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.693916802877716,
+        25.26412904262543
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.727482635016976,
+        25.313894748687748
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.7277769220501,
+        25.313980579376224
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    }
+  ],
+  "created": "2026-04-13T17:56:44.439543",
+  "user_created": true
+}

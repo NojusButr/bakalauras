@@ -1,0 +1,30 @@
+scenario,route,shortest_km,shortest_min,traffic_km,traffic_min,gnn_km,gnn_min,gnn_est_min,routes_differ,response_s
+Normal traffic,West to East (cross-city),9.65,12.3,9.65,16.9,10.37,17.2,14.8,True,5.67
+Normal traffic,North to South (cross-river),5.42,7.6,6.49,12.3,6.1,12.8,12.2,True,3.59
+Normal traffic,Centre to Antakalnis,3.91,6.1,4.4,8.6,4.4,8.6,8.6,True,3.65
+Normal traffic,Zirmunai to Naujamiestis,4.57,6.2,5.68,10.5,5.8,10.5,10.9,True,3.73
+Normal traffic,Short urban route,2.87,6.9,2.96,8.2,2.96,8.2,8.0,True,3.58
+Bridge collapse,West to East (cross-city),9.65,12.3,10.9,18.3,10.9,18.3,15.6,True,3.69
+Bridge collapse,North to South (cross-river),5.42,7.6,6.49,12.3,6.1,12.8,12.2,True,3.77
+Bridge collapse,Centre to Antakalnis,3.91,6.1,4.84,12.0,5.36,12.4,10.1,True,3.85
+Bridge collapse,Zirmunai to Naujamiestis,4.57,6.2,5.68,10.5,5.8,10.5,10.9,True,3.71
+Bridge collapse,Short urban route,2.87,6.9,2.96,8.2,2.96,8.2,8.0,True,3.75
+All bridges down,West to East (cross-city),9.65,12.3,16.2,23.6,16.18,23.7,20.2,True,3.9
+All bridges down,North to South (cross-river),5.42,7.6,10.04,26.4,7.27,34.6,19.8,True,3.99
+All bridges down,Centre to Antakalnis,3.91,6.1,4.21,27.9,4.21,27.9,14.0,True,4.26
+All bridges down,Zirmunai to Naujamiestis,4.57,6.2,9.12,28.0,5.8,37.9,19.5,True,3.99
+All bridges down,Short urban route,2.87,6.9,4.64,37.0,3.25,49.4,15.4,True,4.1
+Old Town lockdown,West to East (cross-city),9.65,12.3,9.65,16.8,10.37,18.6,15.4,True,3.8
+Old Town lockdown,North to South (cross-river),5.42,7.6,10.06,14.1,7.27,15.3,13.2,True,3.74
+Old Town lockdown,Centre to Antakalnis,3.91,6.1,4.42,11.7,4.7,11.9,10.2,True,3.8
+Old Town lockdown,Zirmunai to Naujamiestis,4.57,6.2,6.88,14.3,5.68,15.4,12.9,True,3.8
+Winter storm,West to East (cross-city),9.65,12.3,10.42,42.7,11.22,53.2,24.4,True,3.85
+Winter storm,North to South (cross-river),5.42,7.6,5.97,36.4,6.1,37.3,21.4,True,3.82
+Winter storm,Centre to Antakalnis,3.91,6.1,4.21,24.3,4.35,26.5,14.8,True,3.87
+Winter storm,Zirmunai to Naujamiestis,4.57,6.2,5.68,30.2,6.08,40.6,18.8,True,3.91
+Winter storm,Short urban route,2.87,6.9,2.96,34.4,3.25,38.1,15.0,True,3.9
+Rush hour cascade,West to East (cross-city),9.65,12.3,16.18,22.9,16.18,22.9,19.6,True,3.94
+Rush hour cascade,North to South (cross-river),5.42,7.6,9.12,24.8,9.52,32.6,20.4,True,3.94
+Rush hour cascade,Centre to Antakalnis,3.91,6.1,4.89,23.0,5.17,25.7,15.0,True,3.82
+Rush hour cascade,Zirmunai to Naujamiestis,4.57,6.2,8.46,27.2,5.96,33.5,18.2,True,3.92
+Rush hour cascade,Short urban route,2.87,6.9,2.96,27.5,2.96,27.5,15.1,True,3.97

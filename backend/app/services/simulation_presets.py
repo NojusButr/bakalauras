@@ -1,0 +1,5 @@
+PRESET_SCENARIOS = {
+    "vilnius": {
+      
+    }
+}

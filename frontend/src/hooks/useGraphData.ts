@@ -10,10 +10,8 @@ export function useGraphData(city: string) {
   useEffect(() => {
     let cancelled = false
 
-    // 🔥 Clear previous city data immediately
     setGraphData(null)
 
-    // 1️⃣ Check memory cache
     if (memoryCache.has(city)) {
       const cachedData = memoryCache.get(city)!
       console.log(
@@ -29,7 +27,7 @@ export function useGraphData(city: string) {
       return
     }
 
-    // 2️⃣ Fetch from backend
+    // Fetch from backend
     async function load() {
       try {
         console.log(`Fetching ${city} from backend...`)
@@ -74,7 +72,7 @@ export function useGraphData(city: string) {
 
     load()
 
-    // 🛑 Cancel outdated fetch if city changes
+    // Cancel outdated fetch if city changes
     return () => {
       cancelled = true
     }

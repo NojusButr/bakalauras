@@ -3,7 +3,7 @@ import pickle
 import osmnx as ox
 from app.config import CITIES_DIR, CITY_RADIUS_M
 
-# In-memory graph cache
+# inmemory graph cache
 GRAPHS = {}
 
 

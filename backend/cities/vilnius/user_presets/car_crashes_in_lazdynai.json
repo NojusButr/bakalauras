@@ -1,0 +1,28 @@
+{
+  "name": "Car crashes in Lazdynai",
+  "description": "",
+  "events": [
+    {
+      "type": "congestion",
+      "center": [
+        54.67045599202936,
+        25.209310054779056
+      ],
+      "radius_m": 800.0,
+      "speed_reduction_pct": 15.0,
+      "description": ""
+    },
+    {
+      "type": "congestion",
+      "center": [
+        54.67718084645285,
+        25.220360755920414
+      ],
+      "radius_m": 800.0,
+      "speed_reduction_pct": 15.0,
+      "description": ""
+    }
+  ],
+  "created": "2026-04-16T10:46:00.772168",
+  "user_created": true
+}

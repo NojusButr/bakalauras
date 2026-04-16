@@ -1,0 +1,38 @@
+{
+  "name": "Vingis park concert congestions + road closure",
+  "description": "",
+  "events": [
+    {
+      "type": "congestion",
+      "center": [
+        54.68242843696966,
+        25.24845957756043
+      ],
+      "radius_m": 800.0,
+      "speed_reduction_pct": 30.0,
+      "description": ""
+    },
+    {
+      "type": "congestion",
+      "center": [
+        54.67029468110642,
+        25.23018836975098
+      ],
+      "radius_m": 800.0,
+      "speed_reduction_pct": 50.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.68229198339487,
+        25.261001586914066
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    }
+  ],
+  "created": "2026-04-16T10:14:44.536473",
+  "user_created": true
+}

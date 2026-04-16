@@ -1,0 +1,227 @@
+[
+  {
+    "data_pct": 100,
+    "route": "West to East",
+    "traffic_dist": 15.41,
+    "traffic_time": 18.3,
+    "gnn_dist": 15.41,
+    "gnn_time": 18.3,
+    "gnn_est": 18.2
+  },
+  {
+    "data_pct": 100,
+    "route": "North to South",
+    "traffic_dist": 5.32,
+    "traffic_time": 11.0,
+    "gnn_dist": 5.32,
+    "gnn_time": 11.0,
+    "gnn_est": 10.9
+  },
+  {
+    "data_pct": 100,
+    "route": "Centre to Antakalnis",
+    "traffic_dist": 5.42,
+    "traffic_time": 10.4,
+    "gnn_dist": 5.42,
+    "gnn_time": 10.4,
+    "gnn_est": 10.8
+  },
+  {
+    "data_pct": 100,
+    "route": "Zirmunai to Naujamiestis",
+    "traffic_dist": 6.02,
+    "traffic_time": 11.9,
+    "gnn_dist": 6.02,
+    "gnn_time": 11.9,
+    "gnn_est": 11.7
+  },
+  {
+    "data_pct": 100,
+    "route": "Short urban route",
+    "traffic_dist": 1.81,
+    "traffic_time": 7.2,
+    "gnn_dist": 1.81,
+    "gnn_time": 7.2,
+    "gnn_est": 6.4
+  },
+  {
+    "data_pct": 75,
+    "route": "West to East",
+    "traffic_dist": 15.98,
+    "traffic_time": 19.4,
+    "gnn_dist": 15.41,
+    "gnn_time": 18.3,
+    "gnn_est": 18.2
+  },
+  {
+    "data_pct": 75,
+    "route": "North to South",
+    "traffic_dist": 5.32,
+    "traffic_time": 11.0,
+    "gnn_dist": 5.32,
+    "gnn_time": 11.0,
+    "gnn_est": 10.9
+  },
+  {
+    "data_pct": 75,
+    "route": "Centre to Antakalnis",
+    "traffic_dist": 5.42,
+    "traffic_time": 10.4,
+    "gnn_dist": 5.42,
+    "gnn_time": 10.4,
+    "gnn_est": 10.8
+  },
+  {
+    "data_pct": 75,
+    "route": "Zirmunai to Naujamiestis",
+    "traffic_dist": 6.02,
+    "traffic_time": 11.9,
+    "gnn_dist": 6.02,
+    "gnn_time": 11.9,
+    "gnn_est": 11.7
+  },
+  {
+    "data_pct": 75,
+    "route": "Short urban route",
+    "traffic_dist": 1.68,
+    "traffic_time": 7.2,
+    "gnn_dist": 1.81,
+    "gnn_time": 7.2,
+    "gnn_est": 6.4
+  },
+  {
+    "data_pct": 50,
+    "route": "West to East",
+    "traffic_dist": 15.41,
+    "traffic_time": 18.3,
+    "gnn_dist": 15.41,
+    "gnn_time": 18.3,
+    "gnn_est": 18.2
+  },
+  {
+    "data_pct": 50,
+    "route": "North to South",
+    "traffic_dist": 5.25,
+    "traffic_time": 14.4,
+    "gnn_dist": 5.32,
+    "gnn_time": 11.0,
+    "gnn_est": 10.9
+  },
+  {
+    "data_pct": 50,
+    "route": "Centre to Antakalnis",
+    "traffic_dist": 4.91,
+    "traffic_time": 14.8,
+    "gnn_dist": 5.42,
+    "gnn_time": 10.4,
+    "gnn_est": 10.8
+  },
+  {
+    "data_pct": 50,
+    "route": "Zirmunai to Naujamiestis",
+    "traffic_dist": 6.24,
+    "traffic_time": 12.9,
+    "gnn_dist": 6.02,
+    "gnn_time": 11.9,
+    "gnn_est": 11.7
+  },
+  {
+    "data_pct": 50,
+    "route": "Short urban route",
+    "traffic_dist": 1.68,
+    "traffic_time": 7.2,
+    "gnn_dist": 1.81,
+    "gnn_time": 7.2,
+    "gnn_est": 6.4
+  },
+  {
+    "data_pct": 25,
+    "route": "West to East",
+    "traffic_dist": 10.45,
+    "traffic_time": 19.9,
+    "gnn_dist": 15.41,
+    "gnn_time": 18.3,
+    "gnn_est": 18.2
+  },
+  {
+    "data_pct": 25,
+    "route": "North to South",
+    "traffic_dist": 5.25,
+    "traffic_time": 14.4,
+    "gnn_dist": 5.32,
+    "gnn_time": 11.0,
+    "gnn_est": 10.9
+  },
+  {
+    "data_pct": 25,
+    "route": "Centre to Antakalnis",
+    "traffic_dist": 4.92,
+    "traffic_time": 14.8,
+    "gnn_dist": 5.42,
+    "gnn_time": 10.4,
+    "gnn_est": 10.8
+  },
+  {
+    "data_pct": 25,
+    "route": "Zirmunai to Naujamiestis",
+    "traffic_dist": 5.19,
+    "traffic_time": 18.2,
+    "gnn_dist": 6.02,
+    "gnn_time": 11.9,
+    "gnn_est": 11.7
+  },
+  {
+    "data_pct": 25,
+    "route": "Short urban route",
+    "traffic_dist": 2.79,
+    "traffic_time": 9.5,
+    "gnn_dist": 1.81,
+    "gnn_time": 7.2,
+    "gnn_est": 6.4
+  },
+  {
+    "data_pct": 10,
+    "route": "West to East",
+    "traffic_dist": 10.44,
+    "traffic_time": 19.9,
+    "gnn_dist": 15.41,
+    "gnn_time": 18.3,
+    "gnn_est": 18.2
+  },
+  {
+    "data_pct": 10,
+    "route": "North to South",
+    "traffic_dist": 5.29,
+    "traffic_time": 12.2,
+    "gnn_dist": 5.32,
+    "gnn_time": 11.0,
+    "gnn_est": 10.9
+  },
+  {
+    "data_pct": 10,
+    "route": "Centre to Antakalnis",
+    "traffic_dist": 4.6,
+    "traffic_time": 16.0,
+    "gnn_dist": 5.42,
+    "gnn_time": 10.4,
+    "gnn_est": 10.8
+  },
+  {
+    "data_pct": 10,
+    "route": "Zirmunai to Naujamiestis",
+    "traffic_dist": 5.34,
+    "traffic_time": 18.6,
+    "gnn_dist": 6.02,
+    "gnn_time": 11.9,
+    "gnn_est": 11.7
+  },
+  {
+    "data_pct": 10,
+    "route": "Short urban route",
+    "traffic_dist": 1.68,
+    "traffic_time": 7.2,
+    "gnn_dist": 1.81,
+    "gnn_time": 7.2,
+    "gnn_est": 6.4
+  }
+]

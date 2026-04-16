@@ -1,0 +1,48 @@
+{
+  "name": "Protest at seimas Closure on Gedimino pr.",
+  "description": "",
+  "events": [
+    {
+      "type": "damage",
+      "center": [
+        54.69048148665026,
+        25.25835692882538
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "damage",
+      "center": [
+        54.68610010638671,
+        25.28536140918732
+      ],
+      "radius_m": 80.0,
+      "speed_reduction_pct": 0.0,
+      "description": ""
+    },
+    {
+      "type": "congestion",
+      "center": [
+        54.68536827986303,
+        25.278189182281498
+      ],
+      "radius_m": 800.0,
+      "speed_reduction_pct": 50.0,
+      "description": ""
+    },
+    {
+      "type": "congestion",
+      "center": [
+        54.68104527267699,
+        25.27741670608521
+      ],
+      "radius_m": 800.0,
+      "speed_reduction_pct": 50.0,
+      "description": ""
+    }
+  ],
+  "created": "2026-04-16T10:37:46.206014",
+  "user_created": true
+}

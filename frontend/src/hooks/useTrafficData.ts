@@ -60,7 +60,6 @@ export function useTrafficData(city: string) {
       setTrafficData(data)
       setLastUpdated(data?.metadata?.timestamp ?? null)
       setStatus('loaded')
-      // Refresh snapshot list
       await fetchSnapshotList()
     } catch (err) {
       console.error('Failed to trigger snapshot:', err)
