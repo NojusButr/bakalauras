@@ -55,7 +55,7 @@ def get_latest_snapshot(city_name: str):
 
 @router.get("/snapshot/{city_name}/list")
 def get_snapshot_list(city_name: str):
-    """List all saved snapshot filenames for a city (oldest → newest)."""
+    """List all saved snapshot filenames for a city (oldest  newest)."""
     city_key = city_name.lower()
     if city_key not in CITIES_CONFIG:
         raise HTTPException(status_code=404, detail=f"City '{city_name}' not found")

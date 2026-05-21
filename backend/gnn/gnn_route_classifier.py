@@ -43,7 +43,7 @@ class LSTMGraphBlock(nn.Module):
         self.conv_c = SAGEConv(hidden_dim, hidden_dim)
         self.conv_o = SAGEConv(hidden_dim, hidden_dim)
 
-        # Gate projections: [h_prev || x] → hidden
+        # Gate projections: [h_prev || x] to hidden
         self.gate_f = nn.Linear(hidden_dim * 2, hidden_dim)
         self.gate_i = nn.Linear(hidden_dim * 2, hidden_dim)
         self.gate_c = nn.Linear(hidden_dim * 2, hidden_dim)
@@ -92,9 +92,9 @@ class RouteClassifierGNN(nn.Module):
     Route classifier with LSTM-GN gated message passing.
 
     Architecture:
-      1. Node encoder (MLP): raw features → hidden_dim
+      1. Node encoder (MLP): raw features to hidden_dim
       2. M steps of LSTM-style graph message passing
-      3. Edge classifier (MLP): [src_embed || dst_embed || edge_features] → logit
+      3. Edge classifier (MLP): [src_embed || dst_embed || edge_features] to logit
     """
 
     def __init__(

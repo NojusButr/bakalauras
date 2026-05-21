@@ -25,7 +25,7 @@ class EdgeTravelTimeGNN(nn.Module):
     Forward pass:
       1. Node embeddings via stacked GraphSAGE layers
       2. Edge representation = [src_embed ‖ dst_embed ‖ edge_features]
-      3. MLP → predicted travel_time (seconds)
+      3. MLP  predicted travel_time (seconds)
     """
 
     def __init__(

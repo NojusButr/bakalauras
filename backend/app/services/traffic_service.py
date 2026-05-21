@@ -293,7 +293,7 @@ def save_snapshot(city_name: str, snapshot: dict) -> Path:
     with open(filepath, "w") as f:
         json.dump(snapshot, f, indent=2)
 
-    print(f"[{city_key}] Snapshot saved → {filepath}")
+    print(f"[{city_key}] Snapshot saved  {filepath}")
     return filepath
 
 

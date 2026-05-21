@@ -208,7 +208,7 @@ def _degrade_snapshot(snapshot, keep_pct, seed=None, mode="random",
     Strip traffic data with different realistic patterns.
     
     For random: keep_pct controls how much remains.
-    For corridor/zone/minor: removes ALL matching roads. Slider ignored.
+    For minor: removes ALL matching roads. Slider ignored.
     """
     import random as _rnd
     import math
@@ -746,7 +746,6 @@ def _calculate_route(req: RouteRequest, force_weight: str):
 
 
 def _calculate_classifier_route(req: RouteRequest):
-    """Run the GNN route classifier — predicts route directly, no Dijkstra."""
     try:
         city_name = req.city.lower()
         if city_name not in CITIES_CONFIG:

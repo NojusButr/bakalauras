@@ -201,8 +201,6 @@ function RouteMap({
       <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution="&copy; OSM" />
       <ZoomControl position="topright" />
 
-      {/* Rendering order (bottom → top): base → traffic → sim roads → routes → markers → events */}
-
       {/* Layer 1: Base street network (when no traffic) */}
       <Pane name="base-streets" style={{ zIndex: 400 }}>
         {showBaseLayer && <GeoJSON key={`graph-${city}`} data={graphData!} style={baseStreetStyle} />}

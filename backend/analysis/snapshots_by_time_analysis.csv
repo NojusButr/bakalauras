@@ -1,0 +1,5 @@
+Time of Day,Snapshot Count,Avg Speed (kph),Avg Jam Factor,Congested Edges (%)
+Morning (6-10),1,40.57,1.42,4.3
+Midday (10-15),13,43.05,1.05,2.5
+Evening (15-19),19,43.47,0.98,1.6
+Night (19-6),6,43.67,0.97,1.2

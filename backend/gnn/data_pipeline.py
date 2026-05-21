@@ -2,8 +2,8 @@
 data_pipeline.py — Convert OSM graph + traffic snapshots into PyG Data objects.
 
 For each snapshot, generates:
-  - 1 clean sample (full traffic data → full travel times)
-  - N degraded samples (partial traffic data → full travel times)
+  - 1 clean sample (full traffic data  full travel times)
+  - N degraded samples (partial traffic data  full travel times)
 """
 
 import json

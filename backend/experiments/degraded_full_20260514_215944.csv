@@ -1,0 +1,1429 @@
+data_level,route,scenario,is_crisis,route_distance_km,avg_route_duration_minutes,time_shortest_s,time_traffic_s,time_gnn_s,time_classifier_s,compute_time_shortest_s,compute_time_traffic_s,compute_time_gnn_s,compute_time_classifier_s,winner,seed
+minor,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.028,0.064,3.021,0.099,TIE,80077019
+minor,Gediminas Ave,Normal traffic,False,1.08,3.95,237,237,237,237,0.025,0.064,0.46,0.069,TIE,80065019
+minor,Station to centre,Normal traffic,False,1.69,7.31,453,424,424,421,0.023,0.064,0.392,0.088,TIE,80060219
+minor,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.025,0.066,0.463,0.08,TIE,80088219
+minor,Zirmunai to Naujamiestis,Normal traffic,False,5.68,15.07,1053,756,871,1091,0.025,0.155,0.383,0.333,TRAFFIC,80083119
+minor,Antakalnis to centre,Normal traffic,False,3.93,10.76,673,618,618,668,0.024,0.062,0.432,0.181,TIE,80092519
+minor,Seskine to Old Town,Normal traffic,False,6.05,12.5,759,741,731,779,0.026,0.063,0.395,0.238,GNN,80103019
+minor,Karoliniskes to Uzupis,Normal traffic,False,7.56,17.98,1114,1043,1068,1161,0.026,0.07,0.442,0.234,TRAFFIC,80089819
+minor,Justiniskes to centre,Normal traffic,False,6.61,13.94,785,888,802,808,0.028,0.069,0.506,0.181,GNN,80105119
+minor,Fabijoniskes to river,Normal traffic,False,6.13,11.15,669,669,669,911,0.034,0.083,0.468,0.323,TIE,80121219
+minor,West to East,Normal traffic,False,13.05,24.85,1523,1459,1400,1707,0.034,0.094,0.543,0.301,GNN,80149219
+minor,North to South,Normal traffic,False,11.58,17.51,1221,880,880,1107,0.034,0.205,0.462,0.348,TIE,80124219
+minor,Pilaite to Pasilaiciai,Normal traffic,False,9.88,16.19,929,1014,929,1108,0.031,0.074,0.454,0.266,GNN,80089219
+minor,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.52,1404,938,938,1220,0.044,0.083,0.483,0.331,TIE,80104419
+minor,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.45,1030,1064,1052,1209,0.029,0.077,0.475,0.337,GNN,80094219
+minor,Lazdynai to Jeruzale,Normal traffic,False,9.79,17.51,1078,1023,862,1035,0.029,0.175,0.413,0.408,GNN,80034219
+minor,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1072,1287,0.038,0.081,0.54,0.315,TIE,80062219
+minor,Ring road W to E,Normal traffic,False,16.35,25.16,1920,1099,1105,1876,0.039,0.076,0.454,0.336,TRAFFIC,80154219
+minor,Grigiskes to Verkiai,Normal traffic,False,24.31,30.49,1923,1736,1736,1855,0.035,0.078,0.508,0.358,TIE,80066619
+minor,Salininkai to Seskine,Normal traffic,False,9.3,15.07,1079,730,730,741,0.028,0.079,0.439,0.305,TIE,80009219
+minor,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,328,328,0.024,0.077,0.414,0.098,TIE,80075187
+minor,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.95,237,237,237,237,0.025,0.069,0.426,0.093,TIE,80063187
+minor,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.31,453,424,424,421,0.025,0.069,0.493,0.119,TIE,80058387
+minor,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.039,0.068,0.582,0.089,TIE,80086387
+minor,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,18.26,1095,1096,1092,1335,0.05,0.076,0.382,0.283,GNN,80081287
+minor,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.51,1045,1056,1085,1350,0.034,0.071,0.428,0.239,TRAFFIC,80090687
+minor,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,14.75,892,878,878,1010,0.027,0.072,0.485,0.302,TIE,80101187
+minor,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,17.79,1161,974,1101,1165,0.028,0.1,0.451,0.305,TRAFFIC,80087987
+minor,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,15.3,887,949,949,898,0.029,0.084,0.448,0.28,TIE,80103287
+minor,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.15,669,669,669,992,0.026,0.071,0.634,0.154,TIE,80119387
+minor,West to East,all bridges old town destroyed_optimistic,True,13.05,23.81,1523,1334,1400,1707,0.031,0.088,0.508,0.298,TRAFFIC,80147387
+minor,North to South,all bridges old town destroyed_optimistic,True,11.93,22.31,1375,1302,1320,1500,0.032,0.077,0.445,0.296,TRAFFIC,80122387
+minor,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,16.19,929,1014,929,1108,0.027,0.072,0.458,0.284,GNN,80087387
+minor,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.12,1116,938,938,1031,0.03,0.079,0.423,0.3,TIE,80102587
+minor,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.45,1030,1064,1052,1209,0.034,0.074,0.523,0.285,GNN,80092387
+minor,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.51,1078,1023,976,1035,0.029,0.079,0.498,0.29,GNN,80032387
+minor,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.53,1657,1287,1370,1287,0.033,0.074,0.465,0.282,TRAFFIC,80060387
+minor,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.4,1109,1099,1105,1115,0.035,0.073,0.539,0.276,TRAFFIC,80152387
+minor,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,40.33,2530,2310,2310,2402,0.034,0.086,0.558,0.356,TIE,80064787
+minor,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.43,1221,991,991,1118,0.048,0.079,0.469,0.33,TIE,80007387
+minor,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.025,0.085,0.462,0.09,TIE,80080060
+minor,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.95,237,237,237,237,0.023,0.088,0.431,0.104,TIE,80068060
+minor,Station to centre,Car crashes in Lazdynai,True,1.69,7.31,453,424,424,421,0.028,0.074,0.571,0.119,TIE,80063260
+minor,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.024,0.075,0.442,0.072,TIE,80091260
+minor,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,15.07,1053,756,871,1091,0.026,0.18,0.482,0.399,TRAFFIC,80086160
+minor,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.76,673,618,618,668,0.032,0.079,0.508,0.276,TIE,80095560
+minor,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.5,759,741,731,779,0.028,0.079,0.584,0.302,GNN,80106060
+minor,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,17.98,1114,1043,1068,1161,0.036,0.079,0.509,0.313,TRAFFIC,80092860
+minor,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.94,785,888,802,808,0.027,0.089,0.42,0.322,GNN,80108160
+minor,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.15,669,669,669,911,0.028,0.081,0.536,0.317,TIE,80124260
+minor,West to East,Car crashes in Lazdynai,True,13.05,24.85,1523,1459,1400,1707,0.045,0.092,0.534,0.298,GNN,80152260
+minor,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,880,1107,0.035,0.089,0.436,0.294,TIE,80127260
+minor,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,16.19,929,1014,929,1108,0.028,0.081,0.469,0.297,GNN,80092260
+minor,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.52,1404,938,938,1220,0.037,0.076,0.498,0.303,TIE,80107460
+minor,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.45,1030,1064,1052,1209,0.029,0.083,0.494,0.323,GNN,80097260
+minor,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,17.51,1078,1023,862,1035,0.028,0.08,0.464,0.285,GNN,80037260
+minor,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1072,1287,0.029,0.085,0.485,0.179,TIE,80065260
+minor,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.16,1920,1099,1105,1876,0.036,0.075,0.498,0.316,TRAFFIC,80157260
+minor,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.49,1923,1736,1736,1855,0.036,0.084,0.475,0.309,TIE,80069660
+minor,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.07,1079,730,730,741,0.032,0.072,0.43,0.276,TIE,80012260
+minor,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,328,328,0.028,0.066,0.46,0.091,TIE,80079618
+minor,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.31,453,424,424,421,0.025,0.066,0.487,0.127,TIE,80062818
+minor,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.115,0.073,0.41,0.092,TIE,80090818
+minor,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,15.07,1053,756,871,1091,0.031,0.084,0.535,0.194,TRAFFIC,80085718
+minor,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,10.76,673,618,618,668,0.027,0.066,0.534,0.236,TIE,80095118
+minor,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.48,952,906,903,939,0.026,0.07,0.557,0.33,GNN,80105618
+minor,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,21.57,1361,1227,1011,1484,0.035,0.083,0.458,0.326,GNN,80092418
+minor,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,13.94,785,888,802,808,0.028,0.069,0.443,0.294,GNN,80107718
+minor,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.15,669,669,669,911,0.028,0.074,0.488,0.288,TIE,80123818
+minor,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,24.85,1523,1459,1400,1707,0.031,0.087,0.556,0.317,GNN,80151818
+minor,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,880,1107,0.031,0.085,0.504,0.312,TIE,80126818
+minor,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,16.19,929,1014,929,1108,0.034,0.076,0.467,0.176,GNN,80091818
+minor,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.12,1116,938,938,1031,0.029,0.076,0.593,0.315,TIE,80107018
+minor,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.45,1030,1064,1052,1209,0.036,0.083,0.445,0.296,GNN,80096818
+minor,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,17.51,1078,1023,862,1035,0.035,0.09,0.522,0.289,GNN,80036818
+minor,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.74,1657,1072,1072,1287,0.038,0.083,0.516,0.331,TIE,80064818
+minor,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.4,1109,1099,1105,1115,0.036,0.076,0.427,0.332,TRAFFIC,80156818
+minor,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.49,1923,1736,1736,1855,0.036,0.086,0.429,0.343,TIE,80069218
+minor,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.07,1079,730,730,741,0.029,0.072,0.452,0.282,TIE,80011818
+minor,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.024,0.078,0.474,0.104,TIE,80076589
+minor,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.95,237,237,237,237,0.024,0.074,0.422,0.086,TIE,80064589
+minor,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.31,453,424,424,421,0.03,0.078,0.444,0.124,TIE,80059789
+minor,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.028,0.072,0.544,0.086,TIE,80087789
+minor,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,15.07,1053,756,871,1091,0.033,0.162,0.538,0.419,TRAFFIC,80082689
+minor,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.76,673,618,618,668,0.025,0.083,0.459,0.251,TIE,80092089
+minor,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.5,759,741,731,779,0.033,0.069,0.605,0.327,GNN,80102589
+minor,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,17.98,1114,1043,1068,1161,0.033,0.091,0.57,0.289,TRAFFIC,80089389
+minor,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.94,785,888,802,808,0.028,0.081,0.534,0.286,GNN,80104689
+minor,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.15,669,669,669,911,0.035,0.075,0.495,0.187,TIE,80120789
+minor,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,24.85,1523,1459,1400,1707,0.031,0.089,0.642,0.321,GNN,80148789
+minor,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,880,1107,0.032,0.075,0.523,0.198,TIE,80123789
+minor,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,16.19,929,1014,929,1108,0.028,0.079,0.62,0.181,GNN,80088789
+minor,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.52,1404,938,938,1220,0.029,0.085,0.573,0.326,TIE,80103989
+minor,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.45,1030,1064,1052,1209,0.029,0.076,0.462,0.244,GNN,80093789
+minor,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,17.51,1078,1023,862,1035,0.035,0.081,0.539,0.205,GNN,80033789
+minor,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1072,1287,0.03,0.077,0.449,0.299,TIE,80061789
+minor,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.16,1920,1099,1105,1876,0.057,0.085,0.572,0.369,TRAFFIC,80153789
+minor,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.49,1923,1736,1736,1855,0.042,0.077,0.555,0.322,TIE,80066189
+minor,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,730,741,0.036,0.075,0.609,0.304,TIE,80008789
+minor,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.028,0.071,0.572,0.076,TIE,80079034
+minor,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.95,237,237,237,237,0.024,0.085,0.533,0.081,TIE,80067034
+minor,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.31,453,424,424,421,0.025,0.085,0.502,0.084,TIE,80062234
+minor,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.03,0.2,0.523,0.103,TIE,80090234
+minor,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,14.74,1053,716,871,1091,0.027,0.071,0.497,0.351,TRAFFIC,80085134
+minor,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.76,673,618,618,668,0.026,0.07,0.653,0.274,TIE,80094534
+minor,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.5,759,741,731,779,0.026,0.075,0.588,0.292,GNN,80105034
+minor,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,17.98,1114,1043,1068,1161,0.028,0.074,0.53,0.333,TRAFFIC,80091834
+minor,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,13.94,785,888,802,808,0.026,0.072,0.531,0.305,GNN,80107134
+minor,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.15,669,669,669,911,0.027,0.069,0.492,0.166,TIE,80123234
+minor,West to East,Vingis park concert congestions + road closure,True,13.05,24.85,1523,1459,1400,1707,0.052,0.078,0.443,0.317,GNN,80151234
+minor,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,880,1107,0.037,0.086,0.523,0.303,TIE,80126234
+minor,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,16.19,929,1014,929,1108,0.028,0.073,0.425,0.309,GNN,80091234
+minor,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.52,1404,938,938,1220,0.035,0.072,0.474,0.226,TIE,80106434
+minor,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.45,1030,1064,1052,1209,0.028,0.072,0.518,0.302,GNN,80096234
+minor,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,17.51,1078,1023,862,1035,0.027,0.074,0.468,0.291,GNN,80036234
+minor,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.23,1716,1072,1072,1287,0.028,0.08,0.43,0.292,TIE,80064234
+minor,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.16,1920,1099,1105,1876,0.037,0.078,0.449,0.318,TRAFFIC,80156234
+minor,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.49,1923,1736,1736,1855,0.034,0.081,0.45,0.304,TIE,80068634
+minor,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,730,741,0.028,0.071,0.574,0.278,TIE,80011234
+90,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.036,0.177,0.513,0.132,TIE,79986119
+90,Gediminas Ave,Normal traffic,False,1.08,3.92,237,234,249,234,0.029,0.077,0.485,0.084,TRAFFIC,79974119
+90,Station to centre,Normal traffic,False,1.69,7.28,453,421,457,421,0.025,0.099,0.538,0.124,TRAFFIC,79969319
+90,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.025,0.08,0.535,0.084,TIE,79997319
+90,Zirmunai to Naujamiestis,Normal traffic,False,5.68,14.74,1053,716,911,1091,0.034,0.086,0.502,0.207,TRAFFIC,79992219
+90,Antakalnis to centre,Normal traffic,False,3.93,10.57,673,596,598,756,0.025,0.083,0.465,0.217,TRAFFIC,80001619
+90,Seskine to Old Town,Normal traffic,False,6.05,12.35,759,723,731,779,0.03,0.229,0.48,0.361,TRAFFIC,80012119
+90,Karoliniskes to Uzupis,Normal traffic,False,7.56,17.39,1114,973,1068,1161,0.028,0.087,0.468,0.323,TRAFFIC,79998919
+90,Justiniskes to centre,Normal traffic,False,6.61,12.75,785,745,737,808,0.028,0.187,0.473,0.44,GNN,80014219
+90,Fabijoniskes to river,Normal traffic,False,6.13,11.5,669,711,719,911,0.04,0.077,0.453,0.321,TRAFFIC,80030319
+90,West to East,Normal traffic,False,13.05,23.8,1523,1333,1575,1707,0.032,0.182,0.492,0.332,TRAFFIC,80058319
+90,North to South,Normal traffic,False,11.58,17.51,1221,880,880,1107,0.041,0.081,0.577,0.216,TIE,80033319
+90,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.55,929,937,929,1108,0.028,0.082,0.508,0.305,GNN,79998319
+90,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.42,1404,926,927,1220,0.028,0.082,0.555,0.33,TIE,80013519
+90,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.17,1030,1030,1085,1209,0.029,0.088,0.538,0.345,TRAFFIC,80003319
+90,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,838,1035,0.028,0.089,0.559,0.286,TIE,79943319
+90,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1072,1287,0.036,0.081,0.535,0.332,TIE,79971319
+90,Ring road W to E,Normal traffic,False,16.35,25.16,1920,1099,1115,1876,0.035,0.202,0.455,0.454,TRAFFIC,80063319
+90,Grigiskes to Verkiai,Normal traffic,False,24.31,30.18,1923,1698,1736,1855,0.037,0.091,0.493,0.332,TRAFFIC,79975719
+90,Salininkai to Seskine,Normal traffic,False,9.3,15.07,1079,730,733,741,0.028,0.093,0.605,0.284,TRAFFIC,79918319
+90,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,328,328,0.024,0.093,0.542,0.088,TIE,79984287
+90,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.92,237,234,249,237,0.029,0.093,0.559,0.107,TRAFFIC,79972287
+90,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.28,453,421,457,421,0.031,0.077,0.565,0.159,TRAFFIC,79967487
+90,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.025,0.083,0.653,0.102,TIE,79995487
+90,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.38,1095,870,1080,1335,0.03,0.093,0.46,0.32,TRAFFIC,79990387
+90,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.32,1045,1034,1064,1350,0.026,0.08,0.445,0.233,TRAFFIC,79999787
+90,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,14.73,892,876,879,1010,0.032,0.081,0.507,0.282,TRAFFIC,80010287
+90,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,17.78,1161,973,1101,1165,0.03,0.081,0.627,0.285,TRAFFIC,79997087
+90,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,14.67,887,873,873,898,0.028,0.085,0.517,0.182,TIE,80012387
+90,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.15,669,669,719,1039,0.026,0.08,0.467,0.281,TRAFFIC,80028487
+90,West to East,all bridges old town destroyed_optimistic,True,13.05,23.8,1523,1333,1488,1707,0.031,0.099,0.683,0.335,TRAFFIC,80056487
+90,North to South,all bridges old town destroyed_optimistic,True,11.93,21.91,1375,1254,1272,1500,0.041,0.089,0.439,0.362,TRAFFIC,80031487
+90,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.55,929,937,929,1108,0.029,0.081,0.508,0.286,GNN,79996487
+90,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.02,1116,926,932,1031,0.029,0.082,0.469,0.289,TRAFFIC,80011687
+90,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.17,1030,1030,1085,1209,0.03,0.085,0.593,0.282,TRAFFIC,80001487
+90,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,16.65,1078,920,920,1035,0.027,0.078,0.483,0.328,TIE,79941487
+90,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.52,1657,1286,1364,1287,0.03,0.083,0.475,0.287,TRAFFIC,79969487
+90,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.4,1109,1099,1106,1115,0.036,0.082,0.487,0.309,TRAFFIC,80061487
+90,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,40.02,2530,2273,2273,2402,0.055,0.096,0.514,0.324,TIE,79973887
+90,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.43,1221,991,991,1118,0.03,0.084,0.554,0.301,TIE,79916487
+90,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.029,0.088,0.425,0.087,TIE,79989160
+90,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.92,237,234,234,234,0.024,0.091,0.575,0.085,TIE,79977160
+90,Station to centre,Car crashes in Lazdynai,True,1.69,7.28,453,421,457,421,0.024,0.076,0.52,0.123,TRAFFIC,79972360
+90,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.024,0.077,0.506,0.084,TIE,80000360
+90,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,14.74,1053,716,911,1091,0.026,0.195,0.481,0.458,TRAFFIC,79995260
+90,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.57,673,596,598,756,0.026,0.075,0.453,0.226,TRAFFIC,80004660
+90,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.43,759,733,731,779,0.026,0.077,0.53,0.319,GNN,80015160
+90,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,17.39,1114,973,1068,1161,0.028,0.096,0.497,0.287,TRAFFIC,80001960
+90,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,12.75,785,745,746,808,0.029,0.08,0.609,0.198,TIE,80017260
+90,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.15,669,669,719,911,0.028,0.089,0.482,0.321,TRAFFIC,80033360
+90,West to East,Car crashes in Lazdynai,True,13.05,23.8,1523,1333,1488,1707,0.032,0.086,0.672,0.307,TRAFFIC,80061360
+90,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,880,1107,0.038,0.099,0.471,0.307,TIE,80036360
+90,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.029,0.083,0.483,0.239,TIE,80001360
+90,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.42,1404,926,927,1220,0.03,0.084,0.496,0.296,TIE,80016560
+90,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.41,1030,1059,1085,1217,0.029,0.082,0.468,0.325,TRAFFIC,80006360
+90,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,15.97,1078,838,838,1035,0.03,0.088,0.602,0.286,TIE,79946360
+90,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1072,1287,0.03,0.088,0.491,0.337,TIE,79974360
+90,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.16,1920,1099,1107,1876,0.037,0.083,0.619,0.326,TRAFFIC,80066360
+90,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.49,1923,1736,1736,1815,0.035,0.087,0.563,0.312,TIE,79978760
+90,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.07,1079,730,730,741,0.035,0.074,0.684,0.183,TIE,79921360
+90,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,328,328,0.023,0.076,0.628,0.089,TIE,79988718
+90,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.28,453,421,457,421,0.024,0.082,0.505,0.141,TRAFFIC,79971918
+90,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.13,0.111,0.538,0.081,TIE,79999918
+90,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,14.74,1053,716,911,1122,0.025,0.078,0.427,0.335,TRAFFIC,79994818
+90,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,10.57,673,596,598,756,0.025,0.089,0.465,0.232,TRAFFIC,80004218
+90,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.39,952,895,903,939,0.029,0.075,0.488,0.282,TRAFFIC,80014718
+90,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,19.45,1361,973,1003,1484,0.028,0.086,0.519,0.317,TRAFFIC,80001518
+90,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.62,785,730,736,808,0.028,0.082,0.523,0.286,TRAFFIC,80016818
+90,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.15,669,669,719,911,0.027,0.083,0.534,0.285,TRAFFIC,80032918
+90,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,23.8,1523,1333,1488,1707,0.041,0.098,0.58,0.298,TRAFFIC,80060918
+90,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,880,1107,0.032,0.082,0.52,0.317,TIE,80035918
+90,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.48,929,929,929,1108,0.03,0.081,0.521,0.29,TIE,80000918
+90,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.02,1116,926,927,1031,0.036,0.094,0.53,0.301,TIE,80016118
+90,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.27,1030,1042,1085,1209,0.029,0.087,0.478,0.272,TRAFFIC,80005918
+90,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,16.02,1078,844,838,1035,0.028,0.082,0.457,0.306,GNN,79945918
+90,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.74,1657,1072,1072,1287,0.032,0.083,0.546,0.3,TIE,79973918
+90,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.48,1109,1109,1109,1115,0.036,0.096,0.434,0.316,TIE,80065918
+90,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.18,1923,1698,1736,1855,0.042,0.084,0.457,0.333,TRAFFIC,79978318
+90,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.07,1079,730,730,741,0.029,0.078,0.552,0.29,TIE,79920918
+90,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.025,0.083,0.547,0.122,TIE,79985689
+90,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,249,234,0.025,0.081,0.591,0.085,TRAFFIC,79973689
+90,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.28,453,421,457,421,0.024,0.085,0.598,0.124,TRAFFIC,79968889
+90,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.032,0.18,0.622,0.135,TIE,79996889
+90,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,14.74,1053,716,911,1122,0.028,0.086,0.484,0.338,TRAFFIC,79991789
+90,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.57,673,596,598,756,0.024,0.073,0.493,0.249,TRAFFIC,80001189
+90,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.35,759,723,731,779,0.028,0.094,0.538,0.306,TRAFFIC,80011689
+90,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,17.39,1114,973,1068,1161,0.026,0.081,0.539,0.283,TRAFFIC,79998489
+90,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,12.62,785,730,736,808,0.028,0.08,0.486,0.298,TRAFFIC,80013789
+90,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.32,669,690,719,992,0.027,0.082,0.523,0.292,TRAFFIC,80029889
+90,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,23.81,1523,1334,1568,1707,0.031,0.081,0.469,0.354,TRAFFIC,80057889
+90,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,880,1107,0.032,0.088,0.631,0.295,TIE,80032889
+90,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.48,929,929,929,1108,0.031,0.088,0.537,0.318,TIE,79997889
+90,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.42,1404,926,927,1220,0.03,0.087,0.518,0.308,TIE,80013089
+90,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.23,1030,1038,1085,1209,0.029,0.085,0.438,0.313,TRAFFIC,80002889
+90,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,15.97,1078,838,838,1035,0.035,0.086,0.459,0.305,TIE,79942889
+90,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1072,1287,0.049,0.084,0.536,0.174,TIE,79970889
+90,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1106,1876,0.036,0.089,0.554,0.353,TIE,80062889
+90,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.18,1923,1698,1736,1855,0.047,0.089,0.537,0.341,TRAFFIC,79975289
+90,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,730,741,0.029,0.086,0.471,0.311,TIE,79917889
+90,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.028,0.095,0.583,0.09,TIE,79988134
+90,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.95,237,237,249,237,0.024,0.091,0.51,0.088,TRAFFIC,79976134
+90,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.28,453,421,457,421,0.034,0.089,0.613,0.121,TRAFFIC,79971334
+90,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.025,0.2,0.594,0.114,TIE,79999334
+90,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,14.74,1053,716,966,1091,0.027,0.087,0.503,0.348,TRAFFIC,79994234
+90,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.57,673,596,598,756,0.026,0.116,0.613,0.254,TRAFFIC,80003634
+90,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.43,759,733,731,779,0.045,0.086,0.558,0.3,GNN,80014134
+90,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,17.46,1114,981,1068,1161,0.027,0.091,0.553,0.323,TRAFFIC,80000934
+90,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.62,785,730,736,808,0.038,0.077,0.498,0.319,TRAFFIC,80016234
+90,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.32,669,690,719,992,0.028,0.096,0.482,0.33,TRAFFIC,80032334
+90,West to East,Vingis park concert congestions + road closure,True,13.05,23.8,1523,1333,1488,1707,0.03,0.094,0.436,0.321,TRAFFIC,80060334
+90,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,880,1107,0.035,0.083,0.531,0.327,TIE,80035334
+90,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.48,929,929,929,1108,0.029,0.081,0.418,0.328,TIE,80000334
+90,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.42,1404,926,927,1220,0.036,0.1,0.557,0.321,TIE,80015534
+90,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.17,1030,1030,1085,1209,0.029,0.082,0.487,0.304,TRAFFIC,80005334
+90,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,15.97,1078,838,838,1035,0.027,0.077,0.484,0.308,TIE,79945334
+90,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.23,1716,1072,1072,1287,0.033,0.089,0.567,0.326,TIE,79973334
+90,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.16,1920,1099,1107,1876,0.035,0.11,0.569,0.343,TRAFFIC,80065334
+90,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.18,1923,1698,1736,1815,0.035,0.099,0.519,0.353,TRAFFIC,79977734
+90,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,730,741,0.027,0.076,0.449,0.215,TIE,79920334
+80,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.024,0.178,0.482,0.108,TIE,79985119
+80,Gediminas Ave,Normal traffic,False,1.08,3.92,237,234,249,234,0.026,0.078,0.45,0.113,TRAFFIC,79973119
+80,Station to centre,Normal traffic,False,1.69,7.28,453,421,457,421,0.026,0.091,0.447,0.152,TRAFFIC,79968319
+80,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.024,0.075,0.48,0.096,TIE,79996319
+80,Zirmunai to Naujamiestis,Normal traffic,False,5.68,14.74,1053,716,911,1091,0.027,0.079,0.455,0.212,TRAFFIC,79991219
+80,Antakalnis to centre,Normal traffic,False,3.93,10.57,673,596,695,756,0.026,0.085,0.58,0.221,TRAFFIC,80000619
+80,Seskine to Old Town,Normal traffic,False,6.05,12.4,759,729,742,779,0.029,0.194,0.49,0.345,TRAFFIC,80011119
+80,Karoliniskes to Uzupis,Normal traffic,False,7.56,17.68,1114,1007,1068,1161,0.028,0.087,0.462,0.28,TRAFFIC,79997919
+80,Justiniskes to centre,Normal traffic,False,6.61,12.97,785,771,736,808,0.034,0.176,0.47,0.385,GNN,80013219
+80,Fabijoniskes to river,Normal traffic,False,6.13,11.15,669,669,669,911,0.16,0.084,0.39,0.285,TIE,80029319
+80,West to East,Normal traffic,False,13.05,23.8,1523,1333,1488,1707,0.04,0.087,0.45,0.311,TRAFFIC,80057319
+80,North to South,Normal traffic,False,11.58,17.51,1221,880,880,1107,0.036,0.09,0.543,0.332,TIE,80032319
+80,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.55,929,937,929,1108,0.029,0.081,0.511,0.286,GNN,79997319
+80,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.42,1404,926,932,1220,0.029,0.086,0.482,0.312,TRAFFIC,80012519
+80,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.17,1030,1030,1085,1209,0.029,0.081,0.436,0.34,TRAFFIC,80002319
+80,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,838,1035,0.027,0.179,0.453,0.29,TIE,79942319
+80,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1072,1287,0.03,0.081,0.583,0.201,TIE,79970319
+80,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1106,1876,0.036,0.094,0.459,0.303,TIE,80062319
+80,Grigiskes to Verkiai,Normal traffic,False,24.31,30.18,1923,1698,1736,1815,0.035,0.085,0.519,0.264,TRAFFIC,79974719
+80,Salininkai to Seskine,Normal traffic,False,9.3,15.07,1079,730,730,741,0.029,0.097,0.489,0.288,TIE,79917319
+80,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,328,328,0.024,0.071,0.476,0.085,TIE,79983287
+80,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.95,237,237,237,234,0.031,0.075,0.498,0.12,TIE,79971287
+80,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.55,453,453,457,421,0.026,0.08,0.583,0.15,TRAFFIC,79966487
+80,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.025,0.091,0.631,0.081,TIE,79994487
+80,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.38,1095,870,1091,1335,0.042,0.076,0.396,0.304,TRAFFIC,79989387
+80,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.23,1045,1023,1052,1350,0.026,0.097,0.472,0.217,TRAFFIC,79998787
+80,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,14.73,892,876,879,1010,0.029,0.078,0.549,0.306,TRAFFIC,80009287
+80,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,17.78,1161,973,1101,1165,0.029,0.077,0.455,0.278,TRAFFIC,79996087
+80,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,14.8,887,889,873,898,0.028,0.075,0.457,0.278,GNN,80011387
+80,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.51,669,712,691,992,0.025,0.088,0.489,0.325,GNN,80027487
+80,West to East,all bridges old town destroyed_optimistic,True,13.05,23.81,1523,1334,1488,1707,0.035,0.085,0.503,0.343,TRAFFIC,80055487
+80,North to South,all bridges old town destroyed_optimistic,True,11.93,22.12,1375,1279,1299,1500,0.04,0.094,0.466,0.293,TRAFFIC,80030487
+80,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.72,929,958,929,1108,0.028,0.094,0.549,0.294,GNN,79995487
+80,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.11,1116,937,927,1031,0.03,0.091,0.564,0.286,GNN,80010687
+80,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.25,1030,1040,1085,1209,0.028,0.091,0.641,0.283,TRAFFIC,80000487
+80,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,16.65,1078,920,920,1035,0.029,0.095,0.516,0.288,TIE,79940487
+80,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.58,1657,1293,1397,1287,0.034,0.09,0.463,0.358,TRAFFIC,79968487
+80,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.4,1109,1099,1105,1115,0.048,0.092,0.643,0.192,TRAFFIC,80060487
+80,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,40.02,2530,2273,2310,2402,0.035,0.092,0.55,0.195,TRAFFIC,79972887
+80,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.4,1221,987,1035,1118,0.03,0.084,0.543,0.298,TRAFFIC,79915487
+80,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.031,0.087,0.426,0.087,TIE,79988160
+80,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.95,237,237,249,237,0.031,0.081,0.451,0.086,TRAFFIC,79976160
+80,Station to centre,Car crashes in Lazdynai,True,1.69,7.31,453,424,457,421,0.024,0.079,0.532,0.119,TRAFFIC,79971360
+80,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.025,0.075,0.482,0.108,TIE,79999360
+80,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,15.38,1053,793,793,1122,0.033,0.175,0.469,0.392,TIE,79994260
+80,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.57,673,596,617,756,0.031,0.094,0.572,0.241,TRAFFIC,80003660
+80,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.65,759,759,731,779,0.026,0.103,0.501,0.231,GNN,80014160
+80,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,17.39,1114,973,1068,1161,0.036,0.083,0.463,0.289,TRAFFIC,80000960
+80,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,12.68,785,736,746,808,0.035,0.094,0.482,0.336,TRAFFIC,80016260
+80,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.15,669,669,669,992,0.032,0.095,0.624,0.313,TIE,80032360
+80,West to East,Car crashes in Lazdynai,True,13.05,23.8,1523,1333,1488,1707,0.032,0.083,0.564,0.322,TRAFFIC,80060360
+80,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,880,1107,0.042,0.081,0.494,0.368,TIE,80035360
+80,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,929,0.029,0.093,0.507,0.168,TIE,80000360
+80,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.42,1404,926,927,1220,0.028,0.082,0.515,0.307,TIE,80015560
+80,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.17,1030,1030,1085,1209,0.029,0.09,0.53,0.311,TRAFFIC,80005360
+80,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,15.97,1078,838,838,1035,0.028,0.085,0.442,0.163,TIE,79945360
+80,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1072,1287,0.032,0.091,0.61,0.314,TIE,79973360
+80,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.24,1920,1109,1115,1876,0.036,0.085,0.512,0.214,TRAFFIC,80065360
+80,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.18,1923,1698,1736,1855,0.041,0.091,0.508,0.35,TRAFFIC,79977760
+80,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.07,1079,730,730,741,0.029,0.099,0.535,0.24,TIE,79920360
+80,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,328,328,0.025,0.097,0.672,0.109,TIE,79987718
+80,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.55,453,453,457,421,0.024,0.086,0.495,0.136,TRAFFIC,79970918
+80,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.122,0.076,0.41,0.085,TIE,79998918
+80,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,14.74,1053,716,936,1091,0.026,0.077,0.451,0.298,TRAFFIC,79993818
+80,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,10.57,673,596,598,756,0.031,0.075,0.537,0.217,TRAFFIC,80003218
+80,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.53,952,912,903,939,0.027,0.078,0.482,0.292,GNN,80013718
+80,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,19.45,1361,973,1078,1484,0.029,0.086,0.483,0.232,TRAFFIC,80000518
+80,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.62,785,730,736,808,0.031,0.08,0.65,0.314,TRAFFIC,80015818
+80,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.33,669,691,691,911,0.027,0.082,0.487,0.232,TIE,80031918
+80,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,23.8,1523,1333,1568,1707,0.033,0.084,0.451,0.205,TRAFFIC,80059918
+80,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,880,1107,0.034,0.109,0.478,0.343,TIE,80034918
+80,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.48,929,929,929,1108,0.026,0.086,0.562,0.283,TIE,79999918
+80,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.02,1116,926,929,1031,0.04,0.086,0.508,0.235,TRAFFIC,80015118
+80,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.49,1030,1069,1085,1209,0.036,0.077,0.543,0.342,TRAFFIC,80004918
+80,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,16.65,1078,920,838,1035,0.035,0.094,0.458,0.303,GNN,79944918
+80,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.74,1657,1072,1076,1287,0.028,0.103,0.522,0.33,TRAFFIC,79972918
+80,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.4,1109,1099,1106,1115,0.056,0.077,0.516,0.333,TRAFFIC,80064918
+80,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.23,1923,1704,1774,1855,0.036,0.107,0.442,0.238,TRAFFIC,79977318
+80,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.07,1079,730,730,741,0.027,0.104,0.516,0.172,TIE,79919918
+80,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.042,0.093,0.617,0.108,TIE,79984689
+80,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,4.05,237,249,249,234,0.024,0.11,0.475,0.11,TIE,79972689
+80,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.31,453,424,457,421,0.041,0.081,0.67,0.14,TRAFFIC,79967889
+80,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.041,0.19,0.561,0.096,TIE,79995889
+80,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,14.78,1053,720,1013,1091,0.038,0.079,0.479,0.226,TRAFFIC,79990789
+80,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.57,673,596,598,756,0.025,0.076,0.57,0.258,TRAFFIC,80000189
+80,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.61,759,754,731,774,0.027,0.093,0.519,0.305,GNN,80010689
+80,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,17.4,1114,974,1051,1161,0.029,0.08,0.452,0.304,TRAFFIC,79997489
+80,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,12.75,785,745,736,808,0.036,0.102,0.585,0.171,GNN,80012789
+80,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.15,669,669,669,992,0.025,0.074,0.55,0.308,TIE,80028889
+80,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,23.8,1523,1333,1569,1707,0.037,0.109,0.619,0.322,TRAFFIC,80056889
+80,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,880,1107,0.029,0.116,0.614,0.302,TIE,80031889
+80,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.55,929,937,929,1108,0.029,0.119,0.469,0.29,GNN,79996889
+80,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.42,1404,926,1010,1220,0.029,0.083,0.449,0.29,TRAFFIC,80012089
+80,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.17,1030,1030,1085,1209,0.034,0.096,0.541,0.301,TRAFFIC,80001889
+80,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,15.97,1078,838,838,1035,0.029,0.08,0.501,0.286,TIE,79941889
+80,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1072,1287,0.049,0.079,0.532,0.288,TIE,79969889
+80,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.16,1920,1099,1106,1876,0.033,0.129,0.465,0.3,TRAFFIC,80061889
+80,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.18,1923,1698,1736,1855,0.057,0.108,0.515,0.384,TRAFFIC,79974289
+80,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,730,737,0.048,0.094,0.551,0.298,TIE,79916889
+80,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.041,0.076,0.52,0.092,TIE,79987134
+80,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.92,237,234,234,234,0.028,0.101,0.539,0.108,TIE,79975134
+80,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.28,453,421,457,421,0.023,0.103,0.472,0.117,TRAFFIC,79970334
+80,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.023,0.166,0.567,0.097,TIE,79998334
+80,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,14.74,1053,716,966,1091,0.037,0.112,0.561,0.209,TRAFFIC,79993234
+80,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.57,673,596,598,668,0.041,0.108,0.474,0.187,TRAFFIC,80002634
+80,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.4,759,729,731,779,0.027,0.082,0.576,0.309,TRAFFIC,80013134
+80,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,17.73,1114,1013,1013,1161,0.046,0.099,0.676,0.286,TIE,79999934
+80,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.62,785,730,736,808,0.035,0.11,0.548,0.286,TRAFFIC,80015234
+80,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.33,669,691,691,911,0.038,0.104,0.577,0.306,TIE,80031334
+80,West to East,Vingis park concert congestions + road closure,True,13.05,23.8,1523,1333,1488,1707,0.052,0.113,0.475,0.296,TRAFFIC,80059334
+80,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,890,1107,0.035,0.08,0.469,0.169,TRAFFIC,80034334
+80,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.72,929,958,929,1108,0.026,0.078,0.535,0.285,GNN,79999334
+80,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.42,1404,926,929,1220,0.028,0.121,0.516,0.305,TRAFFIC,80014534
+80,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.23,1030,1038,1085,1209,0.028,0.093,0.538,0.274,TRAFFIC,80004334
+80,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.02,1078,844,838,1035,0.027,0.076,0.519,0.284,GNN,79944334
+80,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.23,1716,1072,1072,1287,0.03,0.096,0.648,0.307,TIE,79972334
+80,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.16,1920,1099,1106,1876,0.036,0.117,0.541,0.318,TRAFFIC,80064334
+80,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.23,1923,1704,1699,1855,0.034,0.08,0.49,0.33,GNN,79976734
+80,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,730,741,0.027,0.077,0.444,0.333,TIE,79919334
+70,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.023,0.212,0.573,0.115,TIE,79984119
+70,Gediminas Ave,Normal traffic,False,1.08,4.05,237,249,249,234,0.041,0.075,0.548,0.09,TIE,79972119
+70,Station to centre,Normal traffic,False,1.69,7.55,453,453,457,421,0.023,0.08,0.596,0.125,TRAFFIC,79967319
+70,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.025,0.073,0.486,0.082,TIE,79995319
+70,Zirmunai to Naujamiestis,Normal traffic,False,5.68,14.74,1053,716,966,1091,0.026,0.084,0.463,0.288,TRAFFIC,79990219
+70,Antakalnis to centre,Normal traffic,False,3.93,10.57,673,596,617,756,0.025,0.11,0.476,0.244,TRAFFIC,79999619
+70,Seskine to Old Town,Normal traffic,False,6.05,12.69,759,764,731,779,0.028,0.192,0.589,0.415,GNN,80010119
+70,Karoliniskes to Uzupis,Normal traffic,False,7.56,17.68,1114,1007,1068,1161,0.028,0.11,0.58,0.332,TRAFFIC,79996919
+70,Justiniskes to centre,Normal traffic,False,6.61,13.22,785,802,746,808,0.043,0.179,0.621,0.462,GNN,80012219
+70,Fabijoniskes to river,Normal traffic,False,6.13,11.32,669,690,690,1039,0.038,0.086,0.392,0.18,TIE,80028319
+70,West to East,Normal traffic,False,13.05,24.83,1523,1457,1569,1707,0.029,0.083,0.557,0.313,TRAFFIC,80056319
+70,North to South,Normal traffic,False,11.58,17.51,1221,880,960,1107,0.053,0.102,0.605,0.312,TRAFFIC,80031319
+70,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.72,929,958,929,1108,0.041,0.078,0.423,0.213,GNN,79996319
+70,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.43,1404,927,1015,1220,0.029,0.078,0.565,0.306,TRAFFIC,80011519
+70,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.41,1030,1059,1085,1209,0.028,0.117,0.468,0.286,TRAFFIC,80001319
+70,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,844,1035,0.027,0.222,0.483,0.345,TRAFFIC,79941319
+70,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1078,1287,0.029,0.093,0.559,0.289,TRAFFIC,79969319
+70,Ring road W to E,Normal traffic,False,16.35,25.16,1920,1099,1116,1876,0.032,0.081,0.453,0.307,TRAFFIC,80061319
+70,Grigiskes to Verkiai,Normal traffic,False,24.31,30.18,1923,1699,1699,1855,0.034,0.08,0.549,0.332,TIE,79973719
+70,Salininkai to Seskine,Normal traffic,False,9.3,15.07,1079,730,730,741,0.034,0.103,0.495,0.279,TIE,79916319
+70,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,355,328,0.023,0.119,0.504,0.085,TRAFFIC,79982287
+70,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.95,237,237,237,234,0.023,0.074,0.588,0.112,TIE,79970287
+70,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.31,453,424,457,421,0.028,0.083,0.499,0.145,TRAFFIC,79965487
+70,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.023,0.072,0.505,0.083,TIE,79993487
+70,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.38,1095,870,1068,1335,0.039,0.076,0.56,0.299,TRAFFIC,79988387
+70,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.32,1045,1034,1083,1350,0.026,0.079,0.515,0.24,TRAFFIC,79997787
+70,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,14.75,892,878,878,1010,0.025,0.073,0.538,0.288,TIE,80008287
+70,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,18.04,1161,1004,1145,1165,0.027,0.076,0.539,0.331,TRAFFIC,79995087
+70,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,14.75,887,883,883,898,0.026,0.091,0.53,0.312,TIE,80010387
+70,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.15,669,669,719,992,0.025,0.072,0.433,0.283,TRAFFIC,80026487
+70,West to East,all bridges old town destroyed_optimistic,True,13.05,23.8,1523,1333,1568,1707,0.032,0.086,0.537,0.283,TRAFFIC,80054487
+70,North to South,all bridges old town destroyed_optimistic,True,11.93,22.27,1375,1298,1272,1500,0.051,0.081,0.546,0.185,GNN,80029487
+70,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.48,929,929,929,1108,0.033,0.077,0.496,0.295,TIE,79994487
+70,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.11,1116,937,1026,1031,0.03,0.077,0.427,0.29,TRAFFIC,80009687
+70,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.22,1030,1036,1085,1209,0.036,0.126,0.53,0.178,TRAFFIC,79999487
+70,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,16.65,1078,920,990,1035,0.047,0.08,0.472,0.287,TRAFFIC,79939487
+70,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.52,1657,1286,1369,1287,0.033,0.112,0.465,0.294,TRAFFIC,79967487
+70,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.53,1109,1115,1115,1115,0.036,0.085,0.563,0.344,TIE,80059487
+70,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,40.94,2530,2383,2312,2402,0.032,0.088,0.519,0.323,GNN,79971887
+70,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.4,1221,987,991,1118,0.035,0.091,0.495,0.343,TRAFFIC,79914487
+70,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.041,0.074,0.481,0.07,TIE,79987160
+70,Gediminas Ave,Car crashes in Lazdynai,True,1.08,4.05,237,249,249,234,0.023,0.069,0.64,0.088,TIE,79975160
+70,Station to centre,Car crashes in Lazdynai,True,1.69,7.28,453,421,457,421,0.042,0.081,0.525,0.13,TRAFFIC,79970360
+70,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.024,0.07,0.528,0.091,TIE,79998360
+70,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,14.74,1053,716,954,1091,0.032,0.22,0.632,0.42,TRAFFIC,79993260
+70,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.57,673,596,663,756,0.026,0.075,0.438,0.264,TRAFFIC,80002660
+70,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.43,759,733,739,779,0.025,0.069,0.524,0.311,TRAFFIC,80013160
+70,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,17.39,1114,973,1100,1161,0.027,0.097,0.656,0.334,TRAFFIC,79999960
+70,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,12.62,785,730,736,808,0.047,0.123,0.691,0.284,TRAFFIC,80015260
+70,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.32,669,690,669,1039,0.025,0.085,0.607,0.348,GNN,80031360
+70,West to East,Car crashes in Lazdynai,True,13.05,24.83,1523,1457,1569,1707,0.033,0.075,0.549,0.188,TRAFFIC,80059360
+70,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,960,1107,0.031,0.093,0.598,0.191,TRAFFIC,80034360
+70,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.037,0.083,0.56,0.315,TIE,79999360
+70,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.42,1404,926,942,1220,0.028,0.075,0.573,0.293,TRAFFIC,80014560
+70,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.22,1030,1036,1085,1217,0.029,0.125,0.639,0.314,TRAFFIC,80004360
+70,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,15.97,1078,838,844,1035,0.029,0.081,0.678,0.281,TRAFFIC,79944360
+70,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1076,1287,0.029,0.127,0.549,0.29,TRAFFIC,79972360
+70,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1106,1876,0.042,0.109,0.57,0.353,TIE,80064360
+70,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.2,1923,1701,1701,1855,0.033,0.123,0.697,0.313,TIE,79976760
+70,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.07,1079,730,730,741,0.029,0.078,0.515,0.289,TIE,79919360
+70,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,355,328,0.024,0.079,0.585,0.093,TRAFFIC,79986718
+70,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.28,453,421,424,421,0.026,0.081,0.642,0.123,TRAFFIC,79969918
+70,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.127,0.086,0.458,0.117,TIE,79997918
+70,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,14.74,1053,716,954,1091,0.025,0.097,0.611,0.288,TRAFFIC,79992818
+70,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,11.04,673,652,695,756,0.031,0.096,0.491,0.232,TRAFFIC,80002218
+70,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.39,952,895,913,939,0.042,0.116,0.52,0.298,TRAFFIC,80012718
+70,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,19.45,1361,973,1003,1484,0.027,0.079,0.47,0.279,TRAFFIC,79999518
+70,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.68,785,736,736,808,0.033,0.104,0.55,0.312,TIE,80014818
+70,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.5,669,711,690,992,0.025,0.077,0.447,0.202,GNN,80030918
+70,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,25.01,1523,1478,1488,1707,0.034,0.132,0.535,0.337,TRAFFIC,80058918
+70,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,882,1107,0.044,0.075,0.462,0.327,TRAFFIC,80033918
+70,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.72,929,958,929,929,0.037,0.098,0.5,0.185,GNN,79998918
+70,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.12,1116,938,938,1031,0.038,0.079,0.437,0.286,TIE,80014118
+70,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.9,1030,1118,1085,1209,0.029,0.077,0.493,0.222,GNN,80003918
+70,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,16.17,1078,862,862,1035,0.027,0.072,0.469,0.303,TIE,79943918
+70,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.74,1657,1072,1072,1287,0.028,0.073,0.56,0.175,TIE,79971918
+70,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1118,1115,0.034,0.101,0.532,0.304,TRAFFIC,80063918
+70,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.2,1923,1701,1736,1815,0.034,0.101,0.578,0.33,TRAFFIC,79976318
+70,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.07,1079,730,730,737,0.047,0.107,0.489,0.281,TIE,79918918
+70,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.042,0.091,0.48,0.107,TIE,79983689
+70,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,4.05,237,249,249,237,0.024,0.095,0.566,0.084,TIE,79971689
+70,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.31,453,424,424,421,0.029,0.09,0.726,0.144,TIE,79966889
+70,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,431,368,0.023,0.239,0.568,0.108,TRAFFIC,79994889
+70,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,14.74,1053,716,951,1091,0.03,0.076,0.594,0.313,TRAFFIC,79989789
+70,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.57,673,596,695,756,0.033,0.075,0.52,0.236,TRAFFIC,79999189
+70,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.37,759,725,742,779,0.027,0.087,0.619,0.191,TRAFFIC,80009689
+70,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,17.72,1114,1012,1100,1161,0.027,0.076,0.671,0.155,TRAFFIC,79996489
+70,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,12.68,785,736,736,808,0.046,0.097,0.466,0.279,TIE,80011789
+70,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.15,669,669,669,1039,0.026,0.073,0.473,0.283,TIE,80027889
+70,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,23.8,1523,1333,1592,1707,0.03,0.109,0.568,0.321,TRAFFIC,80055889
+70,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,880,1107,0.033,0.104,0.503,0.307,TIE,80030889
+70,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.48,929,929,929,1108,0.029,0.088,0.622,0.341,TIE,79995889
+70,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.52,1404,938,940,1220,0.03,0.079,0.48,0.303,TRAFFIC,80011089
+70,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.29,1030,1045,1074,1209,0.03,0.082,0.492,0.293,TRAFFIC,80000889
+70,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,15.97,1078,838,838,1035,0.03,0.079,0.468,0.286,TIE,79940889
+70,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1078,1287,0.031,0.08,0.459,0.303,TRAFFIC,79968889
+70,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.16,1920,1099,1126,1876,0.037,0.085,0.453,0.317,TRAFFIC,80060889
+70,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.23,1923,1704,1699,1815,0.036,0.089,0.454,0.314,GNN,79973289
+70,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,730,741,0.029,0.078,0.45,0.177,TIE,79915889
+70,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.025,0.086,0.448,0.095,TIE,79986134
+70,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.95,237,237,237,234,0.025,0.077,0.473,0.07,TIE,79974134
+70,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,457,421,0.025,0.077,0.477,0.103,TRAFFIC,79969334
+70,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.025,0.078,0.525,0.089,TIE,79997334
+70,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,14.74,1053,716,1009,1091,0.027,0.188,0.571,0.391,TRAFFIC,79992234
+70,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.57,673,596,695,668,0.026,0.094,0.484,0.232,TRAFFIC,80001634
+70,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.45,759,735,742,774,0.027,0.076,0.501,0.29,TRAFFIC,80012134
+70,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,17.68,1114,1007,1068,1161,0.028,0.089,0.555,0.292,TRAFFIC,79998934
+70,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.97,785,771,736,808,0.028,0.077,0.626,0.328,GNN,80014234
+70,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.51,669,712,691,992,0.028,0.092,0.531,0.191,GNN,80030334
+70,West to East,Vingis park concert congestions + road closure,True,13.05,23.81,1523,1334,1456,1707,0.032,0.089,0.478,0.316,TRAFFIC,80058334
+70,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,880,1107,0.034,0.086,0.49,0.305,TIE,80033334
+70,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.72,929,958,929,929,0.03,0.092,0.584,0.197,GNN,79998334
+70,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.42,1404,926,1069,1220,0.031,0.079,0.553,0.301,TRAFFIC,80013534
+70,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.23,1030,1038,1085,1209,0.036,0.092,0.486,0.294,TRAFFIC,80003334
+70,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,15.97,1078,838,838,1035,0.03,0.078,0.496,0.288,TIE,79943334
+70,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.27,1716,1076,1082,1287,0.035,0.085,0.478,0.303,TRAFFIC,79971334
+70,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1115,1876,0.036,0.083,0.469,0.205,TRAFFIC,80063334
+70,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.18,1923,1699,1699,1855,0.038,0.082,0.462,0.329,TIE,79975734
+70,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,730,741,0.031,0.08,0.481,0.297,TIE,79918334
+60,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.026,0.173,0.477,0.101,TIE,79983119
+60,Gediminas Ave,Normal traffic,False,1.08,4.05,237,249,249,234,0.025,0.073,0.444,0.089,TIE,79971119
+60,Station to centre,Normal traffic,False,1.69,7.28,453,421,457,421,0.029,0.076,0.459,0.126,TRAFFIC,79966319
+60,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.025,0.075,0.452,0.085,TIE,79994319
+60,Zirmunai to Naujamiestis,Normal traffic,False,5.68,15.81,1053,844,946,1091,0.027,0.08,0.473,0.299,TRAFFIC,79989219
+60,Antakalnis to centre,Normal traffic,False,3.93,11.38,673,693,695,756,0.026,0.074,0.458,0.182,TRAFFIC,79998619
+60,Seskine to Old Town,Normal traffic,False,6.05,12.43,759,733,731,779,0.028,0.182,0.467,0.428,GNN,80009119
+60,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.04,1114,1051,1100,1161,0.033,0.083,0.452,0.292,TRAFFIC,79995919
+60,Justiniskes to centre,Normal traffic,False,6.61,12.62,785,730,736,808,0.03,0.188,0.485,0.433,TRAFFIC,80011219
+60,Fabijoniskes to river,Normal traffic,False,6.13,11.5,669,711,669,1039,0.035,0.086,0.435,0.296,GNN,80027319
+60,West to East,Normal traffic,False,13.05,23.81,1523,1334,1611,1707,0.033,0.085,0.494,0.3,TRAFFIC,80055319
+60,North to South,Normal traffic,False,11.58,17.51,1221,880,890,1107,0.033,0.083,0.474,0.302,TRAFFIC,80030319
+60,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.48,929,929,929,1108,0.033,0.082,0.479,0.203,TIE,79995319
+60,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.57,1404,944,1084,1220,0.03,0.081,0.466,0.314,TRAFFIC,80010519
+60,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.46,1030,1065,1085,1217,0.03,0.086,0.452,0.222,TRAFFIC,80000319
+60,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,842,1035,0.038,0.171,0.484,0.388,TRAFFIC,79940319
+60,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1079,1287,0.031,0.082,0.578,0.299,TRAFFIC,79968319
+60,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1116,1876,0.039,0.084,0.48,0.322,TRAFFIC,80060319
+60,Grigiskes to Verkiai,Normal traffic,False,24.31,30.18,1923,1699,1743,1855,0.039,0.086,0.528,0.334,TRAFFIC,79972719
+60,Salininkai to Seskine,Normal traffic,False,9.3,15.17,1079,741,734,741,0.029,0.081,0.453,0.187,GNN,79915319
+60,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,328,328,0.028,0.081,0.444,0.092,TIE,79981287
+60,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.95,237,237,249,234,0.028,0.079,0.539,0.119,TRAFFIC,79969287
+60,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.28,453,421,421,421,0.025,0.085,0.514,0.149,TIE,79964487
+60,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.026,0.077,0.561,0.085,TIE,79992487
+60,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.38,1095,870,1075,1335,0.041,0.08,0.396,0.301,TRAFFIC,79987387
+60,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.34,1045,1036,1036,1262,0.028,0.079,0.471,0.227,TIE,79996787
+60,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,14.74,892,877,879,1010,0.028,0.082,0.443,0.196,TRAFFIC,80007287
+60,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,18.9,1161,1107,1133,1165,0.028,0.082,0.485,0.208,TRAFFIC,79994087
+60,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,14.8,887,889,873,898,0.029,0.086,0.448,0.29,GNN,80009387
+60,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.88,669,757,719,1039,0.028,0.078,0.481,0.294,GNN,80025487
+60,West to East,all bridges old town destroyed_optimistic,True,13.05,24.52,1523,1419,1575,1707,0.032,0.089,0.485,0.303,TRAFFIC,80053487
+60,North to South,all bridges old town destroyed_optimistic,True,11.93,21.91,1375,1254,1316,1500,0.038,0.095,0.482,0.303,TRAFFIC,80028487
+60,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.48,929,929,929,1108,0.029,0.083,0.494,0.273,TIE,79993487
+60,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.02,1116,927,1010,1031,0.03,0.08,0.476,0.301,TRAFFIC,80008687
+60,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.22,1030,1036,1085,1217,0.031,0.09,0.48,0.262,TRAFFIC,79998487
+60,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.88,1078,1067,990,1035,0.034,0.081,0.512,0.178,GNN,79938487
+60,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.57,1657,1291,1374,1287,0.037,0.092,0.443,0.249,TRAFFIC,79966487
+60,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1128,1115,0.038,0.085,0.509,0.312,TRAFFIC,80058487
+60,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,41.22,2530,2416,2377,2402,0.036,0.095,0.512,0.328,GNN,79970887
+60,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.6,1221,1011,991,1118,0.03,0.083,0.547,0.247,GNN,79913487
+60,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.025,0.079,0.472,0.095,TIE,79986160
+60,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.95,237,237,237,234,0.025,0.077,0.506,0.079,TIE,79974160
+60,Station to centre,Car crashes in Lazdynai,True,1.69,7.31,453,424,424,421,0.025,0.077,0.46,0.118,TIE,79969360
+60,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.026,0.077,0.489,0.086,TIE,79997360
+60,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,14.78,1053,720,1013,1091,0.027,0.223,0.509,0.405,TRAFFIC,79992260
+60,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.57,673,596,665,756,0.028,0.078,0.477,0.256,TRAFFIC,80001660
+60,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.66,759,760,742,779,0.028,0.077,0.499,0.33,GNN,80012160
+60,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,17.65,1114,1004,1073,1161,0.034,0.079,0.479,0.294,TRAFFIC,79998960
+60,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.12,785,790,736,808,0.03,0.121,0.512,0.3,GNN,80014260
+60,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.51,669,712,790,1039,0.028,0.082,0.469,0.293,TRAFFIC,80030360
+60,West to East,Car crashes in Lazdynai,True,13.05,23.8,1523,1333,1585,1707,0.033,0.086,0.534,0.308,TRAFFIC,80058360
+60,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,987,1107,0.032,0.087,0.505,0.305,TRAFFIC,80033360
+60,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,929,0.04,0.089,0.505,0.308,TIE,79998360
+60,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.42,1404,926,1021,1220,0.042,0.086,0.489,0.299,TRAFFIC,80013560
+60,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.46,1030,1065,1074,1217,0.044,0.079,0.481,0.284,TRAFFIC,80003360
+60,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,16.21,1078,867,862,1035,0.03,0.083,0.471,0.292,GNN,79943360
+60,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1078,1287,0.037,0.088,0.517,0.196,TRAFFIC,79971360
+60,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.16,1920,1099,1118,1876,0.041,0.085,0.464,0.319,TRAFFIC,80063360
+60,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.49,1923,1736,1736,1855,0.037,0.088,0.465,0.306,TIE,79975760
+60,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.13,1079,737,737,741,0.028,0.083,0.437,0.291,TIE,79918360
+60,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,328,328,0.032,0.084,0.493,0.095,TIE,79985718
+60,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.55,453,453,457,421,0.025,0.076,0.503,0.137,TRAFFIC,79968918
+60,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.121,0.082,0.387,0.071,TIE,79996918
+60,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,14.74,1053,716,898,1091,0.028,0.084,0.481,0.305,TRAFFIC,79991818
+60,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,11.03,673,650,598,756,0.026,0.077,0.562,0.151,GNN,80001218
+60,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.52,952,910,903,939,0.03,0.084,0.499,0.292,GNN,80011718
+60,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,19.45,1361,973,1078,1484,0.029,0.081,0.488,0.229,TRAFFIC,79998518
+60,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,13.22,785,801,746,808,0.028,0.08,0.52,0.295,GNN,80013818
+60,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.4,669,699,669,1039,0.028,0.082,0.447,0.307,GNN,80029918
+60,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,23.8,1523,1333,1585,1707,0.033,0.087,0.509,0.302,TRAFFIC,80057918
+60,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,880,1107,0.035,0.08,0.45,0.317,TIE,80032918
+60,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.48,929,929,929,1108,0.029,0.081,0.477,0.291,TIE,79997918
+60,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.11,1116,937,1026,1031,0.032,0.081,0.465,0.313,TRAFFIC,80013118
+60,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.41,1030,1059,1085,1209,0.033,0.089,0.48,0.176,TRAFFIC,80002918
+60,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,15.97,1078,838,838,1035,0.029,0.087,0.49,0.203,TIE,79942918
+60,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.77,1657,1076,1076,1287,0.032,0.089,0.455,0.307,TIE,79970918
+60,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.037,0.084,0.467,0.314,TRAFFIC,80062918
+60,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.18,1923,1699,1782,1855,0.037,0.089,0.455,0.333,TRAFFIC,79975318
+60,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.11,1079,734,734,741,0.033,0.081,0.473,0.285,TIE,79917918
+60,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.55,333,333,333,328,0.027,0.078,0.483,0.084,TIE,79982689
+60,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,4.05,237,249,249,234,0.026,0.075,0.476,0.074,TIE,79970689
+60,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.55,453,453,453,421,0.025,0.095,0.516,0.121,TIE,79965889
+60,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.025,0.091,0.5,0.068,TIE,79993889
+60,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,14.74,1053,716,1009,1091,0.03,0.181,0.502,0.404,TRAFFIC,79988789
+60,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.57,673,596,598,756,0.025,0.075,0.522,0.248,TRAFFIC,79998189
+60,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.4,759,729,731,779,0.028,0.079,0.516,0.339,TRAFFIC,80008689
+60,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.04,1114,1051,1094,1161,0.03,0.081,0.468,0.299,TRAFFIC,79995489
+60,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,12.8,785,751,736,808,0.028,0.08,0.476,0.194,GNN,80010789
+60,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.41,669,700,691,911,0.029,0.078,0.478,0.292,GNN,80026889
+60,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,25.05,1523,1483,1488,1707,0.033,0.087,0.466,0.304,TRAFFIC,80054889
+60,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,882,1107,0.053,0.087,0.548,0.306,TRAFFIC,80029889
+60,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.48,929,929,929,1108,0.03,0.081,0.487,0.3,TIE,79994889
+60,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.42,1404,926,1026,1220,0.031,0.084,0.495,0.303,TRAFFIC,80010089
+60,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.17,1030,1030,1040,1217,0.033,0.08,0.45,0.298,TRAFFIC,79999889
+60,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,16.17,1078,862,862,1035,0.03,0.083,0.49,0.293,TIE,79939889
+60,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1075,1287,0.033,0.082,0.511,0.203,TRAFFIC,79967889
+60,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1109,1876,0.043,0.085,0.487,0.317,TRAFFIC,80059889
+60,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.28,1923,1711,1789,1855,0.041,0.083,0.478,0.318,TRAFFIC,79972289
+60,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,730,737,0.029,0.093,0.471,0.293,TIE,79914889
+60,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,355,328,0.027,0.091,0.456,0.075,TRAFFIC,79985134
+60,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.95,237,237,249,237,0.026,0.076,0.501,0.093,TRAFFIC,79973134
+60,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.025,0.075,0.486,0.124,TIE,79968334
+60,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.03,0.186,0.508,0.1,TIE,79996334
+60,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,14.74,1053,716,895,1122,0.029,0.079,0.474,0.209,TRAFFIC,79991234
+60,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.59,673,598,596,756,0.027,0.077,0.504,0.247,GNN,80000634
+60,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,13.14,759,818,748,774,0.029,0.086,0.551,0.301,GNN,80011134
+60,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,17.98,1114,1044,1044,1161,0.029,0.087,0.482,0.293,TIE,79997934
+60,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.97,785,771,802,808,0.029,0.086,0.497,0.185,TRAFFIC,80013234
+60,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.51,669,712,691,1039,0.029,0.078,0.497,0.297,GNN,80029334
+60,West to East,Vingis park concert congestions + road closure,True,13.05,24.83,1523,1457,1488,1707,0.033,0.086,0.474,0.306,TRAFFIC,80057334
+60,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,880,1107,0.034,0.085,0.487,0.305,TIE,80032334
+60,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.48,929,929,929,1108,0.033,0.081,0.481,0.295,TIE,79997334
+60,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.42,1404,926,940,1220,0.035,0.081,0.488,0.303,TRAFFIC,80012534
+60,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.17,1030,1030,1085,1209,0.037,0.085,0.462,0.303,TRAFFIC,80002334
+60,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,15.97,1078,838,838,1035,0.029,0.08,0.464,0.294,TIE,79942334
+60,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.23,1716,1072,1101,1287,0.03,0.088,0.444,0.193,TRAFFIC,79970334
+60,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.16,1920,1099,1126,1876,0.037,0.081,0.488,0.324,TRAFFIC,80062334
+60,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.18,1923,1698,1849,1855,0.036,0.086,0.536,0.327,TRAFFIC,79974734
+60,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,733,741,0.031,0.081,0.453,0.353,TRAFFIC,79917334
+50,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.024,0.171,0.487,0.195,TIE,79982119
+50,Gediminas Ave,Normal traffic,False,1.08,3.92,237,234,249,234,0.025,0.078,0.46,0.089,TRAFFIC,79970119
+50,Station to centre,Normal traffic,False,1.69,7.28,453,421,421,421,0.025,0.083,0.481,0.1,TIE,79965319
+50,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.025,0.074,0.466,0.086,TIE,79993319
+50,Zirmunai to Naujamiestis,Normal traffic,False,5.68,15.86,1053,850,951,1091,0.033,0.082,0.432,0.354,TRAFFIC,79988219
+50,Antakalnis to centre,Normal traffic,False,3.93,10.59,673,598,695,756,0.028,0.075,0.433,0.227,TRAFFIC,79997619
+50,Seskine to Old Town,Normal traffic,False,6.05,12.98,759,799,742,774,0.027,0.175,0.45,0.358,GNN,80008119
+50,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.59,1114,1117,1060,1161,0.034,0.092,0.471,0.29,GNN,79994919
+50,Justiniskes to centre,Normal traffic,False,6.61,13.57,785,844,736,808,0.028,0.179,0.491,0.436,GNN,80010219
+50,Fabijoniskes to river,Normal traffic,False,6.13,11.89,669,758,700,1039,0.031,0.08,0.428,0.295,GNN,80026319
+50,West to East,Normal traffic,False,13.05,24.83,1523,1457,1592,1707,0.036,0.166,0.477,0.304,TRAFFIC,80054319
+50,North to South,Normal traffic,False,11.58,17.51,1221,880,950,1107,0.036,0.08,0.555,0.309,TRAFFIC,80029319
+50,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.48,929,929,929,1108,0.029,0.102,0.494,0.299,TIE,79994319
+50,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.52,1404,938,1069,1220,0.031,0.084,0.487,0.32,TRAFFIC,80009519
+50,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.25,1030,1040,1040,1217,0.031,0.082,0.483,0.299,TIE,79999319
+50,Lazdynai to Jeruzale,Normal traffic,False,9.79,16.02,1078,844,838,1035,0.034,0.082,0.483,0.305,GNN,79939319
+50,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1076,1287,0.031,0.082,0.458,0.302,TRAFFIC,79967319
+50,Ring road W to E,Normal traffic,False,16.35,25.29,1920,1115,1118,1876,0.04,0.188,0.485,0.421,TRAFFIC,80059319
+50,Grigiskes to Verkiai,Normal traffic,False,24.31,30.2,1923,1701,1839,1855,0.036,0.082,0.579,0.319,TRAFFIC,79971719
+50,Salininkai to Seskine,Normal traffic,False,9.3,15.1,1079,733,812,741,0.039,0.077,0.476,0.292,TRAFFIC,79914319
+50,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,333,328,0.025,0.079,0.467,0.093,TRAFFIC,79980287
+50,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,4.05,237,249,249,237,0.025,0.081,0.484,0.112,TIE,79968287
+50,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.31,453,424,457,421,0.026,0.082,0.552,0.095,TRAFFIC,79963487
+50,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.026,0.084,0.543,0.092,TIE,79991487
+50,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.42,1095,875,1075,1335,0.031,0.081,0.475,0.179,TRAFFIC,79986387
+50,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.23,1045,1023,1023,1350,0.028,0.08,0.529,0.156,TIE,79995787
+50,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,15.07,892,916,879,1010,0.027,0.078,0.478,0.291,GNN,80006287
+50,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,18.9,1161,1107,1174,1165,0.029,0.085,0.502,0.305,TRAFFIC,79993087
+50,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,14.88,887,898,873,898,0.028,0.076,0.438,0.296,GNN,80008387
+50,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.7,669,735,691,1039,0.026,0.08,0.508,0.29,GNN,80024487
+50,West to East,all bridges old town destroyed_optimistic,True,13.05,23.8,1523,1333,1577,1707,0.032,0.088,0.466,0.306,TRAFFIC,80052487
+50,North to South,all bridges old town destroyed_optimistic,True,11.93,22.25,1375,1295,1258,1500,0.038,0.084,0.488,0.307,GNN,80027487
+50,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.55,929,937,929,1108,0.03,0.079,0.494,0.195,GNN,79992487
+50,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.12,1116,938,1010,1031,0.03,0.082,0.569,0.305,TRAFFIC,80007687
+50,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.5,1030,1070,1074,1217,0.031,0.084,0.487,0.3,TRAFFIC,79997487
+50,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.43,1078,1014,1014,1035,0.03,0.081,0.478,0.294,TIE,79937487
+50,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,25.96,1657,1458,1456,1287,0.029,0.082,0.511,0.216,GNN,79965487
+50,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.4,1109,1099,1115,1115,0.037,0.088,0.494,0.313,TRAFFIC,80057487
+50,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,40.02,2530,2273,2360,2402,0.035,0.087,0.48,0.321,TRAFFIC,79969887
+50,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.43,1221,991,991,1118,0.031,0.079,0.522,0.288,TIE,79912487
+50,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.025,0.076,0.492,0.085,TIE,79985160
+50,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.92,237,234,234,234,0.026,0.075,0.498,0.093,TIE,79973160
+50,Station to centre,Car crashes in Lazdynai,True,1.69,7.28,453,421,453,421,0.03,0.085,0.49,0.091,TRAFFIC,79968360
+50,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.026,0.176,0.491,0.099,TIE,79996360
+50,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,14.89,1053,734,903,1091,0.03,0.077,0.476,0.3,TRAFFIC,79991260
+50,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.76,673,618,618,756,0.026,0.083,0.492,0.263,TIE,80000660
+50,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.65,759,759,741,779,0.027,0.083,0.556,0.292,GNN,80011160
+50,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,18.51,1114,1107,1073,1161,0.031,0.083,0.511,0.293,GNN,79997960
+50,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.36,785,818,736,808,0.036,0.077,0.464,0.293,GNN,80013260
+50,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.15,669,669,669,1039,0.033,0.079,0.497,0.197,TIE,80029360
+50,West to East,Car crashes in Lazdynai,True,13.05,23.8,1523,1333,1575,1707,0.039,0.088,0.436,0.254,TRAFFIC,80057360
+50,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,950,1107,0.033,0.08,0.495,0.307,TRAFFIC,80032360
+50,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.029,0.082,0.445,0.297,TIE,79997360
+50,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.48,1404,934,1068,1220,0.03,0.083,0.439,0.305,TRAFFIC,80012560
+50,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.32,1030,1049,1085,1209,0.032,0.081,0.464,0.299,TRAFFIC,80002360
+50,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,15.97,1078,838,838,1035,0.029,0.08,0.478,0.29,TIE,79942360
+50,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1072,1287,0.031,0.08,0.487,0.306,TIE,79970360
+50,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1173,1876,0.041,0.086,0.483,0.315,TRAFFIC,80062360
+50,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.73,1923,1764,1736,1855,0.036,0.084,0.45,0.325,GNN,79974760
+50,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.63,1079,797,734,741,0.029,0.083,0.46,0.186,GNN,79917360
+50,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,333,328,0.025,0.079,0.463,0.075,TRAFFIC,79984718
+50,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.28,453,421,424,421,0.025,0.08,0.483,0.128,TRAFFIC,79967918
+50,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.027,0.079,0.572,0.091,TIE,79995918
+50,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,15.24,1053,776,958,1091,0.14,0.081,0.478,0.306,TRAFFIC,79990818
+50,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,10.59,673,598,598,756,0.03,0.091,0.459,0.227,TIE,80000218
+50,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.68,952,929,920,939,0.029,0.075,0.474,0.294,GNN,80010718
+50,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,19.71,1361,1004,1088,1484,0.031,0.083,0.521,0.293,TRAFFIC,79997518
+50,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.8,785,751,748,808,0.035,0.089,0.484,0.3,GNN,80012818
+50,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.32,669,690,690,992,0.028,0.076,0.509,0.299,TIE,80028918
+50,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,24.83,1523,1457,1585,1707,0.033,0.089,0.528,0.306,TRAFFIC,80056918
+50,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,880,1107,0.033,0.08,0.485,0.311,TIE,80031918
+50,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.48,929,929,929,1108,0.032,0.092,0.467,0.296,TIE,79996918
+50,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.02,1116,926,1069,1031,0.034,0.09,0.508,0.321,TRAFFIC,80012118
+50,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.82,1030,1108,1085,1209,0.033,0.082,0.461,0.305,GNN,80001918
+50,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,15.97,1078,838,842,1035,0.03,0.08,0.463,0.296,TRAFFIC,79941918
+50,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,23.64,1657,1180,1267,1287,0.03,0.088,0.481,0.225,TRAFFIC,79969918
+50,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.04,0.08,0.479,0.307,TRAFFIC,80061918
+50,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.53,1923,1741,1737,1855,0.037,0.086,0.476,0.321,GNN,79974318
+50,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.63,1079,797,816,741,0.03,0.079,0.447,0.191,TRAFFIC,79916918
+50,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,333,328,0.028,0.073,0.472,0.098,TRAFFIC,79981689
+50,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,234,234,0.024,0.074,0.489,0.09,TIE,79969689
+50,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.55,453,453,453,421,0.025,0.083,0.499,0.123,TIE,79964889
+50,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.025,0.09,0.491,0.088,TIE,79992889
+50,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,14.74,1053,716,911,1091,0.031,0.182,0.479,0.401,TRAFFIC,79987789
+50,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.57,673,596,596,756,0.026,0.078,0.527,0.248,TIE,79997189
+50,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.56,759,748,731,779,0.028,0.084,0.527,0.297,GNN,80007689
+50,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.43,1114,1098,1073,1161,0.03,0.076,0.485,0.289,GNN,79994489
+50,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.22,785,801,736,808,0.028,0.078,0.502,0.291,GNN,80009789
+50,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.5,669,711,669,1039,0.029,0.078,0.483,0.296,GNN,80025889
+50,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,23.81,1523,1334,1522,1707,0.038,0.09,0.487,0.246,TRAFFIC,80053889
+50,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,950,1107,0.037,0.08,0.486,0.307,TRAFFIC,80028889
+50,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.48,929,929,929,1108,0.041,0.089,0.474,0.212,TIE,79993889
+50,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.57,1404,945,1026,1220,0.031,0.086,0.514,0.301,TRAFFIC,80009089
+50,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.22,1030,1036,1085,1209,0.033,0.082,0.469,0.3,TRAFFIC,79998889
+50,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,16.02,1078,844,838,1035,0.03,0.081,0.476,0.299,GNN,79938889
+50,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1078,1287,0.038,0.081,0.516,0.313,TRAFFIC,79966889
+50,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1126,1876,0.038,0.085,0.466,0.323,TRAFFIC,80058889
+50,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.49,1923,1736,1736,1855,0.036,0.083,0.443,0.323,TIE,79971289
+50,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.17,1079,741,812,737,0.029,0.088,0.465,0.289,TRAFFIC,79913889
+50,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.027,0.075,0.497,0.074,TIE,79984134
+50,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.95,237,237,237,234,0.026,0.079,0.493,0.091,TIE,79972134
+50,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.027,0.074,0.492,0.121,TIE,79967334
+50,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.025,0.189,0.465,0.124,TIE,79995334
+50,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,15.79,1053,842,948,1122,0.029,0.08,0.446,0.314,TRAFFIC,79990234
+50,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,11.95,673,761,617,756,0.026,0.079,0.478,0.259,GNN,79999634
+50,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.72,759,767,731,779,0.028,0.078,0.609,0.292,GNN,80010134
+50,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.58,1114,1116,1100,1161,0.034,0.092,0.49,0.292,GNN,79996934
+50,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.97,785,771,730,808,0.029,0.081,0.479,0.3,GNN,80012234
+50,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.5,669,711,669,1039,0.028,0.074,0.489,0.298,GNN,80028334
+50,West to East,Vingis park concert congestions + road closure,True,13.05,24.83,1523,1457,1585,1707,0.033,0.085,0.444,0.31,TRAFFIC,80056334
+50,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,890,1107,0.033,0.088,0.499,0.179,TRAFFIC,80031334
+50,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.48,929,929,929,1108,0.028,0.081,0.437,0.292,TIE,79996334
+50,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.43,1404,927,1079,1220,0.03,0.083,0.448,0.297,TRAFFIC,80011534
+50,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.64,1030,1087,1085,1209,0.029,0.084,0.481,0.298,GNN,80001334
+50,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.21,1078,867,862,1035,0.029,0.079,0.469,0.292,GNN,79941334
+50,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.23,1716,1072,1072,1287,0.03,0.081,0.473,0.303,TIE,79969334
+50,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1126,1876,0.045,0.084,0.464,0.202,TRAFFIC,80061334
+50,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.49,1923,1736,1699,1855,0.036,0.081,0.485,0.314,GNN,79973734
+50,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,733,737,0.03,0.08,0.482,0.3,TRAFFIC,79916334
+40,Old Town loop,Normal traffic,False,1.53,5.51,333,328,355,328,0.026,0.165,0.539,0.209,TRAFFIC,79981119
+40,Gediminas Ave,Normal traffic,False,1.08,3.92,237,234,249,234,0.025,0.079,0.461,0.089,TRAFFIC,79969119
+40,Station to centre,Normal traffic,False,1.69,7.28,453,421,424,421,0.027,0.09,0.456,0.134,TRAFFIC,79964319
+40,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.026,0.075,0.456,0.083,TIE,79992319
+40,Zirmunai to Naujamiestis,Normal traffic,False,5.68,17.37,1053,1031,984,1091,0.028,0.083,0.488,0.363,GNN,79987219
+40,Antakalnis to centre,Normal traffic,False,3.93,11.04,673,652,659,756,0.031,0.075,0.466,0.228,TRAFFIC,79996619
+40,Seskine to Old Town,Normal traffic,False,6.05,12.61,759,754,762,779,0.028,0.189,0.484,0.346,TRAFFIC,80007119
+40,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.58,1114,1116,1109,1161,0.033,0.08,0.454,0.299,GNN,79993919
+40,Justiniskes to centre,Normal traffic,False,6.61,13.95,785,889,740,808,0.028,0.207,0.437,0.364,GNN,80009219
+40,Fabijoniskes to river,Normal traffic,False,6.13,11.7,669,735,669,992,0.031,0.077,0.418,0.302,GNN,80025319
+40,West to East,Normal traffic,False,13.05,24.83,1523,1457,1567,1707,0.034,0.171,0.482,0.399,TRAFFIC,80053319
+40,North to South,Normal traffic,False,11.58,17.51,1221,880,950,1107,0.032,0.079,0.502,0.304,TRAFFIC,80028319
+40,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.48,929,929,929,929,0.03,0.075,0.481,0.291,TIE,79993319
+40,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.52,1404,938,1026,1220,0.029,0.081,0.499,0.299,TRAFFIC,80008519
+40,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.23,1030,1038,1085,1209,0.03,0.08,0.459,0.293,TRAFFIC,79998319
+40,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,862,1035,0.029,0.079,0.473,0.308,TRAFFIC,79938319
+40,South to Northeast,Normal traffic,False,11.13,23.26,1716,1075,1072,1287,0.03,0.078,0.461,0.299,GNN,79966319
+40,Ring road W to E,Normal traffic,False,16.35,25.16,1920,1099,1115,1876,0.037,0.179,0.472,0.418,TRAFFIC,80058319
+40,Grigiskes to Verkiai,Normal traffic,False,24.31,30.68,1923,1759,1835,1855,0.035,0.083,0.581,0.323,TRAFFIC,79970719
+40,Salininkai to Seskine,Normal traffic,False,9.3,15.13,1079,737,812,741,0.029,0.077,0.506,0.288,TRAFFIC,79913319
+40,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,360,328,0.025,0.075,0.459,0.092,TRAFFIC,79979287
+40,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,4.05,237,249,249,234,0.025,0.073,0.525,0.094,TIE,79967287
+40,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.58,453,457,457,421,0.025,0.09,0.57,0.128,TIE,79962487
+40,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.029,0.084,0.48,0.072,TIE,79990487
+40,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.38,1095,870,1123,1335,0.033,0.077,0.445,0.297,TRAFFIC,79985387
+40,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.39,1045,1042,1036,1350,0.029,0.078,0.508,0.227,GNN,79994787
+40,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,15.07,892,917,879,1010,0.028,0.08,0.49,0.294,GNN,80005287
+40,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,17.79,1161,974,1174,1165,0.029,0.079,0.502,0.289,TRAFFIC,79992087
+40,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,16.52,887,1096,883,898,0.029,0.079,0.434,0.291,GNN,80007387
+40,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.32,669,690,669,1039,0.027,0.077,0.477,0.182,GNN,80023487
+40,West to East,all bridges old town destroyed_optimistic,True,13.05,24.9,1523,1465,1487,1707,0.034,0.093,0.483,0.319,TRAFFIC,80051487
+40,North to South,all bridges old town destroyed_optimistic,True,11.93,22.29,1375,1300,1307,1500,0.034,0.086,0.494,0.306,TRAFFIC,80026487
+40,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.48,929,929,929,1108,0.028,0.088,0.489,0.29,TIE,79991487
+40,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.12,1116,938,1084,1031,0.03,0.082,0.46,0.3,TRAFFIC,80006687
+40,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,18.34,1030,1171,1085,1209,0.033,0.082,0.467,0.291,GNN,79996487
+40,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,16.65,1078,920,1024,1035,0.035,0.086,0.479,0.295,TRAFFIC,79936487
+40,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.53,1657,1287,1484,1287,0.03,0.083,0.493,0.344,TRAFFIC,79964487
+40,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1115,1115,0.039,0.082,0.459,0.307,TRAFFIC,80056487
+40,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,43.14,2530,2647,2361,2402,0.044,0.089,0.466,0.33,GNN,79968887
+40,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,18.43,1221,991,1088,1118,0.035,0.084,0.499,0.301,TRAFFIC,79911487
+40,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,333,328,0.025,0.081,0.432,0.096,TRAFFIC,79984160
+40,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.92,237,234,234,234,0.025,0.073,0.494,0.091,TIE,79972160
+40,Station to centre,Car crashes in Lazdynai,True,1.69,7.31,453,424,424,421,0.03,0.079,0.49,0.091,TIE,79967360
+40,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.024,0.188,0.479,0.098,TIE,79995360
+40,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,16.43,1053,918,902,1122,0.028,0.08,0.46,0.322,GNN,79990260
+40,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,11.38,673,693,695,756,0.026,0.077,0.497,0.226,TRAFFIC,79999660
+40,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.88,759,786,731,779,0.03,0.077,0.571,0.249,GNN,80010160
+40,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,18.77,1114,1139,1071,1161,0.03,0.087,0.502,0.3,GNN,79996960
+40,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,12.97,785,771,736,808,0.029,0.08,0.449,0.181,GNN,80012260
+40,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.51,669,712,691,1039,0.027,0.077,0.514,0.306,GNN,80028360
+40,West to East,Car crashes in Lazdynai,True,13.05,24.83,1523,1457,1585,1707,0.043,0.085,0.469,0.308,TRAFFIC,80056360
+40,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,880,1107,0.036,0.086,0.461,0.308,TIE,80031360
+40,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.039,0.083,0.474,0.298,TIE,79996360
+40,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.42,1404,926,1069,1220,0.029,0.078,0.453,0.303,TRAFFIC,80011560
+40,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,18.07,1030,1139,1074,1209,0.03,0.082,0.467,0.304,GNN,80001360
+40,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,16.21,1078,867,865,1035,0.03,0.079,0.458,0.239,GNN,79941360
+40,South to Northeast,Car crashes in Lazdynai,True,11.13,23.26,1716,1075,1072,1287,0.031,0.08,0.455,0.308,GNN,79969360
+40,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.16,1920,1099,1115,1876,0.037,0.08,0.484,0.325,TRAFFIC,80061360
+40,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.2,1923,1701,1702,1855,0.046,0.084,0.463,0.323,TIE,79973760
+40,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.11,1079,734,734,741,0.029,0.083,0.46,0.294,TIE,79916360
+40,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,360,328,0.025,0.083,0.458,0.094,TRAFFIC,79983718
+40,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.58,453,457,457,421,0.026,0.071,0.474,0.136,TIE,79966918
+40,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.026,0.075,0.555,0.092,TIE,79994918
+40,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,15.28,1053,780,965,1091,0.115,0.075,0.368,0.168,TRAFFIC,79989818
+40,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,12.75,673,857,695,756,0.026,0.078,0.459,0.204,GNN,79999218
+40,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,16.67,952,1048,913,939,0.028,0.077,0.466,0.291,GNN,80009718
+40,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,22.51,1361,1340,1320,1484,0.029,0.082,0.496,0.292,GNN,79996518
+40,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.97,785,771,745,808,0.028,0.076,0.484,0.293,GNN,80011818
+40,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.88,669,757,669,1039,0.028,0.079,0.47,0.307,GNN,80027918
+40,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,24.88,1523,1463,1428,1707,0.033,0.082,0.493,0.31,GNN,80055918
+40,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,960,1107,0.032,0.078,0.462,0.316,TRAFFIC,80030918
+40,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,16.16,929,1010,929,1108,0.032,0.079,0.484,0.295,GNN,79995918
+40,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,18.96,1116,1159,1073,1031,0.04,0.082,0.504,0.299,GNN,80011118
+40,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.27,1030,1042,1085,1209,0.031,0.076,0.466,0.295,TRAFFIC,80000918
+40,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,16.21,1078,867,862,1035,0.03,0.079,0.438,0.296,GNN,79940918
+40,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.74,1657,1072,1072,1287,0.03,0.082,0.474,0.304,TIE,79968918
+40,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.038,0.083,0.458,0.313,TRAFFIC,80060918
+40,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.49,1923,1736,1746,1855,0.036,0.082,0.483,0.224,TRAFFIC,79973318
+40,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.26,1079,752,734,741,0.029,0.079,0.486,0.3,GNN,79915918
+40,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.026,0.075,0.523,0.095,TIE,79980689
+40,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,234,234,0.025,0.074,0.577,0.097,TIE,79968689
+40,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.31,453,424,424,421,0.026,0.1,0.513,0.123,TIE,79963889
+40,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.025,0.082,0.464,0.071,TIE,79991889
+40,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,16.15,1053,885,931,1091,0.027,0.171,0.484,0.397,TRAFFIC,79986789
+40,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.59,673,598,693,668,0.026,0.075,0.549,0.167,TRAFFIC,79996189
+40,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.4,759,729,845,779,0.028,0.079,0.527,0.3,TRAFFIC,80006689
+40,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.51,1114,1107,1100,1161,0.03,0.08,0.467,0.292,GNN,79993489
+40,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.4,785,823,737,808,0.029,0.077,0.532,0.254,GNN,80008789
+40,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.7,669,735,691,1039,0.028,0.077,0.478,0.291,GNN,80024889
+40,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,25.47,1523,1533,1593,1707,0.033,0.087,0.462,0.308,TRAFFIC,80052889
+40,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,960,1107,0.032,0.079,0.461,0.302,TRAFFIC,80027889
+40,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.48,929,929,929,1108,0.029,0.081,0.492,0.291,TIE,79992889
+40,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.52,1404,938,1084,1220,0.031,0.077,0.494,0.303,TRAFFIC,80008089
+40,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,18.43,1030,1182,1074,1209,0.03,0.084,0.444,0.26,GNN,79997889
+40,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,15.97,1078,838,842,1035,0.029,0.078,0.476,0.288,TRAFFIC,79937889
+40,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.26,1716,1075,1072,1287,0.031,0.085,0.487,0.3,GNN,79965889
+40,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1116,1876,0.039,0.08,0.484,0.327,TRAFFIC,80057889
+40,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.49,1923,1736,1835,1855,0.037,0.084,0.485,0.317,TRAFFIC,79970289
+40,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.11,1079,734,734,741,0.03,0.075,0.457,0.29,TIE,79912889
+40,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.025,0.075,0.479,0.1,TIE,79983134
+40,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.95,237,237,237,237,0.026,0.075,0.497,0.09,TIE,79971134
+40,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.28,453,421,421,421,0.025,0.084,0.494,0.093,TIE,79966334
+40,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.025,0.185,0.527,0.1,TIE,79994334
+40,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,16.6,1053,939,855,1091,0.027,0.077,0.454,0.217,GNN,79989234
+40,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,11.15,673,665,598,668,0.026,0.074,0.498,0.183,GNN,79998634
+40,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.65,759,759,762,779,0.028,0.075,0.486,0.237,TRAFFIC,80009134
+40,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.12,1114,1061,1100,1161,0.029,0.081,0.458,0.25,TRAFFIC,79995934
+40,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.83,785,755,840,808,0.03,0.077,0.466,0.295,TRAFFIC,80011234
+40,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.5,669,711,690,1039,0.028,0.078,0.496,0.298,GNN,80027334
+40,West to East,Vingis park concert congestions + road closure,True,13.05,23.81,1523,1334,1585,1707,0.037,0.083,0.468,0.306,TRAFFIC,80055334
+40,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,961,1107,0.033,0.079,0.464,0.305,TRAFFIC,80030334
+40,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.48,929,929,929,1108,0.029,0.075,0.436,0.29,TIE,79995334
+40,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.52,1404,938,1015,1220,0.031,0.076,0.452,0.296,TRAFFIC,80010534
+40,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,18.07,1030,1139,1085,1209,0.031,0.081,0.462,0.292,GNN,80000334
+40,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.21,1078,867,862,1035,0.03,0.076,0.467,0.304,GNN,79940334
+40,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.28,1716,1078,1078,1287,0.031,0.079,0.463,0.308,TIE,79968334
+40,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.29,1920,1115,1115,1876,0.038,0.08,0.465,0.32,TIE,80060334
+40,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.23,1923,1705,1705,1855,0.036,0.083,0.504,0.318,TIE,79972734
+40,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,733,741,0.029,0.081,0.451,0.297,TRAFFIC,79915334
+30,Old Town loop,Normal traffic,False,1.53,5.51,333,328,333,328,0.029,0.168,0.457,0.198,TRAFFIC,79980119
+30,Gediminas Ave,Normal traffic,False,1.08,4.05,237,249,237,234,0.025,0.07,0.441,0.094,GNN,79968119
+30,Station to centre,Normal traffic,False,1.69,7.55,453,453,453,421,0.024,0.084,0.455,0.143,TIE,79963319
+30,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.025,0.073,0.477,0.073,TIE,79991319
+30,Zirmunai to Naujamiestis,Normal traffic,False,5.68,15.81,1053,844,1000,1091,0.027,0.08,0.461,0.366,TRAFFIC,79986219
+30,Antakalnis to centre,Normal traffic,False,3.93,11.75,673,737,618,756,0.026,0.075,0.433,0.173,GNN,79995619
+30,Seskine to Old Town,Normal traffic,False,6.05,12.83,759,781,739,779,0.028,0.198,0.477,0.331,GNN,80006119
+30,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.04,1114,1051,1083,1161,0.029,0.084,0.467,0.231,TRAFFIC,79992919
+30,Justiniskes to centre,Normal traffic,False,6.61,13.22,785,801,807,808,0.029,0.168,0.481,0.433,TRAFFIC,80008219
+30,Fabijoniskes to river,Normal traffic,False,6.13,11.7,669,735,669,1039,0.033,0.08,0.404,0.299,GNN,80024319
+30,West to East,Normal traffic,False,13.05,24.96,1523,1472,1591,1707,0.032,0.165,0.48,0.402,TRAFFIC,80052319
+30,North to South,Normal traffic,False,11.58,17.51,1221,880,960,1107,0.033,0.083,0.565,0.306,TRAFFIC,80027319
+30,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.48,929,929,929,1108,0.029,0.075,0.473,0.294,TIE,79992319
+30,Lazdynai to Antakalnis,Normal traffic,False,10.11,19.43,1404,927,1084,1220,0.03,0.078,0.546,0.308,TRAFFIC,80007519
+30,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.92,1030,1120,1074,1217,0.03,0.08,0.465,0.295,GNN,79997319
+30,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,862,1035,0.032,0.08,0.447,0.226,TRAFFIC,79937319
+30,South to Northeast,Normal traffic,False,11.13,23.28,1716,1078,1078,1287,0.031,0.086,0.469,0.301,TIE,79965319
+30,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1115,1876,0.04,0.181,0.455,0.428,TRAFFIC,80057319
+30,Grigiskes to Verkiai,Normal traffic,False,24.31,31.32,1923,1835,1739,1855,0.038,0.085,0.572,0.321,GNN,79969719
+30,Salininkai to Seskine,Normal traffic,False,9.3,15.67,1079,801,812,737,0.03,0.075,0.491,0.293,TRAFFIC,79912319
+30,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,328,328,0.025,0.074,0.485,0.094,TIE,79978287
+30,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,4.05,237,249,237,237,0.025,0.078,0.485,0.108,GNN,79966287
+30,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.55,453,453,453,421,0.025,0.085,0.553,0.121,TIE,79961487
+30,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.032,0.075,0.582,0.084,TIE,79989487
+30,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,17.05,1095,951,947,1335,0.033,0.08,0.467,0.297,GNN,79984387
+30,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.23,1045,1023,1074,1350,0.028,0.079,0.461,0.227,TRAFFIC,79993787
+30,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,15.08,892,918,878,1010,0.03,0.073,0.509,0.293,GNN,80004287
+30,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,20.02,1161,1241,1101,1165,0.033,0.114,0.474,0.294,GNN,79991087
+30,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,14.88,887,898,873,898,0.029,0.076,0.453,0.289,GNN,80006387
+30,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.7,669,735,669,1039,0.027,0.08,0.493,0.291,GNN,80022487
+30,West to East,all bridges old town destroyed_optimistic,True,13.05,24.83,1523,1457,1593,1707,0.032,0.085,0.453,0.302,TRAFFIC,80050487
+30,North to South,all bridges old town destroyed_optimistic,True,11.93,22.27,1375,1298,1272,1500,0.034,0.082,0.509,0.303,GNN,80025487
+30,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,16.16,929,1010,929,1108,0.033,0.083,0.471,0.294,GNN,79990487
+30,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,18.2,1116,1068,1073,1031,0.031,0.078,0.514,0.3,TRAFFIC,80005687
+30,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,18.43,1030,1182,1085,1209,0.03,0.08,0.467,0.296,GNN,79995487
+30,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.89,1078,1069,995,1035,0.036,0.082,0.481,0.294,GNN,79935487
+30,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,24.53,1657,1287,1369,1287,0.032,0.079,0.501,0.273,TRAFFIC,79963487
+30,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1118,1115,0.036,0.086,0.466,0.315,TRAFFIC,80055487
+30,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,40.33,2530,2310,2373,2402,0.037,0.086,0.475,0.213,TRAFFIC,79967887
+30,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,19.24,1221,1088,1217,1118,0.031,0.084,0.485,0.291,TRAFFIC,79910487
+30,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.025,0.081,0.494,0.097,TIE,79983160
+30,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.95,237,237,237,234,0.024,0.073,0.491,0.088,TIE,79971160
+30,Station to centre,Car crashes in Lazdynai,True,1.69,7.28,453,421,421,421,0.025,0.075,0.491,0.154,TIE,79966360
+30,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,431,368,0.025,0.186,0.486,0.098,TRAFFIC,79994360
+30,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,15.76,1053,838,910,1122,0.028,0.08,0.47,0.314,TRAFFIC,79989260
+30,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,10.57,673,596,598,756,0.026,0.074,0.524,0.249,TRAFFIC,79998660
+30,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.83,759,781,741,774,0.028,0.075,0.557,0.298,GNN,80009160
+30,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,18.21,1114,1071,1104,1161,0.029,0.078,0.486,0.299,TRAFFIC,79995960
+30,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.54,785,840,840,808,0.029,0.074,0.473,0.289,TIE,80011260
+30,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.15,669,669,669,1039,0.027,0.075,0.477,0.303,TIE,80027360
+30,West to East,Car crashes in Lazdynai,True,13.05,24.83,1523,1457,1534,1707,0.039,0.082,0.501,0.3,TRAFFIC,80055360
+30,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,950,1107,0.032,0.083,0.481,0.305,TRAFFIC,80030360
+30,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.037,0.085,0.479,0.297,TIE,79995360
+30,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,20.98,1404,1113,1084,1220,0.03,0.075,0.462,0.293,GNN,80010560
+30,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,18.23,1030,1157,1085,1209,0.03,0.078,0.473,0.301,GNN,80000360
+30,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,16.92,1078,952,838,1035,0.029,0.079,0.477,0.299,GNN,79940360
+30,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1075,1287,0.03,0.079,0.474,0.186,TRAFFIC,79968360
+30,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1115,1876,0.036,0.081,0.457,0.206,TRAFFIC,80060360
+30,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.73,1923,1764,1849,1855,0.036,0.081,0.485,0.313,TRAFFIC,79972760
+30,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.1,1079,733,730,741,0.033,0.076,0.474,0.289,GNN,79915360
+30,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,328,328,0.025,0.078,0.465,0.094,TIE,79982718
+30,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.31,453,424,424,421,0.027,0.074,0.472,0.132,TIE,79965918
+30,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.025,0.072,0.552,0.087,TIE,79993918
+30,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,14.74,1053,716,987,1091,0.121,0.076,0.418,0.327,TRAFFIC,79988818
+30,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,11.4,673,695,693,756,0.026,0.076,0.46,0.227,GNN,79998218
+30,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.68,952,929,920,939,0.028,0.077,0.485,0.291,GNN,80008718
+30,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,20.18,1361,1061,1061,1484,0.029,0.081,0.47,0.343,TIE,79995518
+30,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.91,785,764,730,808,0.028,0.086,0.465,0.292,GNN,80010818
+30,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.88,669,757,669,911,0.029,0.073,0.437,0.192,GNN,80026918
+30,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,25.01,1523,1478,1470,1707,0.032,0.077,0.46,0.307,GNN,80054918
+30,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,950,1107,0.034,0.078,0.467,0.313,TRAFFIC,80029918
+30,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.48,929,929,929,1108,0.045,0.088,0.5,0.299,TIE,79994918
+30,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.02,1116,927,1073,1031,0.03,0.074,0.499,0.297,TRAFFIC,80010118
+30,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,18.46,1030,1185,1085,1209,0.03,0.082,0.442,0.303,GNN,79999918
+30,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,16.17,1078,862,865,1035,0.029,0.077,0.553,0.292,TRAFFIC,79939918
+30,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,23.27,1657,1135,1154,1287,0.03,0.083,0.464,0.298,TRAFFIC,79967918
+30,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.037,0.081,0.493,0.322,TRAFFIC,80059918
+30,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.49,1923,1736,1739,1855,0.036,0.09,0.443,0.324,TRAFFIC,79972318
+30,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.11,1079,734,734,741,0.031,0.075,0.455,0.29,TIE,79914918
+30,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.026,0.073,0.447,0.093,TIE,79979689
+30,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,4.05,237,249,237,237,0.025,0.077,0.472,0.09,GNN,79967689
+30,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.28,453,421,424,421,0.025,0.083,0.501,0.123,TRAFFIC,79962889
+30,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.028,0.073,0.45,0.074,TIE,79990889
+30,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,16.85,1053,969,1009,1091,0.027,0.181,0.479,0.318,TRAFFIC,79985789
+30,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,12.12,673,781,663,756,0.026,0.074,0.507,0.24,GNN,79995189
+30,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.9,759,789,741,779,0.028,0.081,0.46,0.317,GNN,80005689
+30,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.62,1114,1121,1082,1161,0.032,0.077,0.462,0.29,GNN,79992489
+30,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.38,785,821,736,808,0.028,0.076,0.433,0.293,GNN,80007789
+30,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.32,669,690,669,1039,0.029,0.077,0.506,0.33,GNN,80023889
+30,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,25.73,1523,1565,1487,1707,0.04,0.084,0.511,0.312,GNN,80051889
+30,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,950,1107,0.035,0.098,0.535,0.312,TRAFFIC,80026889
+30,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,15.48,929,929,929,1108,0.03,0.076,0.49,0.329,TIE,79991889
+30,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,19.43,1404,927,1073,1220,0.031,0.078,0.479,0.281,TRAFFIC,80007089
+30,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.27,1030,1042,1074,1209,0.031,0.076,0.453,0.293,TRAFFIC,79996889
+30,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,16.17,1078,862,862,1035,0.033,0.076,0.524,0.295,TIE,79936889
+30,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1072,1287,0.031,0.076,0.454,0.299,TIE,79964889
+30,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.29,1920,1115,1115,1876,0.039,0.085,0.456,0.363,TIE,80056889
+30,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.49,1923,1736,1835,1855,0.038,0.083,0.469,0.361,TRAFFIC,79969289
+30,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.67,1079,801,812,741,0.031,0.079,0.539,0.204,TRAFFIC,79911889
+30,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,333,328,0.031,0.077,0.584,0.093,TRAFFIC,79982134
+30,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.92,237,234,249,234,0.025,0.073,0.502,0.097,TRAFFIC,79970134
+30,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.024,0.07,0.457,0.086,TIE,79965334
+30,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.024,0.178,0.509,0.097,TIE,79993334
+30,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,15.24,1053,776,895,1122,0.026,0.079,0.451,0.167,TRAFFIC,79988234
+30,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.76,673,618,617,756,0.028,0.076,0.51,0.264,TIE,79997634
+30,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.56,759,748,741,774,0.028,0.077,0.541,0.293,GNN,80008134
+30,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.58,1114,1116,1056,1161,0.031,0.08,0.503,0.3,GNN,79994934
+30,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,13.15,785,793,730,808,0.031,0.076,0.49,0.292,GNN,80010234
+30,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.81,669,748,669,1039,0.029,0.087,0.502,0.3,GNN,80026334
+30,West to East,Vingis park concert congestions + road closure,True,13.05,25.67,1523,1557,1585,1707,0.033,0.089,0.483,0.336,TRAFFIC,80054334
+30,North to South,Vingis park concert congestions + road closure,True,11.58,17.82,1221,917,960,1107,0.033,0.087,0.454,0.308,TRAFFIC,80029334
+30,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.55,929,937,929,929,0.03,0.08,0.494,0.293,GNN,79994334
+30,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,19.52,1404,938,1015,1220,0.05,0.077,0.52,0.306,TRAFFIC,80009534
+30,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.93,1030,1122,1085,1209,0.031,0.076,0.455,0.297,GNN,79999334
+30,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.69,1078,925,862,1035,0.029,0.082,0.482,0.294,GNN,79939334
+30,South to Northeast,Vingis park concert congestions + road closure,True,11.13,23.23,1716,1072,1154,1287,0.03,0.082,0.464,0.308,TRAFFIC,79967334
+30,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1159,1876,0.036,0.081,0.528,0.326,TRAFFIC,80059334
+30,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.18,1923,1698,1842,1815,0.037,0.087,0.478,0.323,TRAFFIC,79971734
+30,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.11,1079,734,733,741,0.03,0.078,0.474,0.29,TIE,79914334
+20,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.024,0.212,0.492,0.18,TIE,79979119
+20,Gediminas Ave,Normal traffic,False,1.08,4.62,237,318,237,237,0.026,0.087,0.46,0.09,GNN,79967119
+20,Station to centre,Normal traffic,False,1.69,8.93,453,619,453,421,0.024,0.079,0.448,0.117,GNN,79962319
+20,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.026,0.07,0.449,0.088,TIE,79990319
+20,Zirmunai to Naujamiestis,Normal traffic,False,5.68,16.54,1053,932,865,1122,0.031,0.077,0.476,0.35,GNN,79985219
+20,Antakalnis to centre,Normal traffic,False,3.93,10.57,673,596,598,668,0.027,0.089,0.476,0.22,TRAFFIC,79994619
+20,Seskine to Old Town,Normal traffic,False,6.05,12.62,759,756,762,779,0.03,0.172,0.452,0.356,TRAFFIC,80005119
+20,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.58,1114,1116,1088,1161,0.032,0.07,0.467,0.301,GNN,79991919
+20,Justiniskes to centre,Normal traffic,False,6.61,14.49,785,954,807,808,0.028,0.183,0.462,0.444,GNN,80007219
+20,Fabijoniskes to river,Normal traffic,False,6.13,11.7,669,735,691,992,0.03,0.066,0.409,0.291,GNN,80023319
+20,West to East,Normal traffic,False,13.05,24.83,1523,1457,1585,1707,0.03,0.152,0.452,0.392,TRAFFIC,80051319
+20,North to South,Normal traffic,False,11.58,17.51,1221,880,950,1107,0.033,0.085,0.535,0.314,TRAFFIC,80026319
+20,Pilaite to Pasilaiciai,Normal traffic,False,9.88,16.16,929,1010,929,1108,0.028,0.076,0.604,0.282,GNN,79991319
+20,Lazdynai to Antakalnis,Normal traffic,False,10.11,21.87,1404,1220,1068,1220,0.029,0.072,0.491,0.22,GNN,80006519
+20,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.26,1030,1041,1085,1217,0.03,0.072,0.579,0.295,TRAFFIC,79996319
+20,Lazdynai to Jeruzale,Normal traffic,False,9.79,16.92,1078,952,862,1035,0.029,0.07,0.493,0.315,GNN,79936319
+20,South to Northeast,Normal traffic,False,11.13,23.23,1716,1072,1154,1287,0.031,0.072,0.415,0.304,TRAFFIC,79964319
+20,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1115,1876,0.042,0.194,0.659,0.42,TRAFFIC,80056319
+20,Grigiskes to Verkiai,Normal traffic,False,24.31,30.49,1923,1736,1842,1855,0.035,0.096,0.62,0.314,TRAFFIC,79968719
+20,Salininkai to Seskine,Normal traffic,False,9.3,15.07,1079,730,730,741,0.046,0.087,0.473,0.305,TIE,79911319
+20,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.55,333,333,333,328,0.024,0.073,0.489,0.074,TIE,79977287
+20,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.92,237,234,234,234,0.041,0.072,0.461,0.109,TIE,79965287
+20,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.55,453,453,457,421,0.024,0.115,0.652,0.146,TRAFFIC,79960487
+20,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.026,0.071,0.604,0.085,TIE,79988487
+20,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,16.45,1095,879,1078,1335,0.026,0.076,0.45,0.303,TRAFFIC,79983387
+20,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,20.98,1045,1473,1025,1350,0.026,0.08,0.452,0.143,GNN,79992787
+20,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,16.52,892,1091,878,1010,0.028,0.089,0.481,0.293,GNN,80003287
+20,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,19.38,1161,1164,1147,1165,0.028,0.074,0.505,0.289,GNN,79990087
+20,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,15.37,887,957,873,898,0.025,0.072,0.53,0.294,GNN,80005387
+20,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.7,669,735,669,1039,0.027,0.065,0.5,0.316,GNN,80021487
+20,West to East,all bridges old town destroyed_optimistic,True,13.05,24.83,1523,1457,1593,1707,0.052,0.081,0.496,0.315,TRAFFIC,80049487
+20,North to South,all bridges old town destroyed_optimistic,True,11.93,22.88,1375,1370,1370,1500,0.031,0.081,0.582,0.311,TIE,80024487
+20,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,17.5,929,1171,929,1108,0.028,0.075,0.499,0.31,GNN,79989487
+20,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,17.11,1116,937,1073,1031,0.03,0.074,0.524,0.297,TRAFFIC,80004687
+20,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.31,1030,1047,1085,1209,0.031,0.075,0.476,0.293,TRAFFIC,79994487
+20,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.32,1078,1001,1001,1035,0.029,0.077,0.476,0.289,TIE,79934487
+20,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,25.98,1657,1461,1461,1287,0.03,0.084,0.527,0.293,TIE,79962487
+20,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1115,1115,0.035,0.083,0.489,0.313,TRAFFIC,80054487
+20,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,43.01,2530,2631,2455,2402,0.035,0.08,0.545,0.322,GNN,79966887
+20,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,21.02,1221,1302,987,1118,0.028,0.082,0.454,0.292,GNN,79909487
+20,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.031,0.075,0.438,0.069,TIE,79982160
+20,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.92,237,234,234,234,0.024,0.072,0.501,0.09,TIE,79970160
+20,Station to centre,Car crashes in Lazdynai,True,1.69,7.28,453,421,421,421,0.025,0.072,0.618,0.12,TIE,79965360
+20,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.025,0.188,0.475,0.097,TIE,79993360
+20,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,15.88,1053,852,984,1091,0.027,0.09,0.469,0.343,TRAFFIC,79988260
+20,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,12.75,673,857,693,756,0.026,0.073,0.494,0.23,GNN,79997660
+20,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.86,759,784,735,779,0.025,0.083,0.476,0.309,GNN,80008160
+20,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,18.52,1114,1109,1071,1161,0.03,0.074,0.456,0.29,GNN,79994960
+20,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.22,785,801,740,808,0.027,0.086,0.439,0.292,GNN,80010260
+20,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.7,669,735,735,1039,0.045,0.075,0.465,0.323,TIE,80026360
+20,West to East,Car crashes in Lazdynai,True,13.05,26.41,1523,1646,1660,1707,0.038,0.085,0.477,0.314,TRAFFIC,80054360
+20,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,952,1107,0.038,0.072,0.527,0.311,TRAFFIC,80029360
+20,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.029,0.073,0.443,0.297,TIE,79994360
+20,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,19.52,1404,938,1079,1220,0.029,0.077,0.437,0.305,TRAFFIC,80009560
+20,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.25,1030,1040,1085,1209,0.037,0.075,0.519,0.294,TRAFFIC,79999360
+20,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,16.17,1078,862,862,1035,0.041,0.078,0.456,0.292,TIE,79939360
+20,South to Northeast,Car crashes in Lazdynai,True,11.13,23.27,1716,1076,1076,1287,0.029,0.076,0.456,0.314,TIE,79967360
+20,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1271,1876,0.033,0.095,0.55,0.321,TRAFFIC,80059360
+20,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.49,1923,1736,1835,1855,0.037,0.078,0.527,0.341,TRAFFIC,79971760
+20,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.07,1079,730,730,737,0.035,0.075,0.472,0.176,TIE,79914360
+20,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,333,328,0.025,0.072,0.484,0.092,TRAFFIC,79981718
+20,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.55,453,453,453,421,0.024,0.081,0.456,0.087,TIE,79964918
+20,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.024,0.089,0.472,0.116,TIE,79992918
+20,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,17.11,1053,1000,946,1091,0.137,0.076,0.403,0.291,GNN,79987818
+20,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,12.12,673,781,618,756,0.026,0.078,0.462,0.255,GNN,79997218
+20,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.85,952,950,897,939,0.038,0.108,0.473,0.319,GNN,80007718
+20,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,21.62,1361,1233,1085,1484,0.029,0.081,0.459,0.291,GNN,79994518
+20,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,13.52,785,837,829,808,0.028,0.07,0.481,0.29,GNN,80009818
+20,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.89,669,758,669,1039,0.045,0.074,0.443,0.343,GNN,80025918
+20,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,24.83,1523,1457,1585,1707,0.032,0.084,0.477,0.22,TRAFFIC,80053918
+20,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,950,1107,0.029,0.088,0.431,0.304,TRAFFIC,80028918
+20,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,16.8,929,1087,929,1108,0.049,0.089,0.425,0.293,GNN,79993918
+20,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,17.02,1116,927,1084,1031,0.049,0.073,0.484,0.321,TRAFFIC,80009118
+20,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.92,1030,1120,1040,1209,0.029,0.077,0.486,0.296,GNN,79998918
+20,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,16.17,1078,862,1056,1035,0.047,0.132,0.68,0.293,TRAFFIC,79938918
+20,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,22.74,1657,1072,1154,1287,0.032,0.078,0.466,0.296,TRAFFIC,79966918
+20,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.059,0.077,0.485,0.309,TRAFFIC,80058918
+20,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.49,1923,1736,1835,1855,0.047,0.08,0.625,0.312,TRAFFIC,79971318
+20,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.11,1079,734,816,741,0.032,0.081,0.493,0.285,TRAFFIC,79913918
+20,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,328,328,0.025,0.067,0.455,0.124,TIE,79978689
+20,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,234,234,0.023,0.066,0.477,0.091,TIE,79966689
+20,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.28,453,421,516,421,0.026,0.072,0.505,0.126,TRAFFIC,79961889
+20,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.027,0.078,0.551,0.089,TIE,79989889
+20,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,15.4,1053,795,984,1091,0.029,0.194,0.531,0.399,TRAFFIC,79984789
+20,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,10.59,673,598,596,756,0.027,0.071,0.482,0.169,GNN,79994189
+20,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,13.0,759,801,870,779,0.027,0.078,0.497,0.211,TRAFFIC,80004689
+20,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.75,1114,1136,1082,1161,0.029,0.075,0.496,0.288,GNN,79991489
+20,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.95,785,889,730,808,0.028,0.075,0.48,0.288,GNN,80006789
+20,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.88,669,757,690,1039,0.028,0.068,0.538,0.285,GNN,80022889
+20,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,24.9,1523,1465,1657,1707,0.03,0.111,0.589,0.311,TRAFFIC,80050889
+20,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,960,1107,0.03,0.085,0.461,0.307,TRAFFIC,80025889
+20,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,16.09,929,1002,929,1108,0.035,0.099,0.464,0.293,GNN,79990889
+20,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,21.45,1404,1170,1079,1220,0.042,0.074,0.511,0.303,GNN,80006089
+20,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,18.43,1030,1182,1085,1209,0.027,0.078,0.478,0.291,GNN,79995889
+20,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,16.17,1078,862,981,1035,0.032,0.075,0.467,0.238,TRAFFIC,79935889
+20,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1573,1287,0.03,0.083,0.502,0.304,TRAFFIC,79963889
+20,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1105,1876,0.052,0.074,0.45,0.314,TIE,80055889
+20,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.49,1923,1736,1835,1855,0.035,0.072,0.44,0.33,TRAFFIC,79968289
+20,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,730,741,0.034,0.084,0.503,0.183,TIE,79910889
+20,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,333,328,0.024,0.11,0.447,0.129,TRAFFIC,79981134
+20,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.92,237,234,234,234,0.025,0.103,0.574,0.094,TIE,79969134
+20,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.024,0.084,0.537,0.121,TIE,79964334
+20,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.024,0.222,0.541,0.097,TIE,79992334
+20,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,16.27,1053,899,895,1091,0.035,0.079,0.457,0.307,GNN,79987234
+20,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,12.38,673,812,596,668,0.042,0.096,0.549,0.235,GNN,79996634
+20,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,13.0,759,801,735,779,0.048,0.074,0.551,0.288,GNN,80007134
+20,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.57,1114,1114,1049,1161,0.029,0.075,0.484,0.308,GNN,79993934
+20,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,12.97,785,771,807,808,0.028,0.071,0.442,0.324,TRAFFIC,80009234
+20,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,12.19,669,794,669,1039,0.039,0.08,0.466,0.313,GNN,80025334
+20,West to East,Vingis park concert congestions + road closure,True,13.05,25.66,1523,1556,1585,1707,0.034,0.084,0.45,0.298,TRAFFIC,80053334
+20,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,950,1107,0.033,0.074,0.522,0.298,TRAFFIC,80028334
+20,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,15.48,929,929,929,1108,0.033,0.076,0.457,0.29,TIE,79993334
+20,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,21.45,1404,1170,1084,1220,0.039,0.082,0.67,0.29,GNN,80008534
+20,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,18.61,1030,1203,1085,1209,0.034,0.074,0.584,0.294,GNN,79998334
+20,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.17,1078,862,862,1035,0.037,0.076,0.514,0.292,TIE,79938334
+20,South to Northeast,Vingis park concert congestions + road closure,True,11.13,24.02,1716,1166,1158,1287,0.032,0.095,0.624,0.298,GNN,79966334
+20,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1115,1876,0.038,0.08,0.441,0.255,TRAFFIC,80058334
+20,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.52,1923,1739,1835,1815,0.035,0.079,0.431,0.225,TRAFFIC,79970734
+20,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.97,1079,838,828,741,0.031,0.077,0.544,0.294,GNN,79913334
+10,Old Town loop,Normal traffic,False,1.53,5.51,333,328,328,328,0.026,0.161,0.467,0.196,TIE,79978119
+10,Gediminas Ave,Normal traffic,False,1.08,4.05,237,249,237,234,0.026,0.071,0.416,0.088,GNN,79966119
+10,Station to centre,Normal traffic,False,1.69,7.58,453,457,457,421,0.025,0.075,0.611,0.131,TIE,79961319
+10,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.026,0.121,0.511,0.068,TIE,79989319
+10,Zirmunai to Naujamiestis,Normal traffic,False,5.68,17.3,1053,1023,895,1091,0.025,0.085,0.437,0.349,GNN,79984219
+10,Antakalnis to centre,Normal traffic,False,3.93,11.04,673,652,652,756,0.043,0.075,0.414,0.126,TIE,79993619
+10,Seskine to Old Town,Normal traffic,False,6.05,13.14,759,818,756,779,0.03,0.164,0.433,0.297,GNN,80004119
+10,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.58,1114,1116,1088,1161,0.028,0.069,0.425,0.209,GNN,79990919
+10,Justiniskes to centre,Normal traffic,False,6.61,13.22,785,801,807,808,0.026,0.173,0.439,0.426,TRAFFIC,80006219
+10,Fabijoniskes to river,Normal traffic,False,6.13,11.7,669,735,669,1039,0.032,0.086,0.382,0.316,GNN,80022319
+10,West to East,Normal traffic,False,13.05,24.83,1523,1457,1554,1707,0.031,0.151,0.466,0.406,TRAFFIC,80050319
+10,North to South,Normal traffic,False,11.58,17.51,1221,880,950,1107,0.05,0.108,0.656,0.34,TRAFFIC,80025319
+10,Pilaite to Pasilaiciai,Normal traffic,False,9.88,15.55,929,937,929,1108,0.034,0.071,0.551,0.277,GNN,79990319
+10,Lazdynai to Antakalnis,Normal traffic,False,10.11,21.0,1404,1116,1115,1220,0.028,0.07,0.555,0.304,TIE,80005519
+10,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.43,1030,1061,1085,1209,0.029,0.082,0.663,0.336,TRAFFIC,79995319
+10,Lazdynai to Jeruzale,Normal traffic,False,9.79,16.17,1078,862,1006,1035,0.028,0.11,0.572,0.351,TRAFFIC,79935319
+10,South to Northeast,Normal traffic,False,11.13,29.82,1716,1862,1717,1287,0.044,0.098,0.502,0.338,GNN,79963319
+10,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1115,1876,0.048,0.2,0.519,0.34,TRAFFIC,80055319
+10,Grigiskes to Verkiai,Normal traffic,False,24.31,30.49,1923,1736,1835,1855,0.036,0.1,0.648,0.256,TRAFFIC,79967719
+10,Salininkai to Seskine,Normal traffic,False,9.3,15.6,1079,793,812,741,0.043,0.075,0.488,0.29,TRAFFIC,79910319
+10,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,328,328,0.03,0.085,0.464,0.094,TIE,79976287
+10,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.92,237,234,237,234,0.031,0.067,0.528,0.095,TRAFFIC,79964287
+10,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.28,453,421,421,421,0.025,0.082,0.514,0.087,TIE,79959487
+10,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.025,0.072,0.568,0.102,TIE,79987487
+10,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,19.36,1095,1228,1072,1335,0.027,0.072,0.442,0.29,GNN,79982387
+10,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.34,1045,1036,1036,1350,0.033,0.093,0.529,0.253,TIE,79991787
+10,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,15.07,892,916,878,1010,0.026,0.073,0.505,0.291,GNN,80002287
+10,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,19.35,1161,1161,1193,1165,0.029,0.081,0.478,0.275,TRAFFIC,79989087
+10,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,15.0,887,913,897,898,0.028,0.07,0.427,0.319,GNN,80004387
+10,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.88,669,757,669,1039,0.024,0.086,0.492,0.312,GNN,80020487
+10,West to East,all bridges old town destroyed_optimistic,True,13.05,27.11,1523,1730,1718,1707,0.051,0.098,0.529,0.211,GNN,80048487
+10,North to South,all bridges old town destroyed_optimistic,True,11.93,22.35,1375,1307,1307,1500,0.031,0.12,0.543,0.2,TIE,80023487
+10,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,15.48,929,929,929,1108,0.047,0.103,0.514,0.341,TIE,79988487
+10,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,19.06,1116,1171,1079,1031,0.028,0.097,0.579,0.308,GNN,80003687
+10,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,18.2,1030,1154,1085,1209,0.036,0.091,0.528,0.316,GNN,79993487
+10,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.51,1078,1023,1023,1035,0.047,0.095,0.445,0.349,TIE,79933487
+10,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,25.98,1657,1461,1369,1287,0.048,0.087,0.519,0.344,GNN,79961487
+10,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1115,1115,0.034,0.07,0.632,0.336,TRAFFIC,80053487
+10,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,42.59,2530,2581,2438,2402,0.054,0.098,0.64,0.358,GNN,79965887
+10,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,20.35,1221,1221,1221,1118,0.029,0.082,0.486,0.175,TIE,79908487
+10,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,333,328,0.027,0.083,0.558,0.104,TRAFFIC,79981160
+10,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.95,237,237,237,234,0.025,0.09,0.65,0.094,TIE,79969160
+10,Station to centre,Car crashes in Lazdynai,True,1.69,8.93,453,619,453,421,0.03,0.08,0.592,0.154,GNN,79964360
+10,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.81,368,449,368,368,0.025,0.068,0.632,0.101,GNN,79992360
+10,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,17.32,1053,1025,1027,1091,0.044,0.217,0.563,0.486,TRAFFIC,79987260
+10,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,12.38,673,812,693,668,0.032,0.091,0.55,0.185,GNN,79996660
+10,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.82,759,779,741,779,0.031,0.107,0.647,0.332,GNN,80007160
+10,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,19.07,1114,1174,1059,1161,0.046,0.07,0.557,0.344,GNN,79993960
+10,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.36,785,818,744,808,0.041,0.116,0.513,0.29,GNN,80009260
+10,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.7,669,735,669,1039,0.044,0.091,0.629,0.291,GNN,80025360
+10,West to East,Car crashes in Lazdynai,True,13.05,24.83,1523,1457,1523,1707,0.03,0.072,0.555,0.342,TRAFFIC,80053360
+10,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,950,1107,0.048,0.067,0.493,0.33,TRAFFIC,80028360
+10,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,15.48,929,929,929,1108,0.047,0.073,0.572,0.236,TIE,79993360
+10,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,21.0,1404,1116,1084,1220,0.048,0.115,0.622,0.291,GNN,80008560
+10,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.64,1030,1087,1085,1209,0.029,0.106,0.592,0.304,GNN,79998360
+10,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,17.43,1078,1014,1078,1035,0.043,0.076,0.559,0.18,TRAFFIC,79938360
+10,South to Northeast,Car crashes in Lazdynai,True,11.13,23.23,1716,1072,1766,1287,0.028,0.067,0.443,0.294,TRAFFIC,79966360
+10,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1271,1876,0.036,0.093,0.549,0.189,TRAFFIC,80058360
+10,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.49,1923,1736,1835,1855,0.033,0.074,0.648,0.216,TRAFFIC,79970760
+10,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,15.6,1079,793,1017,741,0.035,0.073,0.437,0.35,TRAFFIC,79913360
+10,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,328,328,0.041,0.074,0.59,0.111,TIE,79980718
+10,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.55,453,453,453,421,0.041,0.09,0.669,0.144,TIE,79963918
+10,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.028,0.093,0.47,0.083,TIE,79991918
+10,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,17.28,1053,1021,1027,1091,0.025,0.074,0.458,0.337,TRAFFIC,79986818
+10,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,11.04,673,652,673,756,0.034,0.099,0.455,0.234,TRAFFIC,79996218
+10,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.93,952,959,974,939,0.034,0.084,0.494,0.286,TRAFFIC,80006718
+10,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,21.55,1361,1225,1061,1484,0.027,0.088,0.495,0.292,GNN,79993518
+10,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,12.97,785,771,730,808,0.034,0.083,0.521,0.292,GNN,80008818
+10,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.7,669,735,669,1039,0.029,0.081,0.476,0.285,GNN,80024918
+10,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,26.41,1523,1646,1584,1707,0.029,0.086,0.535,0.333,GNN,80052918
+10,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,950,1107,0.03,0.097,0.457,0.328,TRAFFIC,80027918
+10,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,16.09,929,1002,929,1108,0.027,0.074,0.484,0.315,GNN,79992918
+10,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,18.6,1116,1116,1084,1031,0.042,0.093,0.431,0.175,GNN,80008118
+10,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.64,1030,1087,1085,1209,0.027,0.08,0.443,0.155,GNN,79997918
+10,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,15.97,1078,838,1010,1035,0.026,0.114,0.626,0.296,TRAFFIC,79937918
+10,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,24.53,1657,1287,1076,1287,0.028,0.083,0.446,0.342,GNN,79965918
+10,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.035,0.075,0.433,0.297,TRAFFIC,80057918
+10,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.85,1923,1779,1842,1855,0.033,0.095,0.478,0.325,TRAFFIC,79970318
+10,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.07,1079,730,1018,741,0.027,0.068,0.426,0.285,TRAFFIC,79912918
+10,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,333,328,0.024,0.077,0.469,0.087,TRAFFIC,79977689
+10,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,237,234,0.023,0.111,0.486,0.104,TRAFFIC,79965689
+10,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.55,453,453,453,421,0.034,0.063,0.429,0.142,TIE,79960889
+10,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.024,0.064,0.53,0.08,TIE,79988889
+10,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,16.5,1053,927,922,1091,0.037,0.192,0.486,0.447,GNN,79983789
+10,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,11.03,673,650,652,756,0.042,0.081,0.689,0.245,TRAFFIC,79993189
+10,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,14.32,759,960,741,779,0.039,0.113,0.509,0.329,GNN,80003689
+10,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,19.03,1114,1170,1083,1161,0.033,0.113,0.456,0.291,GNN,79990489
+10,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.22,785,801,807,808,0.046,0.069,0.441,0.287,TRAFFIC,80005789
+10,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.7,669,735,669,1039,0.025,0.081,0.509,0.288,GNN,80021889
+10,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,27.17,1523,1737,1659,1707,0.052,0.123,0.563,0.317,GNN,80049889
+10,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,950,1107,0.032,0.069,0.462,0.341,TRAFFIC,80024889
+10,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,16.09,929,1002,929,1108,0.047,0.07,0.66,0.284,GNN,79989889
+10,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,21.45,1404,1170,1084,1220,0.035,0.068,0.446,0.315,GNN,80005089
+10,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.64,1030,1087,1085,1209,0.032,0.093,0.404,0.306,GNN,79994889
+10,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,15.97,1078,838,1033,1035,0.032,0.103,0.627,0.284,TRAFFIC,79934889
+10,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,23.23,1716,1072,1181,1287,0.046,0.09,0.483,0.292,TRAFFIC,79962889
+10,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1168,1876,0.033,0.077,0.558,0.324,TRAFFIC,80054889
+10,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,33.73,1923,2125,1842,1855,0.036,0.072,0.441,0.312,GNN,79967289
+10,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,15.07,1079,730,839,741,0.027,0.088,0.534,0.299,TRAFFIC,79909889
+10,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,333,328,0.036,0.07,0.533,0.096,TRAFFIC,79980134
+10,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,4.62,237,318,234,234,0.027,0.116,0.418,0.082,GNN,79968134
+10,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.023,0.083,0.5,0.089,TIE,79963334
+10,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.023,0.185,0.594,0.104,TIE,79991334
+10,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,15.88,1053,852,1000,1091,0.025,0.079,0.461,0.21,TRAFFIC,79986234
+10,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,11.04,673,652,650,668,0.038,0.09,0.593,0.263,GNN,79995634
+10,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,13.03,759,805,762,779,0.026,0.066,0.471,0.28,GNN,80006134
+10,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.58,1114,1116,1053,1161,0.027,0.093,0.595,0.315,GNN,79992934
+10,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,13.95,785,889,807,808,0.026,0.082,0.455,0.289,GNN,80008234
+10,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,13.26,669,922,690,1039,0.027,0.115,0.575,0.162,GNN,80024334
+10,West to East,Vingis park concert congestions + road closure,True,13.05,24.88,1523,1463,1593,1707,0.031,0.087,0.517,0.327,TRAFFIC,80052334
+10,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,950,1107,0.048,0.071,0.639,0.324,TRAFFIC,80027334
+10,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,17.5,929,1171,929,929,0.035,0.075,0.471,0.294,GNN,79992334
+10,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,20.98,1404,1113,1084,1220,0.036,0.072,0.433,0.293,GNN,80007534
+10,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,18.32,1030,1168,1085,1209,0.035,0.078,0.491,0.299,GNN,79997334
+10,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.69,1078,925,1001,1035,0.028,0.078,0.447,0.286,TRAFFIC,79937334
+10,South to Northeast,Vingis park concert congestions + road closure,True,11.13,25.67,1716,1364,1784,1287,0.029,0.075,0.467,0.298,TRAFFIC,79965334
+10,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1158,1876,0.044,0.077,0.475,0.31,TRAFFIC,80057334
+10,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,31.77,1923,1890,1835,1855,0.04,0.078,0.505,0.314,GNN,79969734
+10,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,15.07,1079,730,1018,741,0.037,0.089,0.518,0.293,TRAFFIC,79912334
+5,Old Town loop,Normal traffic,False,1.53,5.51,333,328,360,328,0.024,0.204,0.536,0.242,TRAFFIC,79977619
+5,Gediminas Ave,Normal traffic,False,1.08,3.92,237,234,234,234,0.029,0.064,0.465,0.085,TIE,79965619
+5,Station to centre,Normal traffic,False,1.69,7.55,453,453,453,421,0.025,0.091,0.477,0.154,TIE,79960819
+5,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.032,0.072,0.449,0.111,TIE,79988819
+5,Zirmunai to Naujamiestis,Normal traffic,False,5.68,18.07,1053,1116,1000,1091,0.036,0.078,0.399,0.399,GNN,79983719
+5,Antakalnis to centre,Normal traffic,False,3.93,12.75,673,857,673,756,0.03,0.068,0.433,0.245,GNN,79993119
+5,Seskine to Old Town,Normal traffic,False,6.05,12.86,759,784,762,779,0.04,0.15,0.489,0.317,GNN,80003619
+5,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.58,1114,1116,1048,1161,0.028,0.066,0.446,0.284,GNN,79990419
+5,Justiniskes to centre,Normal traffic,False,6.61,12.97,785,771,730,808,0.026,0.17,0.447,0.44,GNN,80005719
+5,Fabijoniskes to river,Normal traffic,False,6.13,11.88,669,757,669,1039,0.03,0.076,0.405,0.299,GNN,80021819
+5,West to East,Normal traffic,False,13.05,24.83,1523,1457,1523,1707,0.037,0.187,0.485,0.407,TRAFFIC,80049819
+5,North to South,Normal traffic,False,11.58,17.82,1221,917,950,1107,0.031,0.074,0.582,0.3,TRAFFIC,80024819
+5,Pilaite to Pasilaiciai,Normal traffic,False,9.88,16.09,929,1002,929,1108,0.028,0.065,0.558,0.281,GNN,79989819
+5,Lazdynai to Antakalnis,Normal traffic,False,10.11,20.91,1404,1105,1084,1220,0.037,0.069,0.515,0.324,GNN,80005019
+5,Pilaite to Fabijoniskes,Normal traffic,False,10.76,18.2,1030,1154,1085,1209,0.03,0.093,0.421,0.306,GNN,79994819
+5,Lazdynai to Jeruzale,Normal traffic,False,9.79,17.32,1078,1001,1001,1035,0.031,0.072,0.448,0.287,TIE,79934819
+5,South to Northeast,Normal traffic,False,11.13,26.48,1716,1461,1181,1287,0.028,0.072,0.485,0.299,GNN,79962819
+5,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1271,1876,0.036,0.181,0.541,0.503,TRAFFIC,80054819
+5,Grigiskes to Verkiai,Normal traffic,False,24.31,30.49,1923,1736,1835,1855,0.035,0.077,0.639,0.315,TRAFFIC,79967219
+5,Salininkai to Seskine,Normal traffic,False,9.3,17.19,1079,984,1099,741,0.029,0.102,0.594,0.281,TRAFFIC,79909819
+5,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,333,328,0.025,0.07,0.454,0.137,TRAFFIC,79975787
+5,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.92,237,234,234,234,0.032,0.078,0.475,0.091,TIE,79963787
+5,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.55,453,453,453,421,0.025,0.072,0.597,0.169,TIE,79958987
+5,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.025,0.099,0.551,0.085,TIE,79986987
+5,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,17.54,1095,1010,1091,1335,0.027,0.067,0.453,0.292,TRAFFIC,79981887
+5,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.25,1045,1025,1045,1350,0.026,0.086,0.567,0.153,TRAFFIC,79991287
+5,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,16.19,892,1051,892,1010,0.027,0.074,0.446,0.181,GNN,80001787
+5,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,19.78,1161,1213,1156,1165,0.028,0.071,0.459,0.293,GNN,79988587
+5,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,15.0,887,913,897,898,0.028,0.069,0.514,0.279,GNN,80003887
+5,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.7,669,735,690,1039,0.028,0.064,0.459,0.282,GNN,80019987
+5,West to East,all bridges old town destroyed_optimistic,True,13.05,25.66,1523,1556,1523,1707,0.043,0.08,0.594,0.236,GNN,80047987
+5,North to South,all bridges old town destroyed_optimistic,True,11.93,22.93,1375,1376,1307,1500,0.033,0.079,0.407,0.301,GNN,80022987
+5,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,16.09,929,1002,929,1108,0.028,0.065,0.494,0.317,GNN,79987987
+5,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,18.51,1116,1105,1079,1031,0.03,0.071,0.441,0.294,GNN,80003187
+5,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.64,1030,1087,1085,1209,0.029,0.091,0.431,0.333,GNN,79992987
+5,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.32,1078,1001,1001,1035,0.032,0.067,0.449,0.285,TIE,79932987
+5,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,25.98,1657,1461,1461,1287,0.028,0.072,0.427,0.297,TIE,79960987
+5,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1115,1115,0.034,0.075,0.437,0.303,TRAFFIC,80052987
+5,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,42.33,2530,2549,2366,2402,0.038,0.08,0.476,0.352,GNN,79965387
+5,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,20.35,1221,1221,1221,1118,0.048,0.07,0.538,0.288,TIE,79907987
+5,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,328,328,0.024,0.068,0.445,0.093,TIE,79980660
+5,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.92,237,234,237,234,0.041,0.071,0.487,0.088,TRAFFIC,79968660
+5,Station to centre,Car crashes in Lazdynai,True,1.69,8.93,453,619,516,421,0.025,0.067,0.497,0.123,GNN,79963860
+5,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.025,0.07,0.478,0.07,TIE,79991860
+5,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,16.96,1053,982,954,1091,0.044,0.195,0.462,0.4,GNN,79986760
+5,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,11.03,673,650,693,756,0.025,0.069,0.488,0.258,TRAFFIC,79996160
+5,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.86,759,784,741,779,0.026,0.068,0.508,0.295,GNN,80006660
+5,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,18.58,1114,1116,1059,1161,0.029,0.07,0.465,0.289,GNN,79993460
+5,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,12.8,785,751,730,808,0.028,0.098,0.44,0.289,GNN,80008760
+5,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.88,669,757,669,1039,0.026,0.07,0.445,0.289,GNN,80024860
+5,West to East,Car crashes in Lazdynai,True,13.05,24.83,1523,1457,1525,1707,0.034,0.074,0.451,0.298,TRAFFIC,80052860
+5,North to South,Car crashes in Lazdynai,True,11.58,17.51,1221,880,950,1107,0.034,0.074,0.471,0.192,TRAFFIC,80027860
+5,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,16.09,929,1002,929,1108,0.029,0.077,0.462,0.191,GNN,79992860
+5,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,21.0,1404,1116,1084,1220,0.028,0.069,0.525,0.293,GNN,80008060
+5,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,18.61,1030,1203,1085,1209,0.027,0.066,0.448,0.184,GNN,79997860
+5,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,16.17,1078,862,1001,1035,0.037,0.078,0.568,0.307,TRAFFIC,79937860
+5,South to Northeast,Car crashes in Lazdynai,True,11.13,24.14,1716,1181,1804,1287,0.031,0.08,0.501,0.176,TRAFFIC,79965860
+5,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1115,1876,0.035,0.085,0.48,0.221,TRAFFIC,80057860
+5,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,31.02,1923,1799,1835,1855,0.056,0.074,0.53,0.357,TRAFFIC,79970260
+5,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,18.8,1079,1177,1104,741,0.045,0.073,0.492,0.177,GNN,79912860
+5,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,333,328,0.04,0.097,0.541,0.091,TRAFFIC,79980218
+5,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,8.93,453,619,453,421,0.025,0.068,0.49,0.157,GNN,79963418
+5,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.046,0.111,0.416,0.084,TIE,79991418
+5,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,17.32,1053,1025,899,1091,0.045,0.085,0.474,0.284,GNN,79986318
+5,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,12.38,673,812,693,756,0.024,0.063,0.529,0.218,GNN,79995718
+5,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.87,952,952,952,939,0.026,0.094,0.565,0.352,TIE,80006218
+5,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,22.57,1361,1347,1068,1484,0.029,0.067,0.477,0.291,GNN,79993018
+5,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,13.22,785,801,744,808,0.026,0.091,0.483,0.308,GNN,80008318
+5,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.89,669,758,691,1039,0.026,0.092,0.516,0.285,GNN,80024418
+5,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,25.66,1523,1556,1523,1707,0.03,0.065,0.652,0.3,GNN,80052418
+5,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,17.51,1221,880,950,1107,0.039,0.069,0.484,0.29,TRAFFIC,80027418
+5,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,15.48,929,929,929,1108,0.027,0.063,0.506,0.284,TIE,79992418
+5,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,20.24,1116,1313,1079,1031,0.031,0.085,0.477,0.325,GNN,80007618
+5,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.64,1030,1087,1085,1209,0.047,0.07,0.52,0.299,GNN,79997418
+5,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,17.43,1078,1014,1047,1035,0.031,0.078,0.617,0.29,TRAFFIC,79937418
+5,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,26.04,1657,1468,1369,1287,0.038,0.102,0.475,0.183,GNN,79965418
+5,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.045,0.079,0.527,0.36,TRAFFIC,80057418
+5,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.49,1923,1736,1835,1855,0.058,0.087,0.574,0.308,TRAFFIC,79969818
+5,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,15.6,1079,793,1099,741,0.029,0.069,0.535,0.32,TRAFFIC,79912418
+5,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,333,328,0.032,0.076,0.577,0.083,TRAFFIC,79977189
+5,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,237,234,0.025,0.065,0.511,0.115,TRAFFIC,79965189
+5,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.55,453,453,453,421,0.028,0.064,0.512,0.118,TIE,79960389
+5,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.041,0.072,0.48,0.08,TIE,79988389
+5,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,16.96,1053,982,958,1091,0.032,0.077,0.507,0.305,GNN,79983289
+5,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,11.04,673,652,650,756,0.025,0.213,0.482,0.174,GNN,79992689
+5,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,13.14,759,818,741,779,0.043,0.084,0.579,0.283,GNN,80003189
+5,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.08,1114,1056,1076,1161,0.03,0.078,0.497,0.289,TRAFFIC,79989989
+5,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.22,785,801,785,808,0.028,0.082,0.459,0.291,GNN,80005289
+5,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,12.19,669,794,669,1039,0.034,0.083,0.489,0.324,GNN,80021389
+5,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,25.66,1523,1556,1523,1707,0.032,0.091,0.581,0.33,GNN,80049389
+5,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,17.51,1221,880,950,1107,0.038,0.076,0.566,0.303,TRAFFIC,80024389
+5,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,17.06,929,1118,929,1108,0.032,0.071,0.498,0.295,GNN,79989389
+5,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,24.2,1404,1500,1079,1220,0.036,0.074,0.51,0.321,GNN,80004589
+5,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.64,1030,1087,1085,1209,0.03,0.084,0.559,0.302,GNN,79994389
+5,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,17.32,1078,1001,1001,1035,0.04,0.079,0.508,0.305,TIE,79934389
+5,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,29.89,1716,1871,1364,1287,0.031,0.087,0.457,0.312,GNN,79962389
+5,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1115,1876,0.061,0.123,0.509,0.204,TRAFFIC,80054389
+5,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,33.14,1923,2054,1842,1855,0.051,0.073,0.472,0.33,GNN,79966789
+5,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,17.19,1079,984,839,741,0.044,0.078,0.491,0.224,GNN,79909389
+5,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,328,328,0.025,0.081,0.461,0.077,TIE,79979634
+5,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,4.05,237,249,237,234,0.023,0.066,0.458,0.103,GNN,79967634
+5,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.028,0.065,0.487,0.082,TIE,79962834
+5,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.028,0.085,0.488,0.065,TIE,79990834
+5,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,17.28,1053,1021,895,1091,0.044,0.213,0.516,0.412,GNN,79985734
+5,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,10.59,673,598,693,756,0.035,0.09,0.515,0.242,TRAFFIC,79995134
+5,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,14.09,759,932,741,779,0.028,0.079,0.548,0.333,GNN,80005634
+5,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.58,1114,1116,1051,1161,0.029,0.077,0.658,0.297,GNN,79992434
+5,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,13.22,785,801,807,808,0.028,0.074,0.459,0.286,TRAFFIC,80007734
+5,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.88,669,757,669,1039,0.026,0.067,0.543,0.292,GNN,80023834
+5,West to East,Vingis park concert congestions + road closure,True,13.05,27.24,1523,1746,1656,1707,0.038,0.079,0.455,0.309,GNN,80051834
+5,North to South,Vingis park concert congestions + road closure,True,11.58,17.51,1221,880,950,1107,0.038,0.099,0.552,0.293,TRAFFIC,80026834
+5,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,16.09,929,1002,929,1108,0.033,0.078,0.48,0.315,GNN,79991834
+5,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,20.92,1404,1106,1068,1220,0.029,0.081,0.559,0.314,GNN,80007034
+5,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,18.18,1030,1151,1074,1209,0.029,0.081,0.485,0.311,GNN,79996834
+5,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,16.17,1078,862,1001,1035,0.029,0.093,0.498,0.311,TRAFFIC,79936834
+5,South to Northeast,Vingis park concert congestions + road closure,True,11.13,26.34,1716,1445,1364,1287,0.049,0.103,0.483,0.182,GNN,79964834
+5,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1115,1876,0.038,0.089,0.45,0.318,TRAFFIC,80056834
+5,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.49,1923,1736,1835,1855,0.046,0.088,0.567,0.313,TRAFFIC,79969234
+5,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,18.19,1079,1104,1104,741,0.029,0.072,0.516,0.283,TIE,79911834
+0,Old Town loop,Normal traffic,False,1.53,5.51,333,328,333,328,0.025,0.195,0.617,0.08,TRAFFIC,79977119
+0,Gediminas Ave,Normal traffic,False,1.08,3.92,237,234,237,234,0.023,0.075,0.439,0.074,TRAFFIC,79965119
+0,Station to centre,Normal traffic,False,1.69,7.55,453,453,453,421,0.023,0.081,0.526,0.156,TIE,79960319
+0,Uzupis internal,Normal traffic,False,2.14,6.13,368,368,368,368,0.026,0.069,0.44,0.071,TIE,79988319
+0,Zirmunai to Naujamiestis,Normal traffic,False,5.68,17.58,1053,1057,1058,1091,0.03,0.079,0.508,0.36,TIE,79983219
+0,Antakalnis to centre,Normal traffic,False,3.93,11.04,673,652,673,756,0.026,0.085,0.486,0.243,TRAFFIC,79992619
+0,Seskine to Old Town,Normal traffic,False,6.05,12.82,759,780,741,779,0.034,0.165,0.438,0.347,GNN,80003119
+0,Karoliniskes to Uzupis,Normal traffic,False,7.56,18.58,1114,1116,1059,1161,0.031,0.066,0.542,0.292,GNN,79989919
+0,Justiniskes to centre,Normal traffic,False,6.61,13.22,785,801,807,808,0.036,0.171,0.475,0.453,TRAFFIC,80005219
+0,Fabijoniskes to river,Normal traffic,False,6.13,11.88,669,757,669,1039,0.036,0.067,0.356,0.292,GNN,80021319
+0,West to East,Normal traffic,False,13.05,25.66,1523,1556,1523,1707,0.032,0.154,0.495,0.392,GNN,80049319
+0,North to South,Normal traffic,False,11.58,20.35,1221,1221,1221,1107,0.041,0.072,0.545,0.303,TIE,80024319
+0,Pilaite to Pasilaiciai,Normal traffic,False,9.88,16.09,929,1002,929,1108,0.03,0.068,0.548,0.287,GNN,79989319
+0,Lazdynai to Antakalnis,Normal traffic,False,10.11,21.0,1404,1116,1079,1220,0.03,0.064,0.508,0.304,GNN,80004519
+0,Pilaite to Fabijoniskes,Normal traffic,False,10.76,17.64,1030,1087,1085,1209,0.038,0.065,0.498,0.304,GNN,79994319
+0,Lazdynai to Jeruzale,Normal traffic,False,9.79,15.97,1078,838,1001,1035,0.028,0.065,0.485,0.298,TRAFFIC,79934319
+0,South to Northeast,Normal traffic,False,11.13,26.48,1716,1461,1461,1287,0.03,0.071,0.545,0.298,TIE,79962319
+0,Ring road W to E,Normal traffic,False,16.35,25.21,1920,1105,1115,1876,0.038,0.16,0.528,0.421,TRAFFIC,80054319
+0,Grigiskes to Verkiai,Normal traffic,False,24.31,30.49,1923,1736,1835,1855,0.048,0.081,0.564,0.301,TRAFFIC,79966719
+0,Salininkai to Seskine,Normal traffic,False,9.3,18.19,1079,1104,1022,741,0.027,0.094,0.487,0.28,GNN,79909319
+0,Old Town loop,all bridges old town destroyed_optimistic,True,1.53,5.51,333,328,333,328,0.04,0.066,0.471,0.088,TRAFFIC,79975287
+0,Gediminas Ave,all bridges old town destroyed_optimistic,True,1.08,3.92,237,234,237,234,0.024,0.073,0.454,0.089,TRAFFIC,79963287
+0,Station to centre,all bridges old town destroyed_optimistic,True,1.69,7.55,453,453,453,421,0.026,0.086,0.531,0.123,TIE,79958487
+0,Uzupis internal,all bridges old town destroyed_optimistic,True,2.14,6.13,368,368,368,368,0.025,0.076,0.574,0.085,TIE,79986487
+0,Zirmunai to Naujamiestis,all bridges old town destroyed_optimistic,True,7.05,17.54,1095,1010,1095,1335,0.033,0.073,0.546,0.186,TRAFFIC,79981387
+0,Antakalnis to centre,all bridges old town destroyed_optimistic,True,6.43,17.25,1045,1025,1045,1350,0.025,0.075,0.516,0.155,TRAFFIC,79990787
+0,Seskine to Old Town,all bridges old town destroyed_optimistic,True,6.73,14.87,892,892,892,1010,0.027,0.065,0.508,0.292,TIE,80001287
+0,Karoliniskes to Uzupis,all bridges old town destroyed_optimistic,True,7.84,19.78,1161,1213,1161,1165,0.028,0.081,0.482,0.287,GNN,79988087
+0,Justiniskes to centre,all bridges old town destroyed_optimistic,True,7.18,15.0,887,913,897,898,0.028,0.076,0.504,0.287,GNN,80003387
+0,Fabijoniskes to river,all bridges old town destroyed_optimistic,True,6.13,11.88,669,757,669,1039,0.027,0.075,0.517,0.294,GNN,80019487
+0,West to East,all bridges old town destroyed_optimistic,True,13.05,25.66,1523,1556,1523,1707,0.031,0.073,0.464,0.31,GNN,80047487
+0,North to South,all bridges old town destroyed_optimistic,True,11.93,22.92,1375,1375,1375,1500,0.032,0.073,0.441,0.181,TIE,80022487
+0,Pilaite to Pasilaiciai,all bridges old town destroyed_optimistic,True,9.88,16.09,929,1002,929,1108,0.029,0.072,0.476,0.293,GNN,79987487
+0,Lazdynai to Antakalnis,all bridges old town destroyed_optimistic,True,10.3,18.6,1116,1116,1079,1031,0.031,0.09,0.457,0.298,GNN,80002687
+0,Pilaite to Fabijoniskes,all bridges old town destroyed_optimistic,True,10.76,17.64,1030,1087,1085,1209,0.029,0.082,0.488,0.294,GNN,79992487
+0,Lazdynai to Jeruzale,all bridges old town destroyed_optimistic,True,9.79,17.32,1078,1001,1001,1035,0.039,0.068,0.469,0.286,TIE,79932487
+0,South to Northeast,all bridges old town destroyed_optimistic,True,11.29,25.98,1657,1461,1461,1287,0.03,0.079,0.444,0.307,TIE,79960487
+0,Ring road W to E,all bridges old town destroyed_optimistic,True,16.39,18.45,1109,1105,1115,1115,0.034,0.078,0.437,0.311,TRAFFIC,80052487
+0,Grigiskes to Verkiai,all bridges old town destroyed_optimistic,True,26.28,42.2,2530,2534,2408,2402,0.035,0.084,0.549,0.322,GNN,79964887
+0,Salininkai to Seskine,all bridges old town destroyed_optimistic,True,10.27,20.35,1221,1221,1221,1118,0.037,0.069,0.511,0.284,TIE,79907487
+0,Old Town loop,Car crashes in Lazdynai,True,1.53,5.51,333,328,333,328,0.024,0.065,0.489,0.094,TRAFFIC,79980160
+0,Gediminas Ave,Car crashes in Lazdynai,True,1.08,3.92,237,234,237,234,0.024,0.068,0.466,0.099,TRAFFIC,79968160
+0,Station to centre,Car crashes in Lazdynai,True,1.69,7.55,453,453,453,421,0.029,0.077,0.474,0.093,TIE,79963360
+0,Uzupis internal,Car crashes in Lazdynai,True,2.14,6.13,368,368,368,368,0.025,0.067,0.464,0.084,TIE,79991360
+0,Zirmunai to Naujamiestis,Car crashes in Lazdynai,True,5.68,17.58,1053,1057,1058,1091,0.027,0.167,0.512,0.401,TIE,79986260
+0,Antakalnis to centre,Car crashes in Lazdynai,True,3.93,11.04,673,652,673,756,0.027,0.067,0.512,0.231,TRAFFIC,79995660
+0,Seskine to Old Town,Car crashes in Lazdynai,True,6.05,12.82,759,780,741,779,0.029,0.073,0.51,0.283,GNN,80006160
+0,Karoliniskes to Uzupis,Car crashes in Lazdynai,True,7.56,18.58,1114,1116,1059,1161,0.047,0.068,0.519,0.292,GNN,79992960
+0,Justiniskes to centre,Car crashes in Lazdynai,True,6.61,13.22,785,801,807,808,0.028,0.067,0.519,0.282,TRAFFIC,80008260
+0,Fabijoniskes to river,Car crashes in Lazdynai,True,6.13,11.88,669,757,669,1039,0.028,0.071,0.476,0.295,GNN,80024360
+0,West to East,Car crashes in Lazdynai,True,13.05,25.66,1523,1556,1523,1707,0.033,0.071,0.477,0.314,GNN,80052360
+0,North to South,Car crashes in Lazdynai,True,11.58,20.35,1221,1221,1221,1107,0.031,0.074,0.54,0.318,TIE,80027360
+0,Pilaite to Pasilaiciai,Car crashes in Lazdynai,True,9.88,16.09,929,1002,929,1108,0.033,0.094,0.494,0.288,GNN,79992360
+0,Lazdynai to Antakalnis,Car crashes in Lazdynai,True,10.11,21.0,1404,1116,1079,1220,0.028,0.102,0.451,0.299,GNN,80007560
+0,Pilaite to Fabijoniskes,Car crashes in Lazdynai,True,10.76,17.64,1030,1087,1085,1209,0.048,0.066,0.514,0.323,GNN,79997360
+0,Lazdynai to Jeruzale,Car crashes in Lazdynai,True,9.79,15.97,1078,838,1001,1035,0.047,0.068,0.492,0.297,TRAFFIC,79937360
+0,South to Northeast,Car crashes in Lazdynai,True,11.13,26.48,1716,1461,1461,1287,0.038,0.074,0.47,0.337,TIE,79965360
+0,Ring road W to E,Car crashes in Lazdynai,True,16.35,25.21,1920,1105,1115,1876,0.04,0.071,0.49,0.248,TRAFFIC,80057360
+0,Grigiskes to Verkiai,Car crashes in Lazdynai,True,24.31,30.49,1923,1736,1835,1855,0.033,0.074,0.432,0.36,TRAFFIC,79969760
+0,Salininkai to Seskine,Car crashes in Lazdynai,True,9.3,18.19,1079,1104,1022,741,0.028,0.103,0.488,0.283,GNN,79912360
+0,Old Town loop,Protest at seimas Closure on Gedimino pr.,True,1.53,5.51,333,328,333,328,0.024,0.069,0.555,0.092,TRAFFIC,79979718
+0,Station to centre,Protest at seimas Closure on Gedimino pr.,True,1.69,7.55,453,453,453,421,0.024,0.064,0.643,0.143,TIE,79962918
+0,Uzupis internal,Protest at seimas Closure on Gedimino pr.,True,2.14,6.13,368,368,368,368,0.046,0.065,0.455,0.069,TIE,79990918
+0,Zirmunai to Naujamiestis,Protest at seimas Closure on Gedimino pr.,True,5.68,17.58,1053,1057,1058,1091,0.028,0.071,0.444,0.308,TIE,79985818
+0,Antakalnis to centre,Protest at seimas Closure on Gedimino pr.,True,3.93,11.04,673,652,673,756,0.023,0.062,0.464,0.146,TRAFFIC,79995218
+0,Seskine to Old Town,Protest at seimas Closure on Gedimino pr.,True,6.65,15.87,952,952,974,939,0.031,0.071,0.46,0.325,TRAFFIC,80005718
+0,Karoliniskes to Uzupis,Protest at seimas Closure on Gedimino pr.,True,8.49,20.62,1361,1114,1068,1484,0.027,0.072,0.56,0.287,GNN,79992518
+0,Justiniskes to centre,Protest at seimas Closure on Gedimino pr.,True,6.61,13.22,785,801,807,808,0.026,0.064,0.488,0.16,TRAFFIC,80007818
+0,Fabijoniskes to river,Protest at seimas Closure on Gedimino pr.,True,6.13,11.88,669,757,669,1039,0.026,0.072,0.47,0.292,GNN,80023918
+0,West to East,Protest at seimas Closure on Gedimino pr.,True,13.05,25.66,1523,1556,1523,1707,0.031,0.084,0.582,0.312,GNN,80051918
+0,North to South,Protest at seimas Closure on Gedimino pr.,True,11.58,20.35,1221,1221,1221,1107,0.03,0.081,0.428,0.347,TIE,80026918
+0,Pilaite to Pasilaiciai,Protest at seimas Closure on Gedimino pr.,True,9.88,16.09,929,1002,929,1108,0.041,0.067,0.485,0.298,GNN,79991918
+0,Lazdynai to Antakalnis,Protest at seimas Closure on Gedimino pr.,True,10.3,18.6,1116,1116,1079,1031,0.031,0.068,0.51,0.183,GNN,80007118
+0,Pilaite to Fabijoniskes,Protest at seimas Closure on Gedimino pr.,True,10.76,17.64,1030,1087,1085,1209,0.042,0.116,0.441,0.29,GNN,79996918
+0,Lazdynai to Jeruzale,Protest at seimas Closure on Gedimino pr.,True,9.79,15.97,1078,838,1001,1035,0.031,0.067,0.497,0.298,TRAFFIC,79936918
+0,South to Northeast,Protest at seimas Closure on Gedimino pr.,True,11.29,25.98,1657,1461,1461,1287,0.042,0.076,0.452,0.331,TIE,79964918
+0,Ring road W to E,Protest at seimas Closure on Gedimino pr.,True,16.39,18.45,1109,1105,1115,1115,0.037,0.08,0.474,0.305,TRAFFIC,80056918
+0,Grigiskes to Verkiai,Protest at seimas Closure on Gedimino pr.,True,24.31,30.49,1923,1736,1835,1855,0.038,0.077,0.456,0.215,TRAFFIC,79969318
+0,Salininkai to Seskine,Protest at seimas Closure on Gedimino pr.,True,9.3,18.19,1079,1104,1022,741,0.047,0.079,0.443,0.287,GNN,79911918
+0,Old Town loop,Shopping spree at Ozas while Ukmerges g. has construction,True,1.53,5.51,333,328,333,328,0.034,0.078,0.43,0.094,TRAFFIC,79976689
+0,Gediminas Ave,Shopping spree at Ozas while Ukmerges g. has construction,True,1.08,3.92,237,234,237,234,0.024,0.063,0.461,0.088,TRAFFIC,79964689
+0,Station to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,1.69,7.55,453,453,453,421,0.026,0.077,0.59,0.095,TIE,79959889
+0,Uzupis internal,Shopping spree at Ozas while Ukmerges g. has construction,True,2.14,6.13,368,368,368,368,0.025,0.07,0.462,0.088,TIE,79987889
+0,Zirmunai to Naujamiestis,Shopping spree at Ozas while Ukmerges g. has construction,True,5.68,17.58,1053,1057,1058,1091,0.031,0.168,0.487,0.412,TIE,79982789
+0,Antakalnis to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,3.93,11.04,673,652,673,756,0.027,0.066,0.621,0.278,TRAFFIC,79992189
+0,Seskine to Old Town,Shopping spree at Ozas while Ukmerges g. has construction,True,6.05,12.82,759,780,741,779,0.026,0.066,0.499,0.287,GNN,80002689
+0,Karoliniskes to Uzupis,Shopping spree at Ozas while Ukmerges g. has construction,True,7.56,18.58,1114,1116,1059,1161,0.053,0.07,0.43,0.289,GNN,79989489
+0,Justiniskes to centre,Shopping spree at Ozas while Ukmerges g. has construction,True,6.61,13.22,785,801,807,808,0.028,0.069,0.481,0.193,TRAFFIC,80004789
+0,Fabijoniskes to river,Shopping spree at Ozas while Ukmerges g. has construction,True,6.13,11.88,669,757,669,1039,0.027,0.064,0.441,0.288,GNN,80020889
+0,West to East,Shopping spree at Ozas while Ukmerges g. has construction,True,13.05,25.66,1523,1556,1523,1707,0.031,0.071,0.445,0.298,GNN,80048889
+0,North to South,Shopping spree at Ozas while Ukmerges g. has construction,True,11.58,20.35,1221,1221,1221,1107,0.032,0.068,0.455,0.309,TIE,80023889
+0,Pilaite to Pasilaiciai,Shopping spree at Ozas while Ukmerges g. has construction,True,9.88,16.09,929,1002,929,1108,0.029,0.068,0.447,0.301,GNN,79988889
+0,Lazdynai to Antakalnis,Shopping spree at Ozas while Ukmerges g. has construction,True,10.11,21.0,1404,1116,1079,1220,0.029,0.07,0.463,0.294,GNN,80004089
+0,Pilaite to Fabijoniskes,Shopping spree at Ozas while Ukmerges g. has construction,True,10.76,17.64,1030,1087,1085,1209,0.032,0.072,0.461,0.298,GNN,79993889
+0,Lazdynai to Jeruzale,Shopping spree at Ozas while Ukmerges g. has construction,True,9.79,15.97,1078,838,1001,1035,0.03,0.068,0.5,0.301,TRAFFIC,79933889
+0,South to Northeast,Shopping spree at Ozas while Ukmerges g. has construction,True,11.13,26.48,1716,1461,1461,1287,0.042,0.081,0.628,0.306,TIE,79961889
+0,Ring road W to E,Shopping spree at Ozas while Ukmerges g. has construction,True,16.35,25.21,1920,1105,1115,1876,0.066,0.074,0.434,0.325,TRAFFIC,80053889
+0,Grigiskes to Verkiai,Shopping spree at Ozas while Ukmerges g. has construction,True,24.31,30.49,1923,1736,1835,1855,0.036,0.073,0.445,0.315,TRAFFIC,79966289
+0,Salininkai to Seskine,Shopping spree at Ozas while Ukmerges g. has construction,True,9.3,18.19,1079,1104,1022,741,0.03,0.066,0.434,0.297,GNN,79908889
+0,Old Town loop,Vingis park concert congestions + road closure,True,1.53,5.51,333,328,333,328,0.025,0.068,0.616,0.094,TRAFFIC,79979134
+0,Gediminas Ave,Vingis park concert congestions + road closure,True,1.08,3.92,237,234,237,234,0.037,0.094,0.533,0.088,TRAFFIC,79967134
+0,Station to centre,Vingis park concert congestions + road closure,True,1.69,7.55,453,453,453,421,0.051,0.076,0.837,0.15,TIE,79962334
+0,Uzupis internal,Vingis park concert congestions + road closure,True,2.14,6.13,368,368,368,368,0.033,0.194,0.545,0.101,TIE,79990334
+0,Zirmunai to Naujamiestis,Vingis park concert congestions + road closure,True,5.68,17.58,1053,1057,1058,1091,0.091,0.069,0.446,0.339,TIE,79985234
+0,Antakalnis to centre,Vingis park concert congestions + road closure,True,3.93,11.04,673,652,673,756,0.027,0.069,0.505,0.244,TRAFFIC,79994634
+0,Seskine to Old Town,Vingis park concert congestions + road closure,True,6.05,12.82,759,780,741,779,0.028,0.068,0.523,0.238,GNN,80005134
+0,Karoliniskes to Uzupis,Vingis park concert congestions + road closure,True,7.56,18.58,1114,1116,1059,1161,0.029,0.072,0.461,0.29,GNN,79991934
+0,Justiniskes to centre,Vingis park concert congestions + road closure,True,6.61,13.22,785,801,807,808,0.027,0.064,0.494,0.332,TRAFFIC,80007234
+0,Fabijoniskes to river,Vingis park concert congestions + road closure,True,6.13,11.88,669,757,669,1039,0.028,0.071,0.471,0.312,GNN,80023334
+0,West to East,Vingis park concert congestions + road closure,True,13.05,25.66,1523,1556,1523,1707,0.037,0.086,0.455,0.305,GNN,80051334
+0,North to South,Vingis park concert congestions + road closure,True,11.58,20.35,1221,1221,1221,1107,0.04,0.075,0.442,0.306,TIE,80026334
+0,Pilaite to Pasilaiciai,Vingis park concert congestions + road closure,True,9.88,16.09,929,1002,929,1108,0.029,0.07,0.445,0.283,GNN,79991334
+0,Lazdynai to Antakalnis,Vingis park concert congestions + road closure,True,10.11,21.0,1404,1116,1079,1220,0.05,0.106,0.635,0.298,GNN,80006534
+0,Pilaite to Fabijoniskes,Vingis park concert congestions + road closure,True,10.76,17.64,1030,1087,1085,1209,0.029,0.073,0.461,0.285,GNN,79996334
+0,Lazdynai to Jeruzale,Vingis park concert congestions + road closure,True,9.79,15.97,1078,838,1001,1035,0.029,0.064,0.452,0.286,TRAFFIC,79936334
+0,South to Northeast,Vingis park concert congestions + road closure,True,11.13,26.48,1716,1461,1461,1287,0.031,0.077,0.423,0.306,TIE,79964334
+0,Ring road W to E,Vingis park concert congestions + road closure,True,16.35,25.21,1920,1105,1115,1876,0.037,0.074,0.511,0.215,TRAFFIC,80056334
+0,Grigiskes to Verkiai,Vingis park concert congestions + road closure,True,24.31,30.49,1923,1736,1835,1855,0.036,0.076,0.462,0.322,TRAFFIC,79968734
+0,Salininkai to Seskine,Vingis park concert congestions + road closure,True,9.3,18.19,1079,1104,1022,741,0.03,0.091,0.441,0.29,GNN,79911334

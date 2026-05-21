@@ -759,7 +759,7 @@ def main():
     print(f"City: {CITY}")
     print(f"Architecture: {NUM_STEPS}-step LSTM-GN, hidden={HIDDEN_DIM}")
     print(f"Training: {ROUTES_PER_SNAPSHOT} routes/snapshot, {EPOCHS} epochs")
-    print(f"Dynamic loss: pos_weight {INITIAL_POS_WEIGHT} → {FINAL_POS_WEIGHT}")
+    print(f"Dynamic loss: pos_weight {INITIAL_POS_WEIGHT}  {FINAL_POS_WEIGHT}")
     print()
 
     G = load_graph()

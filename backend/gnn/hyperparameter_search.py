@@ -111,7 +111,7 @@ def main():
             results.append({**config, "val_loss": val_loss, "time": round(elapsed, 1)})
             print(f"  [{i+1:2d}/{len(combos)}] h={config['hidden_dim']:3d} "
                   f"L={config['num_layers']} lr={config['lr']:.4f} "
-                  f"do={config['dropout']:.2f} → val={val_loss:.4f} ({elapsed:.0f}s)")
+                  f"do={config['dropout']:.2f}  val={val_loss:.4f} ({elapsed:.0f}s)")
         except Exception as e:
             print(f"  [{i+1:2d}/{len(combos)}] FAILED: {e}")
             results.append({**config, "val_loss": float("inf"), "time": 0})
@@ -123,7 +123,7 @@ def main():
     print("=" * 70)
     for i, r in enumerate(results[:10]):
         print(f"  #{i+1}: hidden={r['hidden_dim']}, layers={r['num_layers']}, "
-              f"lr={r['lr']}, dropout={r['dropout']:.2f} → val={r['val_loss']:.4f}")
+              f"lr={r['lr']}, dropout={r['dropout']:.2f}  val={r['val_loss']:.4f}")
 
     output_path = city_dir / "models" / "hyperparam_results.json"
     output_path.parent.mkdir(parents=True, exist_ok=True)

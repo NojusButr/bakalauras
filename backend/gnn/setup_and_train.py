@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 
 import subprocess
 import sys
@@ -62,7 +61,7 @@ def main():
         print("  Then visit http://localhost:8000/cities/vilnius")
         return
 
-    print(f"✓ Graph found at {graph_path}")
+    print(f" Graph found at {graph_path}")
 
     # Check snapshots
     snapshots_dir = city_dir / "snapshots"
@@ -100,7 +99,7 @@ def main():
     model_path = output_dir / "best_model.pt"
     if model_path.exists():
         print(f"\n{'='*60}")
-        print(f"✓ Model saved to {model_path}")
+        print(f" Model saved to {model_path}")
         print(f"  The /route/gnn and /route/compare endpoints are now available!")
         print(f"{'='*60}")
     else:
